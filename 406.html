@@ -1,251 +1,503 @@
 <!DOCTYPE html>
 <html lang="ml">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ശാസ്ത്ര വിദ്യാഭ്യാസം പഠനവും ബോധനവും</title>
-<style>
-  body { 
-    font-family: 'Meera', 'Manjari', 'AnjaliOldLipi', Arial, sans-serif; 
-    background-color: #f4f7f6; 
-    margin: 0; 
-    padding: 0; 
-    overflow-x: hidden; 
-  }
-  header { 
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); 
-    color: white; 
-    padding: 2.5rem 1rem; 
-    text-align: center; 
-    animation: slideDown 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-  }
-  h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
-  p.subtitle { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
-  
-  .container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  
-  .nav-buttons { 
-    display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; 
-    margin-bottom: 2.5rem; 
-    animation: fadeIn 1.2s ease-in both; 
-    animation-delay: 0.3s;
-  }
-  
-  button { 
-    background-color: #ffffff; 
-    border: 2px solid #11998e; 
-    color: #11998e; 
-    padding: 10px 22px; 
-    font-size: 1.1rem; 
-    border-radius: 25px; 
-    cursor: pointer; 
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
-    font-weight: bold; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  }
-  
-  button:hover, button.active { 
-    background-color: #11998e; 
-    color: white; 
-    transform: translateY(-3px); 
-    box-shadow: 0 6px 12px rgba(17, 153, 142, 0.2);
-  }
-  
-  .section { display: none; animation: slideUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-  .section.active { display: block; }
-  
-  .card { 
-    background: white; 
-    border-radius: 12px; 
-    padding: 25px; 
-    margin-bottom: 25px; 
-    box-shadow: 0 8px 16px rgba(0,0,0,0.04); 
-    transition: transform 0.3s; 
-    border-left: 6px solid #11998e; 
-  }
-  .card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.08); }
-  
-  .card h3 { color: #2c3e50; margin-top: 0; font-size: 1.6rem; border-bottom: 2px dashed #eee; padding-bottom: 10px; }
-  
-  ul { line-height: 1.8; font-size: 1.15rem; color: #444; padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  
-  /* Fun Table Styling */
-  table { width: 100%; border-collapse: collapse; margin-top: 20px; border-radius: 8px; overflow: hidden; }
-  th, td { padding: 15px; text-align: center; }
-  th { background-color: #11998e; color: white; font-size: 1.2rem; }
-  tr { background-color: #ffffff; border-bottom: 1px solid #eee; transition: background 0.2s; }
-  tr:hover { background-color: #f1fdf9; }
-  tr:last-child { border-bottom: none; }
-  
-  /* Timeline styling for Action Research */
-  .timeline { list-style: none; padding: 0; margin-top: 20px; }
-  .timeline li { 
-    padding: 15px 15px 15px 50px; 
-    background: #f8fbfa; 
-    margin-bottom: 12px; 
-    border-radius: 8px; 
-    position: relative; 
-    border: 1px solid #eef2f1;
-    transition: all 0.3s;
-  }
-  .timeline li:hover { background: #e9f7f4; transform: scale(1.01); }
-  .timeline li::before { 
-    content: '⭐'; 
-    position: absolute; 
-    left: 15px; 
-    top: 15px;
-    font-size: 1.2rem; 
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>406: ശാസ്ത്ര വിദ്യാഭ്യാസം പഠനവും ബോധനവും</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #16a085;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
 
-  /* Animations */
-  @keyframes slideDown { 
-    0% { transform: translateY(-100%); opacity: 0; } 
-    100% { transform: translateY(0); opacity: 1; } 
-  }
-  @keyframes slideUp { 
-    0% { transform: translateY(40px); opacity: 0; } 
-    100% { transform: translateY(0); opacity: 1; } 
-  }
-  @keyframes fadeIn { 
-    0% { opacity: 0; } 
-    100% { opacity: 1; } 
-  }
-</style>
+        body {
+            font-family: 'Noto Sans Malayalam', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Accordion UI */
+        .accordion {
+            background-color: var(--card-bg);
+            color: var(--secondary-color);
+            cursor: pointer;
+            padding: 20px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            font-weight: 700;
+            font-size: 1.1em;
+            opacity: 0; /* For animation */
+            animation: fadeInUp 0.6s forwards;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion:hover {
+            background-color: #e8f8f5;
+            transform: translateY(-2px);
+        }
+
+        .active, .accordion:hover {
+            color: var(--accent-color);
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.5em;
+            transition: transform 0.3s;
+        }
+
+        .active:after {
+            content: "\2212";
+            transform: rotate(180deg);
+        }
+
+        .panel {
+            padding: 0 20px;
+            background-color: var(--card-bg);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 10px;
+        }
+
+        .panel.show {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        /* Content Styling */
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .citation {
+            font-size: 0.8em;
+            color: #888;
+            vertical-align: super;
+            margin-left: 4px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
 </head>
 <body>
-  <header>
-    <h1>ശാസ്ത്ര വിദ്യാഭ്യാസം</h1>
-    <p class="subtitle">പഠനവും ബോധനവും (Science Education: Learning & Teaching)</p>
-  </header>
 
-  <div class="container">
-    <div class="nav-buttons">
-      <button class="active" onclick="showSection('textbook')">പാഠപുസ്‌തകം</button>
-      <button onclick="showSection('evaluation')">വിലയിരുത്തൽ</button>
-      <button onclick="showSection('cce')">CCE മേഖലകൾ</button>
-      <button onclick="showSection('grading')">ഗ്രേഡിങ്</button>
-      <button onclick="showSection('samagra')">സമഗ്ര പോർട്ടൽ</button>
-      <button onclick="showSection('research')">ക്രിയാഗവേഷണം</button>
+<div class="container">
+    <header>
+        <h1>406: ശാസ്ത്ര വിദ്യാഭ്യാസം പഠനവും ബോധനവും <span class="citation">[cite: 1]</span></h1>
+        <div class="subtitle">SHORT NOTES <span class="citation">[cite: 2]</span></div>
+    </header>
+
+    <button class="accordion" style="animation-delay: 0.1s;">ശാസ്ത്ര പാഠപുസ്‌തക സവിശേഷതകൾ <span class="citation">[cite: 3]</span></button>
+    <div class="panel">
+        <ul>
+            <li>ശാസ്ത്രത്തിലെ അടിസ്ഥാന ആശയങ്ങൾ ഉറപ്പാക്കുന്നത് <span class="citation">[cite: 4]</span></li>
+            <li>മനഃശാസ്ത്ര തത്വങ്ങളെ അടിസ്ഥാനമാക്കി ഉള്ളത് കുട്ടികളുടെ <span class="citation">[cite: 5]</span> പ്രായത്തിനും താല്‌പര്യത്തിനും കഴിവുകൾക്കും യോജിച്ചത് <span class="citation">[cite: 6]</span></li>
+            <li>ക്ലാസ് മുറിയിലെ പഠനത്തിനും സ്വയം പഠനത്തിനും <span class="citation">[cite: 7]</span> സഹായകമായത് <span class="citation">[cite: 7]</span></li>
+            <li>കൃത്യവും പ്രസക്തവുമായ വിവരങ്ങൾ ഉൾക്കൊള്ളിച്ചത് <span class="citation">[cite: 8]</span></li>
+            <li>ശാസ്ത്ര ലക്ഷ്യങ്ങൾ സാക്ഷാത്‌കരിക്കുന്നതിനൊപ്പം ധാർമിക <span class="citation">[cite: 9]</span> മൂല്യങ്ങൾക്കും പ്രാധാന്യം നൽകുന്നു <span class="citation">[cite: 10]</span></li>
+            <li>കുട്ടികളുടെ ശാസ്ത്ര പഠനത്തിനായി പ്രചോദിപ്പിക്കുന്നതിന് <span class="citation">[cite: 11]</span></li>
+            <li>ഐസിടി സാധ്യതകൾ ഉൾച്ചേർന്നത് <span class="citation">[cite: 12]</span></li>
+            <li>പ്രത്യേക പരിഗണന അർഹിക്കുന്ന കുട്ടികളെയും <span class="citation">[cite: 13]</span> പരിഗണിക്കുന്നത് <span class="citation">[cite: 14]</span></li>
+            <li>സ്വയം വിലയിരുത്തുന്നതിനും, സ്വയം പഠിക്കുന്നതിനും <span class="citation">[cite: 15]</span> സഹായിക്കുന്നതിന് <span class="citation">[cite: 16]</span></li>
+            <li>അധിക പഠനത്തിനുള്ള സാധ്യത ഒരുക്കുന്നു <span class="citation">[cite: 17]</span></li>
+        </ul>
     </div>
 
-    <div id="textbook" class="section active">
-      <div class="card" style="border-left-color: #FF512F;">
-        <h3 style="color: #FF512F;">ശാസ്ത്ര പാഠപുസ്‌തക സവിശേഷതകൾ</h3>
+    <button class="accordion" style="animation-delay: 0.2s;">വിലയിരുത്തൽ സമീപനം <span class="citation">[cite: 18]</span></button>
+    <div class="panel">
         <ul>
-          <li>ശാസ്ത്രത്തിലെ അടിസ്ഥാന ആശയങ്ങൾ ഉറപ്പാക്കുന്നു.</li>
-          <li>മനഃശാസ്ത്ര തത്വങ്ങളെ അടിസ്ഥാനമാക്കിയുള്ളതും കുട്ടികളുടെ പ്രായത്തിനും താല്‌പര്യത്തിനും യോജിച്ചതും.</li>
-          <li>ക്ലാസ് മുറിയിലെ പഠനത്തിനും സ്വയം പഠനത്തിനും സഹായകമായത്.</li>
-          <li>ശാസ്ത്ര ലക്ഷ്യങ്ങൾ സാക്ഷാത്‌കരിക്കുന്നതിനൊപ്പം ധാർമിക മൂല്യങ്ങൾക്കും പ്രാധാന്യം നൽകുന്നു.</li>
-          <li>ഐസിടി (ICT) സാധ്യതകൾ ഉൾച്ചേർന്നത്.</li>
-          <li>പ്രത്യേക പരിഗണന അർഹിക്കുന്ന കുട്ടികളെയും പരിഗണിക്കുന്നത്.</li>
-          <li>അധിക പഠനത്തിനുള്ള സാധ്യത ഒരുക്കുന്നു.</li>
+            <li>പഠനം എന്നത് കുട്ടികളിൽ സ്വാഭാവികമായും നിരന്തരമായി <span class="citation">[cite: 19]</span> നടക്കുന്ന ഒരു പ്രക്രിയയാണ് <span class="citation">[cite: 20]</span></li>
+            <li>പഠനം കാര്യക്ഷമം ആകണമെങ്കിൽ അനുഭവങ്ങൾ ഉദ്ദേശ്യ അധിഷ്‌ഠിതവും പഠന നേട്ടങ്ങൾ കേന്ദ്രീകരിച്ചതും ആകണം <span class="citation">[cite: 21]</span></li>
+            <li>ഭാഗമായി ബന്ധപ്പെട്ടു ഉണ്ടാവേണ്ട പഠനം നേട്ടങ്ങൾ മുൻകൂട്ടി <span class="citation">[cite: 22]</span> ആസൂത്രണം <span class="citation">[cite: 23]</span> ചെയ്യണം <span class="citation">[cite: 24]</span></li>
         </ul>
-      </div>
+        <p><strong>വിലയിരുത്തലിന് മൂന്ന് തലങ്ങളാണ് ഉള്ളത് <span class="citation">[cite: 25]</span>:</strong></p>
+        <ul>
+            <li><strong>പഠനത്തെ വിലയിരുത്താൻ :</strong> എന്തൊക്കെ പഠിച്ചു എന്ന് വിലയിരുത്തുന്ന പ്രക്രിയ, പാഠഭാഗങ്ങളുടെ പഠനത്തിനു ശേഷമുള്ള പഠിതാവിന്റെ മികവ്, പഠനനിലവാരം എന്നിവയാണ് ഇവിടെ വിലയിരുത്തപ്പെടുന്നത് <span class="citation">[cite: 26]</span></li>
+            <li><strong>പഠനത്തിനായുള്ള വിലയിരുത്തൽ :</strong> പഠനം നടക്കുന്ന വേളയിൽ അധ്യാപകരോ, സഹപാഠികളോ നടത്തുന്ന ഇടപെടലുകൾ ഉണ്ടാവാം പഠനത്തിനൊപ്പം ഉള്ള ഇത്തരം വിലയിരുത്തലുകൾ, ഫീഡ്ബാക്ക് നൽകലുകൾ വിലയിരുത്തലിന്റെ മറ്റൊരു തലമാണ് .ഇവ പഠന പുരോഗതിക്ക് വേണ്ടി നിരന്തരം നിർവഹിക്കപ്പെടേണ്ടതും പഠന പ്രവർത്തനനോട് അടുത്ത് നിൽക്കുന്നതും ആവണം. <span class="citation">[cite: 27]</span></li>
+            <li><strong>വിലയിരുത്തൽ തന്നെ പഠനം :</strong> പഠനത്തിലൂടെ നേടിയ <span class="citation">[cite: 28]</span> സ്വയം <span class="citation">[cite: 29]</span> ആശയങ്ങളെയും ധാരണകളെയും വിമർശനാത്മകമായി പരിശോധിക്കുകയും മാറ്റങ്ങൾ ഉൾക്കൊള്ളുകയും ചെയ്യുന്ന ഒരു തിരുത്തൽ പ്രക്രിയയും ഉണ്ട് . ഇതിനെ സ്വയം തിരുത്തലായി കരുതാം. <span class="citation">[cite: 30]</span> ഇപ്രകാരം സ്വയം നിർവഹിക്കുന്ന വിലയിരുത്തലിലൂടെയും പഠനം സാധ്യമാകുന്നു . ഇത് പഠനത്തിന്റെ മറ്റൊരു തലമാണ് <span class="citation">[cite: 31]</span></li>
+        </ul>
+        <p>പഠനനേട്ടങ്ങൾ ഉറപ്പാക്കുന്ന തരത്തിലുള്ള പഠന സമീപനം സ്വീകരിക്കുമ്പോൾ അതിന് അനുഗുണമായ ഒരു വിലയിരുത്തൽ സമീപനവും സ്വീകരിക്കേണ്ടതുണ്ട് . ആയതിനാൽ പഠനനേട്ടങ്ങൾക്ക് നൽകുന്ന വിലയിരുത്തൽ സമീപനമാണ് സ്വീകരിക്കേണ്ടത്. <span class="citation">[cite: 32]</span></p>
     </div>
 
-    <div id="evaluation" class="section">
-      <div class="card" style="border-left-color: #8E2DE2;">
-        <h3 style="color: #8E2DE2;">വിലയിരുത്തൽ സമീപനം (Evaluation Approach)</h3>
-        <p style="font-size: 1.1rem; color: #555;">പഠനം കാര്യക്ഷമം ആകണമെങ്കിൽ അനുഭവങ്ങൾ ഉദ്ദേശ്യ അധിഷ്‌ഠിതവും പഠന നേട്ടങ്ങൾ കേന്ദ്രീകരിച്ചതും ആകണം. വിലയിരുത്തലിന് മൂന്ന് തലങ്ങളാണുള്ളത്:</p>
+    <button class="accordion" style="animation-delay: 0.3s;">നിരന്തരം സമഗ്രവുമായ വിലയിരുത്തൽ (CCE) <span class="citation">[cite: 33]</span></button>
+    <div class="panel">
+        <p><strong>CCE മേഖലകൾ: <span class="citation">[cite: 34]</span></strong></p>
+        <ol>
+            <li>വൈജ്ഞാനിക മേഖല <span class="citation">[cite: 35]</span></li>
+            <li>സാമൂഹിക വൈകാരിക മേഖല <span class="citation">[cite: 36]</span></li>
+        </ol>
+        
+        <p><strong>വൈജ്ഞാനിക മേഖല:</strong> എല്ലാ വിഷയങ്ങളും വൈജ്ഞാനിക മേഖലയിൽ ഉൾപ്പെടുന്നു . <span class="citation">[cite: 37]</span> ശാസ്ത്ര വിഷയങ്ങൾ (അടിസ്ഥാന ശാസ്ത്രം,ഗണിതശാസ്ത്രം, സാമൂഹ്യശാസ്ത്രം), ഭാഷാ വിഷയങ്ങൾ, കലാപഠനം, പ്രവർത്തി പഠനം, ആരോഗ്യ കായിക വിദ്യാഭ്യാസം തുടങ്ങിയ എല്ലാ വിഷയങ്ങളും ഈ മേഖലയിൽ ഉൾപ്പെടുത്താം. <span class="citation">[cite: 38]</span></p>
+        
+        <p>ഇവിടെ രണ്ടു തരത്തിലുള്ള വിലയിരുത്തലാണ് ഉദ്ദേശിക്കുന്നത്: <span class="citation">[cite: 39]</span></p>
         <ul>
-          <li><strong>പഠനത്തെ വിലയിരുത്തൽ (Assessment of Learning):</strong> എന്തൊക്കെ പഠിച്ചു എന്ന് വിലയിരുത്തുന്ന പ്രക്രിയ. പഠനത്തിനു ശേഷമുള്ള മികവ് വിലയിരുത്തുന്നു.</li>
-          <li><strong>പഠനത്തിനായുള്ള വിലയിരുത്തൽ (Assessment for Learning):</strong> പഠനം നടക്കുന്ന വേളയിൽ നൽകുന്ന ഫീഡ്ബാക്ക്. ഇത് പഠന പുരോഗതിക്ക് സഹായിക്കുന്നു.</li>
-          <li><strong>വിലയിരുത്തൽ തന്നെ പഠനം (Assessment as Learning):</strong> സ്വയം നിർവഹിക്കുന്ന വിലയിരുത്തൽ. വിമർശനാത്മകമായി പരിശോധിച്ച് മാറ്റങ്ങൾ ഉൾക്കൊള്ളുന്ന തിരുത്തൽ പ്രക്രിയ.</li>
+            <li><strong>നിരന്തര വിലയിരുത്തൽ:</strong> നിരന്തര വിലയിരുത്തലിന് അടിസ്ഥാനമാക്കുന്നത് പഠനപ്രക്രിയ, പോർട്ട് ഫോളിയോ, യൂണിറ്റ് തല വിലയിരുത്താൻ <span class="citation">[cite: 39]</span></li>
+            <li><strong>പഠനപ്രക്രിയ:</strong> പഠനപ്രക്രിയയുടെ ഭാഗമായി ശേഷികൾ ആർജിക്കുന്നതിന് വേണ്ടി അധ്യാപകൻ വിവിധതരം <span class="citation">[cite: 40]</span> ഓരോ <span class="citation">[cite: 41]</span> പ്രവർത്തനങ്ങൾ ആസൂത്രണം ചെയ്യുന്നു നടക്കുമ്പോഴും പ്രവർത്തനത്തിലെ പഠിതാവിന്റെ പങ്കാളിത്തം, ആശയധാരണ, ശേഷികൾ ആർജിക്കൽ പ്രകടനം/ അവതരണം, രേഖകൾ തയ്യാറാക്കാൻ എന്നിവ വിലയിരുത്തുന്നു <span class="citation">[cite: 42]</span></li>
+            <li><strong>പോർട്ട് ഫോളിയോ:</strong> പഠനപ്രവർത്തനത്തിലൂടെ കടന്നു പോകുമ്പോൾ രൂപപ്പെടുന്ന എല്ലാ ഉൽപ്പന്നങ്ങളും ഫോർട്ട്ഫോളിയോയിൽ ഉൾപ്പെടുത്താം പഠനത്തെ <span class="citation">[cite: 43]</span> സംബന്ധിച്ച് കുട്ടികൾക്കും രക്ഷിതാവിനും, അധ്യാപികയ്ക്കും ഫീഡ്ബാക്ക് നൽകാം എന്ന ധർമമാണ് പോർട്ട്ഫോളിയോ <span class="citation">[cite: 44]</span> നിർവഹിക്കുന്നത് . <span class="citation">[cite: 45]</span></li>
         </ul>
-      </div>
+        
+        <p><strong>പോർട്ട് ഫോളിയോയിൽ ഉൾപ്പെടുത്താവുന്നവ:</strong></p>
+        <ul>
+            <li>നോട്ടുബുക്ക് <span class="citation">[cite: 47]</span></li>
+            <li>മറ്റു രചനകൾ (വ്യക്തിഗത രചന, <span class="citation">[cite: 48]</span> മെച്ചപ്പെടുത്തിയ രചന) <span class="citation">[cite: 49]</span></li>
+            <li>മറ്റ് പഠന തെളിവുകൾ (ചിത്രങ്ങൾ, ശേഖരങ്ങൾ, <span class="citation">[cite: 50]</span> പഠനോപകരണങ്ങൾ) <span class="citation">[cite: 51]</span></li>
+            <li>പഠന തെളിവുകൾ വിലയിരുത്താൻ കുട്ടികൾ <span class="citation">[cite: 52]</span> രേഖപ്പെടുത്തിയ സൂചകങ്ങൾ <span class="citation">[cite: 53]</span></li>
+            <li>സർഗാത്മക സൃഷ്ടികൾ <span class="citation">[cite: 54]</span></li>
+            <li>വർക്ക് ഷീറ്റുകൾ <span class="citation">[cite: 55]</span></li>
+        </ul>
+
+        <p><strong>പോർട്ട്ഫോളിയോ വിലയിരുത്താൻ താഴെ കൊടുത്ത് <span class="citation">[cite: 56]</span> സൂചകങ്ങൾ ഉപയോഗിക്കാം <span class="citation">[cite: 57]</span>:</strong></p>
+        <ul>
+            <li><strong>ആശയ വ്യക്തത:</strong> ആശയത്തെ വിശദീകരിക്കാൻ സഹായകമായ ഉപകരണങ്ങൾ ഉപയോഗിച്ച് <span class="citation">[cite: 58]</span> ആശയത്തെ ഗ്രഹിക്കാൻ സാധിക്കുന്നു <span class="citation">[cite: 59]</span></li>
+            <li><strong>ധാരണകളുടെ സ്വാംശീകരണം:</strong> ധാരണകൾ കുട്ടികൾക്ക് മനസ്സിലാകുന്നുണ്ടോ എന്നറിയാൻ കുട്ടികളുമായി <span class="citation">[cite: 60]</span> ചർച്ചയിൽ ഏർപ്പെടുന്നു <span class="citation">[cite: 61]</span></li>
+            <li>ഉചിതമായ രൂപഘടന <span class="citation">[cite: 62]</span></li>
+            <li><strong>പൂർണത:</strong> ആശയത്തിന്റെ ലക്ഷ്യത്തിലേക്ക് <span class="citation">[cite: 63]</span> എത്തിയിട്ടുണ്ടോ എന്ന് പരിശോധിക്കൽ <span class="citation">[cite: 64]</span></li>
+            <li><strong>തനിമ:</strong> ഉപകരണത്തിന്റെ അല്ലെങ്കിൽ ഉൽപ്പന്നത്തിന്റെ ഭംഗി,തിരഞ്ഞെടുപ്പ്,വൃത്തി,എന്നിവയിൽ തനിമ <span class="citation">[cite: 65]</span> പുലർത്തുന്നുണ്ടോ എന്ന് പരിശോധിക്കണം <span class="citation">[cite: 66]</span></li>
+        </ul>
+        
+        <p><strong>TERM വിലയിരുത്തൽ :</strong> TERM വിലയിരുത്തൽ അടിസ്ഥാനമാക്കുന്നത് ആശയങ്ങൾ പ്രക്രിയകൾ മുതലായവയാണ്. <span class="citation">[cite: 67]</span></p>
     </div>
 
-    <div id="cce" class="section">
-      <div class="card" style="border-left-color: #f12711;">
-        <h3 style="color: #f12711;">നിരന്തരവും സമഗ്രവുമായ വിലയിരുത്തൽ (CCE)</h3>
-        <p style="font-size: 1.1rem;">CCE യുടെ പ്രധാന മേഖലകൾ:</p>
+    <button class="accordion" style="animation-delay: 0.4s;">ഗ്രേഡിങ് <span class="citation">[cite: 68]</span></button>
+    <div class="panel">
         <ul>
-          <li><strong>വൈജ്ഞാനിക മേഖല (Cognitive Domain):</strong> ശാസ്ത്രം, ഗണിതം, ഭാഷകൾ തുടങ്ങിയ എല്ലാ വിഷയങ്ങളും ഇതിൽ ഉൾപ്പെടുന്നു. പഠനപ്രക്രിയ, പോർട്ട് ഫോളിയോ, യൂണിറ്റ് തല വിലയിരുത്തൽ എന്നിവ ഇതിന്റെ ഭാഗമാണ്.</li>
-          <li><strong>സാമൂഹിക വൈകാരിക മേഖല (Socio-Emotional Domain):</strong> ആശയവിനിമ ശേഷി, സഹഭാവം, പ്രശ്നപരിഹരണശേഷി, സർഗാത്മകശേഷി, വിമർശനാത്മക ചിന്ത, സ്വയാവബോധം എന്നിവ പരിഗണിക്കുന്നു.</li>
+            <li>വിവിധ തലങ്ങളിലുള്ള പഠന നേട്ടങ്ങളെ <span class="citation">[cite: 69]</span> സ്റ്റാൻഡേർഡ് <span class="citation">[cite: 70]</span> അളവുകൾ ഉപയോഗിച്ച് അളക്കുന്ന പ്രക്രിയയാണ് ഗ്രേഡിങ് <span class="citation">[cite: 71]</span></li>
+            <li>കൂടുതൽ സാധുത ഉള്ളതും വിശ്വസനീയവും സമഗ്രവുമാണ് <span class="citation">[cite: 72]</span></li>
+            <li>രണ്ട് രീതിയിലാണ് ഗ്രേഡിങ് നടത്തുന്നത് ഡയറക്റ്റ് ഗ്രേഡിങ് ഇൻഡയറക്ട് ഗ്രേഡിങ് <span class="citation">[cite: 73]</span></li>
+            <li><strong>ഡയറക്റ്റ് ഗ്രേഡിങ്:</strong> ഓരോ ഉത്തരത്തിനും ഗ്രേഡുകൾ നൽകുന്നു അതിനായി ഇംഗ്ലീഷ് ലെറ്റേഴ്‌സും (A,B,C,D..), ഓരോ ഇംഗ്ലീഷ് ലെറ്റേഴ്സിനും അതിന്റേതായ ഗ്രേഡ് പോയിന്റും നൽകുന്നു <span class="citation">[cite: 74]</span></li>
         </ul>
-      </div>
-      <div class="card" style="border-left-color: #f5af19;">
-        <h3 style="color: #f5af19;">പോർട്ട് ഫോളിയോ (Portfolio)</h3>
-        <p style="font-size: 1.1rem;">പഠനപ്രവർത്തനത്തിലൂടെ കടന്നു പോകുമ്പോൾ രൂപപ്പെടുന്ന ഉൽപ്പന്നങ്ങൾ ശേഖരിക്കുന്നത്:</p>
-        <ul>
-          <li>നോട്ടുബുക്ക്, മറ്റു വ്യക്തിഗത രചനകൾ</li>
-          <li>ചിത്രങ്ങൾ, ശേഖരങ്ങൾ, പഠനോപകരണങ്ങൾ</li>
-          <li>സർഗാത്മക സൃഷ്ടികൾ, വർക്ക് ഷീറ്റുകൾ</li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="grading" class="section">
-      <div class="card" style="border-left-color: #11998e;">
-        <h3 style="color: #11998e;">ഗ്രേഡിങ് (Grading System)</h3>
-        <p style="font-size: 1.1rem;">വിവിധ തലങ്ങളിലുള്ള പഠന നേട്ടങ്ങളെ സ്റ്റാൻഡേർഡ് അളവുകൾ ഉപയോഗിച്ച് അളക്കുന്ന പ്രക്രിയയാണിത്. LP തലത്തിൽ 5 പോയിന്റ് ഡയറക്റ്റ് ഗ്രേഡിങ് ആണ് ഉപയോഗിക്കുന്നത്.</p>
+        
+        <p><strong>LP: 5 പോയിന്റ് ഡയറക്റ്റ് ഗ്രേഡിങ് <span class="citation">[cite: 75]</span></strong></p>
         <table>
-          <tr style="background-color: #11998e;">
-            <th style="color: white;">GRADE (ഗ്രേഡ്)</th>
-            <th style="color: white;">GRADE POINT (പോയിന്റ്)</th>
-            <th style="color: white;">GRADE POINT % (ശതമാനം)</th>
-          </tr>
-          <tr><td><strong>A</strong></td><td>5</td><td>75 - 100</td></tr>
-          <tr><td><strong>B</strong></td><td>4</td><td>60 - 74</td></tr>
-          <tr><td><strong>C</strong></td><td>3</td><td>45 - 59</td></tr>
-          <tr><td><strong>D</strong></td><td>2</td><td>33 - 44</td></tr>
-          <tr><td><strong>E</strong></td><td>1</td><td>Below 33</td></tr>
+            <thead>
+                <tr>
+                    <th>GRADE</th>
+                    <th>GRADE POINT</th>
+                    <th>GRADE POINT %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>5</td>
+                    <td>75-100</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>4</td>
+                    <td>60-74</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>3</td>
+                    <td>45-49</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>2</td>
+                    <td>33-44</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>1</td>
+                    <td>Below 33</td>
+                </tr>
+            </tbody>
         </table>
-      </div>
-    </div>
-
-    <div id="samagra" class="section">
-      <div class="card" style="border-left-color: #2F80ED;">
-        <h3 style="color: #2F80ED;">സമഗ്ര പോർട്ടൽ (Samagra e-Resource Portal)</h3>
+        <p class="citation" style="text-align: right;">[cite: 76]</p>
+        
         <ul>
-          <li>കൈറ്റിന്റെ (KITE) കീഴിൽ പൂർണമായും പ്രാദേശികമായി വികസിപ്പിച്ചെടുത്ത ഓൺലൈൻ പഠന പ്ലാറ്റ്ഫോം.</li>
-          <li>1 മുതൽ 12 വരെയുള്ള ക്ലാസ്സുകളിലെ ഡിജിറ്റൽ വിഭവങ്ങളുടെ (Videos, Images, Interactives) സമഗ്ര ശേഖരം.</li>
-          <li>പഠന വിഭവങ്ങളെ വിഷയം-പാഠം-പാഠഭാഗം എന്ന രീതിയിൽ എളുപ്പത്തിൽ ആക്സസ് ചെയ്യാം.</li>
-          <li>അധ്യാപകർക്ക് പാഠാസൂത്രണങ്ങൾ (Lesson Plans) തയ്യാറാക്കാനും പങ്കുവെക്കാനും സഹായിക്കുന്നു.</li>
-          <li>വിലയിരുത്തൽ ചോദ്യങ്ങൾ സമഗ്രയുടെ ചോദ്യ ശേഖരത്തിലേക്ക് അപ്ലോഡ് ചെയ്യാനുള്ള സൗകര്യം.</li>
+            <li><strong>ഇൻഡയറക്ട്‌ട് ഗ്രേഡിങ്:</strong> മാർക്കിനെ ഗ്രേഡുകളിലേക്ക് മാറ്റുന്ന <span class="citation">[cite: 77]</span> രീതി <span class="citation">[cite: 78]</span></li>
         </ul>
-      </div>
     </div>
 
-    <div id="research" class="section">
-      <div class="card" style="border-left-color: #E65100;">
-        <h3 style="color: #E65100;">ക്രിയാഗവേഷണം (Action Research)</h3>
-        <p style="font-size: 1.1rem;">തൊഴിൽ പ്രവർത്തനങ്ങളിൽ നേരിടേണ്ടിവരുന്ന പ്രശ്‌നങ്ങൾക്ക് പരിഹാരം കാണാൻ അധ്യാപകർ അവലംബിക്കുന്ന പ്രക്രിയയാണിത്.</p>
-        <ul class="timeline">
-          <li><strong>1. പ്രശ്നം തിരിച്ചറിയുന്നു:</strong> കുട്ടികളുടെ പഠന പുരോഗതിക്ക് തടസ്സമാകുന്ന പ്രശ്‌നം കണ്ടെത്തുക.</li>
-          <li><strong>2. പ്രശ്ന‌ം സൂക്ഷ്‌മതലത്തിൽ നിർവചിക്കുന്നു:</strong> കൃത്യതയോടെ പ്രശ്‌നത്തെ മനസ്സിലാക്കുക.</li>
-          <li><strong>3. പ്രശ്ന‌കാരണങ്ങൾ കണ്ടെത്തുന്നു:</strong> കാരണങ്ങൾ കണ്ടെത്തി മുൻഗണനാ ക്രമത്തിൽ രേഖപ്പെടുത്തുക.</li>
-          <li><strong>4. പരികല്പ‌ന രൂപീകരിക്കൽ (Hypothesis):</strong> പ്രശ്നത്തെ ഇല്ലാതാക്കാൻ ഉതകുന്ന പ്രവർത്തനങ്ങൾ പ്ലാൻ ചെയ്യുക.</li>
-          <li><strong>5. പ്രവർത്തന കലണ്ടർ ഉണ്ടാക്കുന്നു:</strong> ചിട്ടയായി ക്രമീകരിച്ച പ്രവർത്തനങ്ങൾ ഒരു കലണ്ടറിലാക്കുക.</li>
-          <li><strong>6. പ്രവർത്തനങ്ങൾ നടപ്പിലാക്കൽ:</strong> ആസൂത്രണം ചെയ്ത‌ ക്രമത്തിൽ പ്രവർത്തനങ്ങളെ പൂർത്തീകരിക്കുക.</li>
-          <li><strong>7. ഫലപ്രാപ്തി വിലയിരുത്തൽ:</strong> പ്രീ ടെസ്റ്റ്, പോസ്റ്റ് ടെസ്റ്റ് ഫലങ്ങൾ വെച്ച് ഫലപ്രാപ്ത‌ി വിലയിരുത്തുക.</li>
+    <button class="accordion" style="animation-delay: 0.5s;">സാമൂഹിക വൈകാരിക മേഖല <span class="citation">[cite: 79]</span></button>
+    <div class="panel">
+        <ul>
+            <li>വൈജ്ഞാനിക മേഖലയെ പോലെ തന്നെ പ്രധാനമാണ് സാമൂഹിക വൈകാരിക മേഖലയും <span class="citation">[cite: 79]</span></li>
+            <li>Learning to know, learning to do, learning to live together, and learning to be എന്നിവയുമായി നൈപുണികളാണ് ഇവിടെ പരിഗണിക്കേണ്ടത് <span class="citation">[cite: 80]</span></li>
+            <li>ആശയവിനിമ ശേഷി <span class="citation">[cite: 81]</span></li>
+            <li>വ്യക്ത്യാന്തര നൈപുണി <span class="citation">[cite: 82]</span></li>
+            <li>സഹഭാവം <span class="citation">[cite: 83]</span></li>
+            <li>വികാരങ്ങളുമായി പൊരുത്തപ്പെടൽ <span class="citation">[cite: 84]</span></li>
+            <li>മാനസിക സമ്മർദ്ദങ്ങളുമായി പൊരുത്തപ്പെടൽ <span class="citation">[cite: 85]</span></li>
+            <li>പ്രശ്നപരിഹരണശേഷി <span class="citation">[cite: 86]</span></li>
+            <li>തീരുമാനമെടുക്കൽ <span class="citation">[cite: 87]</span></li>
+            <li>വിമർശനാത്മക ചിന്ത <span class="citation">[cite: 88]</span></li>
+            <li>സർഗാത്മകശേഷി <span class="citation">[cite: 89]</span></li>
+            <li>സ്വയാവബോധം <span class="citation">[cite: 90]</span></li>
+            <li>വൈജ്ഞാനിക മേഖലയിൽ വിവിധ വിഷയങ്ങൾ കൈകാര്യം ചെയ്യുന്ന അധ്യാപകർ തന്നെ ഇവയുടെ വിലയിരുത്തലും <span class="citation">[cite: 91]</span> നിർവഹിക്കണം . അതത് വിഷയങ്ങളുടെ പ്രക്രിയ <span class="citation">[cite: 92]</span> വിലയിരുത്തലിന്റെ ഭാഗമായി ഈ വിലയിരുത്തലും <span class="citation">[cite: 93]</span> നിർവഹിക്കേണ്ടതാണ് <span class="citation">[cite: 94]</span></li>
+            <li>സാമൂഹിക വൈകാരിക മേഖലയിലെ പഠിതാവിന്റെ മികവിനെ സംബന്ധിക്കുന്ന ഗുണപരമായി ഇനങ്ങൾ കണ്ടെത്തി രേഖപ്പെടുത്തുകയാണ് <span class="citation">[cite: 95]</span> വേണ്ടത് ഇവയെ പ്രോത്സാഹിപ്പിക്കുകയും വേണം <span class="citation">[cite: 96]</span></li>
         </ul>
-      </div>
     </div>
 
-  </div>
+    <button class="accordion" style="animation-delay: 0.6s;">വിശകലന ക്ലാസ് നിരീക്ഷണം വിലയിരുത്തൽ <span class="citation">[cite: 97]</span></button>
+    <div class="panel">
+        <p><strong>വിശകലനം നടത്തുമ്പോൾ ശ്രദ്ധിക്കേണ്ട കാര്യങ്ങൾ : <span class="citation">[cite: 98]</span></strong></p>
+        <ul>
+            <li><strong>ആസൂത്രണം :</strong> നിർവഹിച്ച വിദ്യാർത്ഥി തയ്യാറാക്കിയ ടീച്ചിങ് മാന്വൽ <span class="citation">[cite: 99]</span> ,പെഡഗോജി എന്നിവ ചർച്ചയ്ക്ക് വിധേയമാക്കണം, ആസൂത്രണവും നിർവഹണവും തമ്മിലുള്ള പൊരുത്തം വിശകലനം ചെയ്യണം <span class="citation">[cite: 100]</span></li>
+            <li><strong>നിർവഹണം :</strong> അധ്യാപക വിദ്യാർത്ഥി തയ്യാറാക്കിയ നിരീക്ഷണ പത്രികയുടെ അടിസ്ഥാനത്തിൽ ക്ലാസ് നിർവഹണം സംബന്ധിച്ച സൂക്ഷ്മ‌തലത്തിലുള്ള വിശകലനം നടത്തണം <span class="citation">[cite: 101]</span></li>
+            <li><strong>പ്രശ്‌ന സന്ദർഭം :</strong> മുന്നറിവുകൾ പരിശോധിക്കാൻ പര്യാപ്‌തമായിരുന്നോ ? <span class="citation">[cite: 102]</span> പഠന പ്രശ്‌നത്തിന്റെ അവതരണം എല്ലാ കുട്ടികളെയും എൻഗേജ് <span class="citation">[cite: 103]</span> ചെയ്യാൻ പര്യാപ്‌തമായിരുന്നോ ? <span class="citation">[cite: 104]</span> പരികല്‌പന രൂപീകരിക്കാനും ന്യായീകരിക്കാനും അവസരം ഉണ്ടായിരുന്നോ <span class="citation">[cite: 105]</span></li>
+            <li>പഠന പ്രശ്‌നങ്ങൾ കുട്ടികൾ ഏറ്റെടുക്കുന്നുണ്ടോ ? <span class="citation">[cite: 106]</span></li>
+            <li>Explore ഘട്ടത്തിൽ ഓരോ കുട്ടിക്കും വേണ്ടത്ര വിവരങ്ങൾ ശേഖരിച്ചോ ? <span class="citation">[cite: 107]</span></li>
+            <li>വിവരങ്ങൾ വിശകലനം ചെയ്യാനും നിഗമനത്തിൽ എത്തിച്ചേരാനും <span class="citation">[cite: 108]</span> അധ്യാപിക ആവശ്യമായ ഇടപെടലുകൾ നടത്തുന്നുണ്ടോ? <span class="citation">[cite: 109]</span></li>
+            <li>Explain ഘട്ടത്തിൽ നിഗമനങ്ങൾ ഫലപ്രദമായി ആശയവിനിമയം ചെയ്യാൻ കഴിയുന്നുണ്ടോ? <span class="citation">[cite: 110]</span></li>
+            <li>അറിവിനെ മുന്നറിയുമായി കൂട്ടിച്ചേർത്ത് അറിവിന്റെ ഉയർന്ന തലത്തിൽ എത്തിച്ചോ ? <span class="citation">[cite: 111]</span></li>
+            <li>Extend ഘട്ടത്തിൽ പുതിയ സന്ദർഭങ്ങളിൽ ആർജിച്ച അറിവ് <span class="citation">[cite: 112]</span> പ്രയോഗിക്കാനുള്ള അവസരം നൽകിയിരുന്നോ? <span class="citation">[cite: 113]</span></li>
+            <li>Evaluation ഘട്ടത്തിൽ ഫലപ്രദമായി നടന്നിരുന്നോ? <span class="citation">[cite: 114]</span></li>
+            <li>പുതിയ പ്രശ്‌നങ്ങളിലേക്ക് നയിക്കാൻ സാധിക്കുന്നുണ്ടോ? <span class="citation">[cite: 115]</span></li>
+        </ul>
 
-  <script>
-    function showSection(id) {
-      // Hide all sections smoothly
-      document.querySelectorAll('.section').forEach(sec => {
-        sec.classList.remove('active');
-      });
-      // Remove active styling from all buttons
-      document.querySelectorAll('button').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      
-      // Force a reflow to restart CSS animations
-      void document.getElementById(id).offsetWidth;
-      
-      // Show selected section
-      document.getElementById(id).classList.add('active');
-      // Add active styling to clicked button
-      event.currentTarget.classList.add('active');
-    }
-  </script>
+        <p><strong>ക്ലാസ് അന്തരീക്ഷം <span class="citation">[cite: 116]</span></strong></p>
+        <ul>
+            <li>ശിശു കേന്ദ്രീകൃതം <span class="citation">[cite: 117]</span></li>
+            <li>സഹവർത്തിത പഠനം സഹകരണ ആത്മക പഠനം <span class="citation">[cite: 118]</span> എന്നിവയ്ക്ക് ഊന്നൽ നൽകിയിരുന്നോ <span class="citation">[cite: 119]</span></li>
+            <li>കുട്ടികളുടെ ഉൽപ്പന്നങ്ങൾ പ്രദർശിച്ചിരുന്നോ <span class="citation">[cite: 120]</span></li>
+            <li>കുട്ടികളുടെ പങ്കാളിത്തം <span class="citation">[cite: 121]</span></li>
+            <li>പഠനോപകരണങ്ങളുടെ ഉപയോഗം <span class="citation">[cite: 122]</span></li>
+            <li>ശാസ്ത്ര മൂല ക്രമീകരിക്കുകയും <span class="citation">[cite: 123]</span> ഉപയോഗപ്പെടുത്തുകയും ചെയ്യുന്നുണ്ടോ <span class="citation">[cite: 124]</span></li>
+            <li>കണ്ടെത്തലുകൾ നടത്താൻ ആവശ്യമായ സമയവും <span class="citation">[cite: 125]</span> സ്ഥലവും നൽകുന്നുണ്ടോ <span class="citation">[cite: 126]</span></li>
+            <li>സുരക്ഷിതമായ പഠനാന്തരീക്ഷം <span class="citation">[cite: 127]</span></li>
+            <li>പഠനോപകരണങ്ങൾ <span class="citation">[cite: 128]</span> ആശയരൂപീകരണത്തിന് ഉപയോഗപ്പെടുത്തുന്നുണ്ടോ <span class="citation">[cite: 129]</span> ആവശ്യത്തിന് ലഭ്യമായിരുന്നോ a <span class="citation">[cite: 130]</span></li>
+        </ul>
+
+        <p><strong>വിലയിരുത്തൽ <span class="citation">[cite: 131]</span></strong></p>
+        <ul>
+            <li>പരസ്പ്‌പരം, സംഘങ്ങൾ, ടീച്ചർ വിലയിരുത്തൽ <span class="citation">[cite: 132]</span> എന്നിവയ്ക്കുള്ള അവസരം നൽകണം <span class="citation">[cite: 133]</span></li>
+            <li>പഠനം തെളിവുകൾ ദൃശ്യമാകണം <span class="citation">[cite: 134]</span></li>
+        </ul>
+    </div>
+
+    <button class="accordion" style="animation-delay: 0.7s;">സമഗ്ര പോർട്ടൽ <span class="citation">[cite: 135]</span></button>
+    <div class="panel">
+        <ul>
+            <li>കേരളസർക്കാർ പൊതുവിദ്യാഭ്യാ സംരക്ഷണയജ്ഞത്തിന്റെ ഭാഗമായി കൈറ്റിന്റെ (KITE-Kerala Infrastructure and Technology for Education) കീഴിൽ പൂർണമായും പ്രാദേശികമായി വികസിപ്പിച്ചെടുത്ത ഒരു ഓൺലൈൻ പഠന പ്ലാറ്റ്ഫോമാണ് <span class="citation">[cite: 136]</span> e-Resource Portal. <span class="citation">[cite: 137]</span></li>
+            <li>ഹൈടെക് സ്‌കൂൾ പദ്ധതിക്ക് അനുബന്ധമായി, ആവശ്യമുള്ള ഐ.സി.ടി ഉപകരണങ്ങളും പരിശീലനം ലഭിച്ച <span class="citation">[cite: 138]</span> അധ്യാപകരുമടങ്ങിയ സ്‌കൂളുകൾക്ക് ശരിയായ <span class="citation">[cite: 139]</span> പാഠവിനിമയത്തിനുള്ള ഡിജിറ്റൽ ഉള്ളടക്കം ലഭ്യമാക്കുന്നതിന് വേണ്ടി. <span class="citation">[cite: 140]</span></li>
+            <li>അനുയോജ്യമായ പഠനതന്ത്രങ്ങൾ, പഠനസാമഗ്രികൾ, ഡിജിറ്റൽ റിസോഴ്‌സുകൾ, മൂല്യനിർണയ പ്രവർത്തനങ്ങൾ, കുട്ടികൾക്ക് തനതായി ഏറ്റെടുക്കാവുന്ന അസൈൻമെന്റുകൾ <span class="citation">[cite: 141]</span> എന്നിവയെല്ലാം അടങ്ങിയതാണ് ഇതിന്റെ ഘടന. <span class="citation">[cite: 142]</span></li>
+        </ul>
+
+        <p><strong>വിദ്യാർത്ഥികൾക്ക് വേണ്ടി: <span class="citation">[cite: 143]</span></strong></p>
+        <ul>
+            <li>1 മുതൽ 12 വരെയുള്ള ക്ലാസ്സുകളിലെ എല്ലാ <span class="citation">[cite: 144]</span> വിഷയങ്ങളുടെയും ഡിജിറ്റൽ ഉറവിടങ്ങളുടെ സമഗ്രമായ ശേഖരമാണ് സമഗ്ര വിഭവപോർട്ടൽ, <span class="citation">[cite: 145]</span> വീഡിയോകൾ, ചിത്രങ്ങൾ എന്നിവയ്ക്കെ‌ാപ്പം Pdb, ggb, Swf, gif തുടങ്ങിയവപോലുള്ള നിരവധി ഇന്ററാക്ടീവ് പഠന <span class="citation">[cite: 146]</span> വിഭവങ്ങൾ സമഗ്രയിൽ ഉണ്ട് <span class="citation">[cite: 147]</span></li>
+            <li>നിയന്ത്രണം കൂടാതെ ഉള്ളടക്കം ആക്‌സസ് ചെയ്യാനും കഴിയും. <span class="citation">[cite: 148]</span></li>
+            <li>പഠന വിഭവങ്ങളെ വിഷയം-പാഠം-പാഠഭാഗംഎന്ന രീതികളിൽ ആക്സസ് ചെയ്യാൻ കഴിയുന്ന വിധത്തിലുള്ള ഫിൽട്ടറിംഗ് ക്രമീകരണങ്ങൾ സമഗ്രയിൽ ലഭ്യമാക്കിയിട്ടുണ്ട്. <span class="citation">[cite: 149]</span></li>
+            <li>സമഗ്രയുടെ സാധ്യതകൾ വിദ്യാർഥികൾ, അധ്യാപകർ, പൊതുജനങ്ങൾ, അക്കാദമിക പ്രവർത്തകർ തുടങ്ങി എല്ലാ വിഭാഗത്തിലുള്ളവർക്കും ഉപകരിക്കുന്ന വിധത്തിലാണ് തയ്യാറാക്കിയിട്ടുള്ളത്. <span class="citation">[cite: 150]</span></li>
+            <li>പഠന പ്രക്രിയ എളുപ്പമാക്കുന്നതിനുള്ള ഏകകേന്ദ്ര ശാശ്വത <span class="citation">[cite: 151]</span> സഹായി ആയിട്ടാണ് സമഗ്ര നിലകൊള്ളുന്നു. <span class="citation">[cite: 152]</span></li>
+            <li>വിവിധ വിഷയങ്ങളുടെ സമഗ്രാസൂത്രണവും <span class="citation">[cite: 153]</span> സൂക്ഷ്‌മാസൂത്രണവും ഇതിൽ ലഭ്യമാക്കിയിട്ടുണ്ട്. <span class="citation">[cite: 154]</span> വിഷയവുമായി ബന്ധപ്പെട്ടതും അധികവിവരങ്ങൾ നൽകുന്നതുമായ നിരവധി ഡിജിറ്റൽ റിസോഴ്‌സുകളിലേക്കുള്ള ലിങ്കുകളും ലഭ്യമാക്കുന്നു. <span class="citation">[cite: 155]</span></li>
+            <li>സമഗ്രയിലെ വിഭവങ്ങൾ അധ്യാപകർ പരിശോധിച്ച് ഉചിതമായവ സബ്ജ‌ക്‌ട് കൗൺസിലുകളിൽ ചർച്ചചെയ്ത് മൂർത്തമാക്കുകയും ക്ലാസറൂം വിനിമയത്തിന് <span class="citation">[cite: 156]</span> പ്രയോജനപ്പെടുത്തുകയും ചെയ്യാം <span class="citation">[cite: 157]</span></li>
+            <li>കണ്ടും കേട്ടും പ്രവർത്തനങ്ങളിലൂടെയു മൊക്കെ വിദ്യാർഥി നേടേണ്ട അറിവുകളേയുംശേഷികളെയും <span class="citation">[cite: 158]</span> പരിപോഷിപ്പിക്കുന്നതിനുതകുന്നതായിരിക്കും സമഗ്രയിലെ വിഭവങ്ങൾ. <span class="citation">[cite: 159]</span></li>
+            <li>ഈ വിഭവങ്ങൾ ആവശ്യാനുസരണം <span class="citation">[cite: 160]</span> ഉപയോഗിക്കുന്നതോടൊപ്പം സവിശേഷ സാഹചര്യങ്ങൾക്ക് ഇണങ്ങുന്ന വിധത്തിൽ അവയിൽ വേണ്ട മാറ്റം വരുത്തിയും ചിലത് സ്വയം നിർമിച്ചും ഉപയോഗിക്കാവുന്നതാണ്. <span class="citation">[cite: 161]</span></li>
+        </ul>
+
+        <p><strong>അധ്യാപകർക്ക് വേണ്ടി; <span class="citation">[cite: 162]</span></strong></p>
+        <ul>
+            <li>സിലബസ് അധിഷ്‌ഠിത അധ്യാപന വിഭവങ്ങൾ സമഗ്രമായി കൈകാര്യം ചെയ്യുന്നു <span class="citation">[cite: 163]</span></li>
+            <li>ആത്മവിശ്വാസത്തോടെ ക്ലാസ്‌മറിയിൽ പഠനബോധനതന്ത്രങ്ങൾ അവതരിപ്പിക്കുവാൻ സഹായകമായ പാഠാസൂത്രണങ്ങളുടെ <span class="citation">[cite: 164]</span> ബൃഹത് ശേഖരം കൂടിയാണ് സമഗ്രപോർട്ടൽ. <span class="citation">[cite: 165]</span></li>
+            <li>സമഗ്ര റിസോഴ്‌സുകളിൽ നിന്ന് തങ്ങളുടെ പാഠാസൂത്രണത്തിന് അനുയോജ്യമായ വിഭവങ്ങൾ ക്രമീകരിച്ച് ലിസ്റ്റ് ചെയ്യാനുള്ള സൗകര്യം (റിസോഴ്സ് ലിസ്റ്റ്) <span class="citation">[cite: 166]</span></li>
+            <li>വിഭവങ്ങൾ ക്ലാസിൽ നേരിട്ട് ഉപയോഗിക്കുന്നതിനോ <span class="citation">[cite: 167]</span> ഡൗൺലോഡ് ചെയ്യുന്നതിനോ ഉള്ള സൗകര്യം ലഭ്യമാണ്. സമഗ്രയിൽ ലഭ്യമായിട്ടുള്ള പാഠാസൂത്രണങ്ങൾ പരിശോധിക്കുക, മാറ്റങ്ങൾ വരുത്തുക, മാറ്റങ്ങൾ വരുത്തിയവ സ്വന്തം ലോഗിനിൽ ലഭ്യമായ ഇടത്തേക്ക്അപ്ലോഡ് ചെയ്യുക, മാറ്റങ്ങൾ വരുത്തിയതോ അല്ലാത്തതോ ആയ ഏതു പാഠാസൂത്രണവും അധ്യാപകർക്ക് ഡൗൺലോഡ് ചെയ്യാൻ സാധിക്കുന്നു <span class="citation">[cite: 168]</span></li>
+            <li>തങ്ങളുടെ പാഠഭാഗങ്ങളുമായി ബന്ധപ്പെട്ട വിലയിരുത്തൽ ചോദ്യങ്ങൾ ചോദ്യ ശേഖരത്തിലേക്ക് അപ്ലോഡ് <span class="citation">[cite: 169]</span> ചെയ്യുന്നതിനുള്ള സൗകര്യം ലഭ്യമാണ്. <span class="citation">[cite: 170]</span></li>
+        </ul>
+    </div>
+
+    <button class="accordion" style="animation-delay: 0.8s;">ക്രിയാഗവേഷണം <span class="citation">[cite: 171]</span></button>
+    <div class="panel">
+        <ul>
+            <li>സ്റ്റീഫൻ എം കോറി നിർവചിച്ചിട്ടുള്ളത് "തൊഴിൽ പ്രവർത്തനങ്ങളിൽ നേരിടേണ്ടിവരുന്ന പ്രശ്‌നങ്ങൾക്ക് പരിഹാരം കാണാൻ അധ്യാപകർ അവലംബിക്കുന്ന പ്രക്രിയയാണ് ആക്ഷൻ റിസർച്ച്" <span class="citation">[cite: 172]</span></li>
+            <li>അധ്യാപകൻ തനിക്ക് വേണ്ടി സ്വയം നടത്തുന്ന ഗവേഷണ പ്രവർത്തനമാണ് ക്രിയാ ഗവേഷണം <span class="citation">[cite: 173]</span></li>
+            <li>വിദ്യാലയവുമായി ബന്ധപ്പെട്ട പ്രശ്നങ്ങളെ <span class="citation">[cite: 174]</span> ആസ്പദമാക്കിയിട്ടുള്ളതാണ് വിദ്യാഭ്യാസത്തിലെ ആക്ഷൻ റിസർച്ച് <span class="citation">[cite: 175]</span></li>
+            <li>വിജ്ഞാനത്തിന്റെ പുതിയ മേഖലകൾ കണ്ടെത്താനുള്ള ദീർഘയാത്ര ഇവിടെ ആവശ്യമില്ല <span class="citation">[cite: 176]</span></li>
+            <li>ഒരു പ്രവർത്തന മേഖലയിൽ അനുഭവപ്പെടുന്ന പ്രശ്നങ്ങൾക്ക് ശാസ്ത്രീയ അന്വേഷണം വഴി പരിഹാരം കണ്ടെത്താനാണ് <span class="citation">[cite: 177]</span> ക്രിയ ഗവേഷണം ആസൂത്രണം ചെയുന്നത് <span class="citation">[cite: 178]</span></li>
+            <li>ഗവേഷണത്തിൽ ഏർപ്പെടുന്നതും നിഗമനങ്ങളിൽ <span class="citation">[cite: 179]</span> എത്തിച്ചേർന്നതും അതിന്റെ ഗുണഫലമനുഭവിക്കുന്നതും ഒരാള് തന്നെയായിരിക്കും <span class="citation">[cite: 180]</span></li>
+        </ul>
+
+        <p><strong>ക്രിയാഗവേഷണത്തിന്റെ പ്രയോജനങ്ങൾ: <span class="citation">[cite: 181]</span></strong></p>
+        <ul>
+            <li>വിദ്യാഭ്യാസ സ്ഥാപനത്തിന്റെ ബാഹ്യഘടന സൗകര്യങ്ങളുടെ നിലവാരം മെച്ചപ്പെടുത്തുക <span class="citation">[cite: 182]</span></li>
+            <li>സങ്കീർണ്ണ പ്രശ്‌നങ്ങളുടെ കാര്യത്തിൽ നിഗമനങ്ങളിൽ <span class="citation">[cite: 183]</span> എത്തിച്ചേരും മുമ്പ് അവ യുക്തിപൂർവ്വം പഠിക്കുന്ന ശാസ്ത്രീയ മനോഭാവം അധ്യാപകരിൽ വളർത്തുക <span class="citation">[cite: 184]</span></li>
+            <li>പ്രശ്ന‌പരിഹാരത്തിന് സ്വതന്ത്ര സമീപനത്തോട് കൂടിയ മനോഭാവം വിദ്യാർഥികളിലും അധ്യാപകരിലും വളർത്തുക <span class="citation">[cite: 185]</span></li>
+            <li>വിദ്യാലയത്തിന്റെ പ്രവർത്തന ശൈലിയുടെ ഗുണമേന്മ വർദ്ധിപ്പിക്കുക <span class="citation">[cite: 186]</span></li>
+            <li>ശാസ്ത്രീയ മനോഭാവത്തെ <span class="citation">[cite: 187]</span> മെച്ചപ്പെടുത്താനുള്ള കഴിവ് <span class="citation">[cite: 188]</span> ഉൾക്കാഴ്ച‌യും ഭരണകർത്താക്കളിൽ വളർത്തുക <span class="citation">[cite: 189]</span></li>
+            <li>പല വിദ്യാഭ്യാസ സ്ഥാപനങ്ങളിലും നിലനിൽക്കുന്ന യാഥാസ്ഥിതികവും നിശ്ചലവുമായ പരിസ്ഥിതി സാഹചര്യങ്ങൾ നിർമ്മാജനം ചെയ്യുക <span class="citation">[cite: 190]</span></li>
+            <li>പഠനത്തിന് അനുയോജ്യമായ ആരോഗ്യകരമായ സാഹചര്യങ്ങൾ സൃഷ്ടിക്കാൻ പഠിതാക്കളുടെ പ്രതീക്ഷകളുടെയും പ്രകടനത്തിന്റെ നിലവാരം ഉയർത്തുക എന്നിവയാണ് <span class="citation">[cite: 191]</span></li>
+        </ul>
+
+        <p><strong>ക്രിയാഗവേഷണത്തിന്റെ ഘട്ടങ്ങൾ : <span class="citation">[cite: 192]</span></strong></p>
+        <ol>
+            <li><strong>പ്രശ്നം തിരിച്ചറിയുന്നു :</strong> കുട്ടികളുടെ പഠന പുരോഗതിക്ക് <span class="citation">[cite: 193]</span> തടസ്സമാകുന്ന പ്രശ്‌നം തിരിച്ചറിയുന്നതാണ് ആദ്യഘട്ടം <span class="citation">[cite: 194]</span></li>
+            <li><strong>പ്രശ്ന‌ം സൂക്ഷ്‌മതലത്തിൽ നിർവചിക്കുന്നു :</strong> <span class="citation">[cite: 195]</span> കൃത്യതയോടെ പ്രശ്‌നത്തെ മനസ്സിലാക്കി <span class="citation">[cite: 196]</span> സൂക്ഷ്‌മതലത്തിൽ നിർവചിക്കണം <span class="citation">[cite: 197]</span></li>
+            <li><strong>പ്രശ്ന‌കാരണങ്ങൾ കണ്ടെത്തുന്നു :</strong> പ്രശ്‌നത്തിന്റെ കാരണങ്ങൾ കണ്ടെത്തി മുൻഗണന ക്രമത്തിൽ രേഖപ്പെടുത്തൽ <span class="citation">[cite: 198]</span></li>
+            <li><strong>പരികല്പ‌ന രൂപീകരിക്കാൻ:</strong> തിരിച്ചറിഞ്ഞ പ്രശ്നത്തെ ഇല്ലാതാക്കാൻ ഉതകുന്ന പ്രവർത്തനങ്ങൾ പരികല്‌പന ചെയ്യാൻ സൃഷ്ടിപരതയും സർഗാത്മകതയും ആസൂത്രണത്തിനുള്ള കഴിവും ആവശ്യമായ സന്ദർഭമാണിത് <span class="citation">[cite: 199]</span></li>
+            <li><strong>പ്രവർത്തന കലണ്ടർ ഉണ്ടാക്കുന്നു :</strong> ചുരുങ്ങിയ ദിവസങ്ങൾ കൊണ്ട് പൂർത്തീകരിക്കേണ്ടതായതിനാൽ ചിട്ടയായി ക്രമീകരിച്ച പ്രവർത്തനങ്ങൾ രേഖപ്പെടുത്താൻ ഒരു കലണ്ടർ നിർബന്ധമാണ് <span class="citation">[cite: 200]</span></li>
+            <li><strong>പ്രവർത്തനങ്ങൾ നടപ്പിലാക്കൽ :</strong> ആസൂത്രണം ചെയ്ത‌ ക്രമത്തിൽ പ്രവർത്തനങ്ങളെ പൂർത്തീകരിക്കുന്നതാണ് ഗവേഷണത്തിന്റെ അവസാന ഘട്ടം <span class="citation">[cite: 201]</span></li>
+            <li><strong>ഫലപ്രാപ്തി വിലയിരുത്താൻ :</strong> പ്രീ ടെസ്റ്റ്, പോസ്റ്റ് ടെസ്റ്റ് ഫലങ്ങൾ വെച്ച് ചെയ്‌ത പ്രവർത്തനങ്ങളുടെ ഫലപ്രാപ്ത‌ി വിലയിരുത്താം. <span class="citation">[cite: 202]</span></li>
+        </ol>
+    </div>
+
+    <button class="accordion" style="animation-delay: 0.9s;">പഠനനേട്ടങ്ങൾക്ക് ഊന്നാൽ നൽകുന്ന സമീപനം <span class="citation">[cite: 203]</span></button>
+    <div class="panel">
+        <p><strong>വിലയിരുത്തൽ <span class="citation">[cite: 204]</span></strong></p>
+        
+        <p><strong>നിരന്തരവും സമഗ്രവുമായ വിലയിരുത്തൽ <span class="citation">[cite: 212]</span></strong></p>
+        
+        <p><strong>വൈജ്ഞാനിക മേഖല <span class="citation">[cite: 205]</span></strong></p>
+        <ul>
+            <li>നിരന്തര വലയിരുത്തൽ <span class="citation">[cite: 206]</span></li>
+            <li>പഠനപ്രക്രിയ <span class="citation">[cite: 207]</span></li>
+            <li>പോർട്ട് ഫോളിയോ <span class="citation">[cite: 209]</span></li>
+            <li>യൂണിറ്റ്‌തല വലയിരുത്തൽ <span class="citation">[cite: 210]</span></li>
+            <li>TERM വിലയിരുത്തൽ <span class="citation">[cite: 208]</span></li>
+            <li>ആശയങ്ങൾ പ്രക്രിയകൾ മുതലായവയാണ് <span class="citation">[cite: 211]</span></li>
+        </ul>
+
+        <p><strong>സാമൂഹിക വൈകാരിക മേഖല <span class="citation">[cite: 213]</span></strong></p>
+        <ul>
+            <li>മാനസിക സമ്മർദ്ദങ്ങളുമായി പൊരുത്തപ്പെടൽ <span class="citation">[cite: 214]</span></li>
+            <li>പ്രശ്‌നപരിഹരണശേഷി <span class="citation">[cite: 215]</span></li>
+            <li>തീരുമാനമെടുക്കൽ <span class="citation">[cite: 216]</span></li>
+            <li>വിമർശനാത്മക ചിന്ത <span class="citation">[cite: 217]</span></li>
+            <li>സർഗാത്മകശേഷി <span class="citation">[cite: 218]</span></li>
+            <li>സ്വയാവബോധം <span class="citation">[cite: 219]</span></li>
+            <li>ആശയവിനിമ ശേഷി <span class="citation">[cite: 220]</span></li>
+            <li>വ്യക്ത്യാന്തര നൈപുണി <span class="citation">[cite: 221]</span></li>
+            <li>സഹഭാവം <span class="citation">[cite: 222]</span></li>
+            <li>വികാരങ്ങളുമായി പൊരുത്തപ്പെടൽ <span class="citation">[cite: 223]</span></li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    // Accordion interaction logic
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach(acc => {
+        acc.addEventListener("click", function() {
+            // Toggle active class on button
+            this.classList.toggle("active");
+
+            // Toggle corresponding panel visibility
+            let panel = this.nextElementSibling;
+            
+            if (panel.style.maxHeight) {
+                // Panel is open, so close it
+                panel.style.maxHeight = null;
+                panel.classList.remove("show");
+            } else {
+                // Close all other panels (optional: creates true accordion style)
+                document.querySelectorAll(".panel").forEach(p => {
+                    p.style.maxHeight = null;
+                    p.classList.remove("show");
+                });
+                document.querySelectorAll(".accordion").forEach(a => {
+                    a.classList.remove("active");
+                });
+                
+                // Open the clicked one
+                this.classList.add("active");
+                panel.classList.add("show");
+                // dynamically calc height to let CSS animation run smoothly
+                panel.style.maxHeight = panel.scrollHeight + 100 + "px"; 
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
