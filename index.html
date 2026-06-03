@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio and projects of Deled Kerala">
+    <title>Deled Kerala - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            color: white;
+            font-size: 2rem;
+            margin: 3rem 0 1rem 0;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            margin: 1rem 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 0.5rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deled Kerala</h1>
+        <p>Developer | Creator | Problem Solver</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+            <h2>Welcome to my portfolio!</h2>
+            <p>I'm a passionate developer dedicated to building innovative solutions and contributing to open-source projects. This space showcases my work, projects, and interests in software development.</p>
+            <p style="margin-top: 1rem;">Feel free to explore my repositories and get in touch if you'd like to collaborate or discuss exciting projects!</p>
+        </div>
+
+        <!-- Projects Section -->
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of your first project goes here. Share what technologies you used and what problems it solves.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of your second project. Highlight key features and your contribution to the project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Description of your third project. Showcase your skills and the impact of your work.</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <h2 class="section-title">Skills</h2>
+        <div class="card">
+            <h2>Technical Skills</h2>
+            <p><strong>Languages:</strong> JavaScript, Python, Java, HTML/CSS</p>
+            <p><strong>Frameworks & Libraries:</strong> React, Node.js, Django</p>
+            <p><strong>Tools & Technologies:</strong> Git, Docker, GitHub, VS Code</p>
+        </div>
+
+        <!-- Connect Section -->
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="card">
+            <h2>Get in Touch</h2>
+            <p>I'm always interested in hearing about exciting projects and opportunities. Feel free to reach out!</p>
+            <div class="social-links">
+                <a href="https://github.com/deledkerala" target="_blank">GitHub</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Deled Kerala. All rights reserved.</p>
+        <p>Hosted on GitHub Pages</p>
+    </footer>
+</body>
+</html>
