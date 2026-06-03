@@ -1,0 +1,257 @@
+html_content = """<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ശാസ്ത്ര വിദ്യാഭ്യാസം പഠനവും ബോധനവും</title>
+<style>
+  body { 
+    font-family: 'Meera', 'Manjari', 'AnjaliOldLipi', Arial, sans-serif; 
+    background-color: #f4f7f6; 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+  }
+  header { 
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); 
+    color: white; 
+    padding: 2.5rem 1rem; 
+    text-align: center; 
+    animation: slideDown 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+  }
+  h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+  p.subtitle { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+  
+  .container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
+  
+  .nav-buttons { 
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; 
+    margin-bottom: 2.5rem; 
+    animation: fadeIn 1.2s ease-in both; 
+    animation-delay: 0.3s;
+  }
+  
+  button { 
+    background-color: #ffffff; 
+    border: 2px solid #11998e; 
+    color: #11998e; 
+    padding: 10px 22px; 
+    font-size: 1.1rem; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    font-weight: bold; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  button:hover, button.active { 
+    background-color: #11998e; 
+    color: white; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(17, 153, 142, 0.2);
+  }
+  
+  .section { display: none; animation: slideUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  .section.active { display: block; }
+  
+  .card { 
+    background: white; 
+    border-radius: 12px; 
+    padding: 25px; 
+    margin-bottom: 25px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.04); 
+    transition: transform 0.3s; 
+    border-left: 6px solid #11998e; 
+  }
+  .card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.08); }
+  
+  .card h3 { color: #2c3e50; margin-top: 0; font-size: 1.6rem; border-bottom: 2px dashed #eee; padding-bottom: 10px; }
+  
+  ul { line-height: 1.8; font-size: 1.15rem; color: #444; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  
+  /* Fun Table Styling */
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; border-radius: 8px; overflow: hidden; }
+  th, td { padding: 15px; text-align: center; }
+  th { background-color: #11998e; color: white; font-size: 1.2rem; }
+  tr { background-color: #ffffff; border-bottom: 1px solid #eee; transition: background 0.2s; }
+  tr:hover { background-color: #f1fdf9; }
+  tr:last-child { border-bottom: none; }
+  
+  /* Timeline styling for Action Research */
+  .timeline { list-style: none; padding: 0; margin-top: 20px; }
+  .timeline li { 
+    padding: 15px 15px 15px 50px; 
+    background: #f8fbfa; 
+    margin-bottom: 12px; 
+    border-radius: 8px; 
+    position: relative; 
+    border: 1px solid #eef2f1;
+    transition: all 0.3s;
+  }
+  .timeline li:hover { background: #e9f7f4; transform: scale(1.01); }
+  .timeline li::before { 
+    content: '⭐'; 
+    position: absolute; 
+    left: 15px; 
+    top: 15px;
+    font-size: 1.2rem; 
+  }
+
+  /* Animations */
+  @keyframes slideDown { 
+    0% { transform: translateY(-100%); opacity: 0; } 
+    100% { transform: translateY(0); opacity: 1; } 
+  }
+  @keyframes slideUp { 
+    0% { transform: translateY(40px); opacity: 0; } 
+    100% { transform: translateY(0); opacity: 1; } 
+  }
+  @keyframes fadeIn { 
+    0% { opacity: 0; } 
+    100% { opacity: 1; } 
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>ശാസ്ത്ര വിദ്യാഭ്യാസം</h1>
+    <p class="subtitle">പഠനവും ബോധനവും (Science Education: Learning & Teaching)</p>
+  </header>
+
+  <div class="container">
+    <div class="nav-buttons">
+      <button class="active" onclick="showSection('textbook')">പാഠപുസ്‌തകം</button>
+      <button onclick="showSection('evaluation')">വിലയിരുത്തൽ</button>
+      <button onclick="showSection('cce')">CCE മേഖലകൾ</button>
+      <button onclick="showSection('grading')">ഗ്രേഡിങ്</button>
+      <button onclick="showSection('samagra')">സമഗ്ര പോർട്ടൽ</button>
+      <button onclick="showSection('research')">ക്രിയാഗവേഷണം</button>
+    </div>
+
+    <div id="textbook" class="section active">
+      <div class="card" style="border-left-color: #FF512F;">
+        <h3 style="color: #FF512F;">ശാസ്ത്ര പാഠപുസ്‌തക സവിശേഷതകൾ</h3>
+        <ul>
+          <li>ശാസ്ത്രത്തിലെ അടിസ്ഥാന ആശയങ്ങൾ ഉറപ്പാക്കുന്നു.</li>
+          <li>മനഃശാസ്ത്ര തത്വങ്ങളെ അടിസ്ഥാനമാക്കിയുള്ളതും കുട്ടികളുടെ പ്രായത്തിനും താല്‌പര്യത്തിനും യോജിച്ചതും.</li>
+          <li>ക്ലാസ് മുറിയിലെ പഠനത്തിനും സ്വയം പഠനത്തിനും സഹായകമായത്.</li>
+          <li>ശാസ്ത്ര ലക്ഷ്യങ്ങൾ സാക്ഷാത്‌കരിക്കുന്നതിനൊപ്പം ധാർമിക മൂല്യങ്ങൾക്കും പ്രാധാന്യം നൽകുന്നു.</li>
+          <li>ഐസിടി (ICT) സാധ്യതകൾ ഉൾച്ചേർന്നത്.</li>
+          <li>പ്രത്യേക പരിഗണന അർഹിക്കുന്ന കുട്ടികളെയും പരിഗണിക്കുന്നത്.</li>
+          <li>അധിക പഠനത്തിനുള്ള സാധ്യത ഒരുക്കുന്നു.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="evaluation" class="section">
+      <div class="card" style="border-left-color: #8E2DE2;">
+        <h3 style="color: #8E2DE2;">വിലയിരുത്തൽ സമീപനം (Evaluation Approach)</h3>
+        <p style="font-size: 1.1rem; color: #555;">പഠനം കാര്യക്ഷമം ആകണമെങ്കിൽ അനുഭവങ്ങൾ ഉദ്ദേശ്യ അധിഷ്‌ഠിതവും പഠന നേട്ടങ്ങൾ കേന്ദ്രീകരിച്ചതും ആകണം. വിലയിരുത്തലിന് മൂന്ന് തലങ്ങളാണുള്ളത്:</p>
+        <ul>
+          <li><strong>പഠനത്തെ വിലയിരുത്തൽ (Assessment of Learning):</strong> എന്തൊക്കെ പഠിച്ചു എന്ന് വിലയിരുത്തുന്ന പ്രക്രിയ. പഠനത്തിനു ശേഷമുള്ള മികവ് വിലയിരുത്തുന്നു.</li>
+          <li><strong>പഠനത്തിനായുള്ള വിലയിരുത്തൽ (Assessment for Learning):</strong> പഠനം നടക്കുന്ന വേളയിൽ നൽകുന്ന ഫീഡ്ബാക്ക്. ഇത് പഠന പുരോഗതിക്ക് സഹായിക്കുന്നു.</li>
+          <li><strong>വിലയിരുത്തൽ തന്നെ പഠനം (Assessment as Learning):</strong> സ്വയം നിർവഹിക്കുന്ന വിലയിരുത്തൽ. വിമർശനാത്മകമായി പരിശോധിച്ച് മാറ്റങ്ങൾ ഉൾക്കൊള്ളുന്ന തിരുത്തൽ പ്രക്രിയ.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="cce" class="section">
+      <div class="card" style="border-left-color: #f12711;">
+        <h3 style="color: #f12711;">നിരന്തരവും സമഗ്രവുമായ വിലയിരുത്തൽ (CCE)</h3>
+        <p style="font-size: 1.1rem;">CCE യുടെ പ്രധാന മേഖലകൾ:</p>
+        <ul>
+          <li><strong>വൈജ്ഞാനിക മേഖല (Cognitive Domain):</strong> ശാസ്ത്രം, ഗണിതം, ഭാഷകൾ തുടങ്ങിയ എല്ലാ വിഷയങ്ങളും ഇതിൽ ഉൾപ്പെടുന്നു. പഠനപ്രക്രിയ, പോർട്ട് ഫോളിയോ, യൂണിറ്റ് തല വിലയിരുത്തൽ എന്നിവ ഇതിന്റെ ഭാഗമാണ്.</li>
+          <li><strong>സാമൂഹിക വൈകാരിക മേഖല (Socio-Emotional Domain):</strong> ആശയവിനിമ ശേഷി, സഹഭാവം, പ്രശ്നപരിഹരണശേഷി, സർഗാത്മകശേഷി, വിമർശനാത്മക ചിന്ത, സ്വയാവബോധം എന്നിവ പരിഗണിക്കുന്നു.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left-color: #f5af19;">
+        <h3 style="color: #f5af19;">പോർട്ട് ഫോളിയോ (Portfolio)</h3>
+        <p style="font-size: 1.1rem;">പഠനപ്രവർത്തനത്തിലൂടെ കടന്നു പോകുമ്പോൾ രൂപപ്പെടുന്ന ഉൽപ്പന്നങ്ങൾ ശേഖരിക്കുന്നത്:</p>
+        <ul>
+          <li>നോട്ടുബുക്ക്, മറ്റു വ്യക്തിഗത രചനകൾ</li>
+          <li>ചിത്രങ്ങൾ, ശേഖരങ്ങൾ, പഠനോപകരണങ്ങൾ</li>
+          <li>സർഗാത്മക സൃഷ്ടികൾ, വർക്ക് ഷീറ്റുകൾ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="grading" class="section">
+      <div class="card" style="border-left-color: #11998e;">
+        <h3 style="color: #11998e;">ഗ്രേഡിങ് (Grading System)</h3>
+        <p style="font-size: 1.1rem;">വിവിധ തലങ്ങളിലുള്ള പഠന നേട്ടങ്ങളെ സ്റ്റാൻഡേർഡ് അളവുകൾ ഉപയോഗിച്ച് അളക്കുന്ന പ്രക്രിയയാണിത്. LP തലത്തിൽ 5 പോയിന്റ് ഡയറക്റ്റ് ഗ്രേഡിങ് ആണ് ഉപയോഗിക്കുന്നത്.</p>
+        <table>
+          <tr style="background-color: #11998e;">
+            <th style="color: white;">GRADE (ഗ്രേഡ്)</th>
+            <th style="color: white;">GRADE POINT (പോയിന്റ്)</th>
+            <th style="color: white;">GRADE POINT % (ശതമാനം)</th>
+          </tr>
+          <tr><td><strong>A</strong></td><td>5</td><td>75 - 100</td></tr>
+          <tr><td><strong>B</strong></td><td>4</td><td>60 - 74</td></tr>
+          <tr><td><strong>C</strong></td><td>3</td><td>45 - 59</td></tr>
+          <tr><td><strong>D</strong></td><td>2</td><td>33 - 44</td></tr>
+          <tr><td><strong>E</strong></td><td>1</td><td>Below 33</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="samagra" class="section">
+      <div class="card" style="border-left-color: #2F80ED;">
+        <h3 style="color: #2F80ED;">സമഗ്ര പോർട്ടൽ (Samagra e-Resource Portal)</h3>
+        <ul>
+          <li>കൈറ്റിന്റെ (KITE) കീഴിൽ പൂർണമായും പ്രാദേശികമായി വികസിപ്പിച്ചെടുത്ത ഓൺലൈൻ പഠന പ്ലാറ്റ്ഫോം.</li>
+          <li>1 മുതൽ 12 വരെയുള്ള ക്ലാസ്സുകളിലെ ഡിജിറ്റൽ വിഭവങ്ങളുടെ (Videos, Images, Interactives) സമഗ്ര ശേഖരം.</li>
+          <li>പഠന വിഭവങ്ങളെ വിഷയം-പാഠം-പാഠഭാഗം എന്ന രീതിയിൽ എളുപ്പത്തിൽ ആക്സസ് ചെയ്യാം.</li>
+          <li>അധ്യാപകർക്ക് പാഠാസൂത്രണങ്ങൾ (Lesson Plans) തയ്യാറാക്കാനും പങ്കുവെക്കാനും സഹായിക്കുന്നു.</li>
+          <li>വിലയിരുത്തൽ ചോദ്യങ്ങൾ സമഗ്രയുടെ ചോദ്യ ശേഖരത്തിലേക്ക് അപ്ലോഡ് ചെയ്യാനുള്ള സൗകര്യം.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="research" class="section">
+      <div class="card" style="border-left-color: #E65100;">
+        <h3 style="color: #E65100;">ക്രിയാഗവേഷണം (Action Research)</h3>
+        <p style="font-size: 1.1rem;">തൊഴിൽ പ്രവർത്തനങ്ങളിൽ നേരിടേണ്ടിവരുന്ന പ്രശ്‌നങ്ങൾക്ക് പരിഹാരം കാണാൻ അധ്യാപകർ അവലംബിക്കുന്ന പ്രക്രിയയാണിത്.</p>
+        <ul class="timeline">
+          <li><strong>1. പ്രശ്നം തിരിച്ചറിയുന്നു:</strong> കുട്ടികളുടെ പഠന പുരോഗതിക്ക് തടസ്സമാകുന്ന പ്രശ്‌നം കണ്ടെത്തുക.</li>
+          <li><strong>2. പ്രശ്ന‌ം സൂക്ഷ്‌മതലത്തിൽ നിർവചിക്കുന്നു:</strong> കൃത്യതയോടെ പ്രശ്‌നത്തെ മനസ്സിലാക്കുക.</li>
+          <li><strong>3. പ്രശ്ന‌കാരണങ്ങൾ കണ്ടെത്തുന്നു:</strong> കാരണങ്ങൾ കണ്ടെത്തി മുൻഗണനാ ക്രമത്തിൽ രേഖപ്പെടുത്തുക.</li>
+          <li><strong>4. പരികല്പ‌ന രൂപീകരിക്കൽ (Hypothesis):</strong> പ്രശ്നത്തെ ഇല്ലാതാക്കാൻ ഉതകുന്ന പ്രവർത്തനങ്ങൾ പ്ലാൻ ചെയ്യുക.</li>
+          <li><strong>5. പ്രവർത്തന കലണ്ടർ ഉണ്ടാക്കുന്നു:</strong> ചിട്ടയായി ക്രമീകരിച്ച പ്രവർത്തനങ്ങൾ ഒരു കലണ്ടറിലാക്കുക.</li>
+          <li><strong>6. പ്രവർത്തനങ്ങൾ നടപ്പിലാക്കൽ:</strong> ആസൂത്രണം ചെയ്ത‌ ക്രമത്തിൽ പ്രവർത്തനങ്ങളെ പൂർത്തീകരിക്കുക.</li>
+          <li><strong>7. ഫലപ്രാപ്തി വിലയിരുത്തൽ:</strong> പ്രീ ടെസ്റ്റ്, പോസ്റ്റ് ടെസ്റ്റ് ഫലങ്ങൾ വെച്ച് ഫലപ്രാപ്ത‌ി വിലയിരുത്തുക.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function showSection(id) {
+      // Hide all sections smoothly
+      document.querySelectorAll('.section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      // Remove active styling from all buttons
+      document.querySelectorAll('button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Force a reflow to restart CSS animations
+      void document.getElementById(id).offsetWidth;
+      
+      // Show selected section
+      document.getElementById(id).classList.add('active');
+      // Add active styling to clicked button
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>
+"""
+
+with open("Science_Education_Notes.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print("File created successfully: Science_Education_Notes.html")
