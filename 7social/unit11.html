@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>വിവേചനത്തിനെതിരെ - അധ്യായം 11</title>
+    <!-- ഗൂഗിൾ ഫോണ്ട് ഫോർ മലയാളം -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #800000; /* Maroon/Crimson for Struggle and Freedom */
+            --secondary-color: #4a235a; /* Dark Blue/Purple */
+            --accent-color: #d35400; /* Burnt Orange */
+            --background-color: #f9ebea; /* Light reddish/warm background */
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --border-color: #e6b0aa;
+        }
+
+        body {
+            font-family: 'Noto Sans Malayalam', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.4em;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 1.15em;
+            color: white;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-left: 6px solid var(--accent-color);
+            padding-left: 12px;
+            margin-top: 35px;
+            font-size: 1.5em;
+            background-color: #fadbd8;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* ടേബിൾ സ്റ്റൈൽ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 18px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        td p {
+            margin: 0 0 12px 0;
+        }
+
+        td p:last-child {
+            margin: 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block;
+            border-bottom: 2px dashed var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        .box {
+            background: #fdf2e9;
+            border-left: 5px solid var(--accent-color);
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #d35400;
+            font-weight: 600;
+        }
+
+        .citation {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .join-section {
+            margin: 25px 0 35px 0;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: #fdfefe;
+        }
+
+        .join-section h3 { margin-top: 0; }
+
+        .group-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .group-list li { margin: 0; }
+
+        .group-link {
+            display: block;
+            padding: 12px 14px;
+            border: 1px solid #25D366;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #128C7E;
+            background: #f3fff7;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                padding: 12px;
+            }
+            .meta-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .group-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Class 7 Social - 11 - വിവേചനത്തിനെതിരെ (Teaching Manual)</h1>
+        <div class="meta-info">
+            <span><strong>ക്ലാസ്:</strong> 7</span>
+            <span><strong>യൂണിറ്റ്:</strong> 11 - വിവേചനത്തിനെതിരെ</span>
+            <span><strong>പിരീഡുകൾ:</strong> 15</span>
+        </div>
+    </div>
+
+    <div class="join-section">
+        <h3>WhatsApp ഗ്രൂപ്പുകളിൽ ചേരുക</h3>
+        <ul class="group-list">
+            <li><a class="group-link" href="https://chat.whatsapp.com/GVNbd9EqvKmBIdS6PE9xZW?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/F9zhb3FemZe8mkm1xxMFPY?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-3</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/G8NS506eHGQHZu2Zf4WIxT?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/JXvhTmtJYO7GGqPlNKlxMo?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-3</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന ലക്ഷ്യങ്ങൾ (Learning Objectives)</h3>
+        <ul>
+            <li>ലോക ഭൂപടത്തിൽ ദക്ഷിണാഫ്രിക്കയുടെ സ്ഥാനം അടയാളപ്പെടുത്തുകയും അവിടുത്തെ ഭൂപ്രകൃതിയുടെയും വിഭവങ്ങളുടെയും സവിശേഷതകൾ മനസ്സിലാക്കുകയും ചെയ്യുക .</li>
+            <li>ദക്ഷിണാഫ്രിക്കയിലെ യൂറോപ്യൻ കോളനിവൽക്കരണത്തിന്റെ നാൾവഴികളും (ഡച്ചുകാരുടെയും ബ്രിട്ടീഷുകാരുടെയും വരവ്) ഗ്രേറ്റ് ട്രെക്ക് (Great Trek) എന്ന പലായനത്തിന്റെ കാരണങ്ങളും വിശദീകരിക്കുക .</li>
+            <li>ഒന്നാം ബൂവർ യുദ്ധം, രണ്ടാം ബൂവർ യുദ്ധം എന്നിവയുടെ കാരണങ്ങളും ഫലങ്ങളും വിശകലനം ചെയ്യുക .</li>
+            <li>ദക്ഷിണാഫ്രിക്കയിൽ ഗാന്ധിജി നേരിട്ട വിവേചനങ്ങൾ തിരിച്ചറിയുകയും, അവിടെ അദ്ദേഹം പരീക്ഷിച്ച സത്യഗ്രഹ-നിസ്സഹകരണ സമരരീതികൾ വിലയിരുത്തുകയും ചെയ്യുക .</li>
+            <li>വർണ്ണവിവേചനം (Apartheid) എന്ന മനുഷ്യത്വരഹിതമായ വ്യവസ്ഥിതിയെയും, നാഷണൽ പാർട്ടി നടപ്പിലാക്കിയ വിവിധ അടിച്ചമർത്തൽ നിയമങ്ങളെയും അപഗ്രഥിക്കുക .</li>
+            <li>നെൽസൺ മണ്ടേലയുടെ ജീവിതം, അദ്ദേഹം നയിച്ച സമാധാനപരവും സായുധവുമായ സമരങ്ങൾ, അദ്ദേഹത്തിന്റെ ജയിൽവാസം എന്നിവയിലൂടെ ഒരു രാജ്യത്തിന്റെ വിമോചന ചരിത്രം ഉൾക്കൊള്ളുക .</li>
+            <li>വർണ്ണവിവേചനത്തിനെതിരെ ആഫ്രിക്കൻ ജനത നേടിയ വിജയവും, 1994 ലെ ആദ്യത്തെ ജനാധിപത്യ തിരഞ്ഞെടുപ്പും നൽകുന്ന സഹവർത്തിത്വത്തിന്റെ സന്ദേശം പ്രാവർത്തികമാക്കുക .</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ആശയങ്ങൾ / ധാരണകൾ (Concepts)</h3>
+        <ul>
+            <li><strong>ദക്ഷിണാഫ്രിക്കയും കോളനിവൽക്കരണവും:</strong> ആഫ്രിക്കൻ വൻകരയുടെ തെക്കേയറ്റത്തുള്ള രാജ്യം. ശുഭപ്രതീക്ഷാ മുനമ്പ് (Cape of Good Hope). സ്വർണ്ണ-വജ്ര ഖനികൾ യൂറോപ്യരെ ആകർഷിച്ചു .</li>
+            <li><strong>ബൂവറുകളും ഗ്രേറ്റ് ട്രെക്കും:</strong> ഡച്ച്, ഫ്രഞ്ച്, ജർമ്മൻ പാരമ്പര്യമുള്ള കർഷകരായ യൂറോപ്യൻ കുടിയേറ്റക്കാർ 'ബൂവറുകൾ' എന്നറിയപ്പെട്ടു (പിന്നീട് ആഫ്രിക്കാനർ). ബ്രിട്ടന്റെ അടിമത്ത നിരോധനത്തിൽ നിന്നും ഭാഷാ ഉപരോധത്തിൽ നിന്നും രക്ഷപ്പെടാൻ ബൂവറുകൾ ഉൾനാടുകളിലേക്ക് നടത്തിയ പലായനമാണ് 'ഗ്രേറ്റ് ട്രെക്ക്' .</li>
+            <li><strong>ബൂവർ യുദ്ധങ്ങൾ:</strong> ഖനികളുടെ നിയന്ത്രണത്തിനായി നടന്ന യുദ്ധങ്ങൾ. ഒന്നാം ബൂവർ യുദ്ധത്തിൽ ബൂവറുകൾ ജയിച്ചു (1880-81). രണ്ടാം ബൂവർ യുദ്ധത്തിൽ (1899-1902) ബ്രിട്ടൻ ജയിക്കുകയും 'വെരിനിഗിംഗ് സന്ധി' വഴി ദക്ഷിണാഫ്രിക്ക യൂണിയൻ രൂപീകരിക്കുകയും ചെയ്തു .</li>
+            <li><strong>ഗാന്ധിജിയും ദക്ഷിണാഫ്രിക്കയും:</strong> മാരിട്‌സ് ബർഗ് സ്റ്റേഷനിലെ തീവണ്ടിയിൽ നിന്നുള്ള പുറത്താക്കൽ അനുഭവം. 'ഇന്ത്യൻ ഒപ്പീനിയൻ' എന്ന പത്രം. ഗാന്ധിജിയുടെ രാഷ്ട്രീയ പരീക്ഷണശാല .</li>
+            <li><strong>വർണ്ണവിവേചനം (Apartheid):</strong> കറുത്ത വർഗക്കാർക്കെതിരെ 1948 ൽ നാഷണൽ പാർട്ടി നിയമം മൂലം നടപ്പാക്കിയ വേർതിരിക്കൽ. (നിയമങ്ങൾ: പാസ്സ് നിയമം, ബന്റു വിദ്യാഭ്യാസ നിയമം, ജനസംഖ്യാ രജിസ്ട്രേഷൻ നിയമം തുടങ്ങിയവ) .</li>
+            <li><strong>സ്വാതന്ത്ര്യസമരം & നെൽസൺ മണ്ടേല:</strong> ആഫ്രിക്കൻ നാഷണൽ കോൺഗ്രസ് (ANC). 'ലോംഗ് വാക്ക് ടു ഫ്രീഡം' എന്ന ആത്മകഥ. 1960 ലെ 'ആഫ്രിക്കൻ വർഷം', ഷാർപ്പ് വിൽ കൂട്ടക്കൊല. വീട്ടിലിരിപ്പ് (Stay-at-home) സമരം. റോബൻ ദ്വീപിലെ 26 വർഷത്തെ ജയിൽവാസം .</li>
+            <li><strong>വിജയം:</strong> 1991 ൽ വർണ്ണവിവേചനം റദ്ദാക്കി, 1994 ൽ മണ്ടേല ആദ്യ കറുത്ത വർഗക്കാരനായ പ്രസിഡന്റായി .</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ശേഷികൾ / നൈപുണികൾ (Skills)</h3>
+        <ul>
+            <li>ലോക ഭൂപടത്തിൽ ആഫ്രിക്കൻ വൻകരയും ദക്ഷിണാഫ്രിക്കയും കൃത്യമായി അടയാളപ്പെടുത്താനുള്ള ഭൂപട നൈപുണി .</li>
+            <li>മഹാത്മാഗാന്ധി, നെൽസൺ മണ്ടേല തുടങ്ങിയവരുടെ ആത്മകഥകളിൽ നിന്നും ചരിത്രരേഖകളിൽ നിന്നും ആശയങ്ങൾ വിശകലനം ചെയ്ത് നിഗമനങ്ങളിലെത്താനുള്ള വായനാ-അപഗ്രഥന ശേഷി .</li>
+            <li>ചരിത്രസംഭവങ്ങൾ (ഉദാ: ബൂവർ യുദ്ധങ്ങൾ, വർണ്ണവിവേചന വിരുദ്ധ പ്രക്ഷോഭങ്ങൾ) കാലഗണനാക്രമത്തിൽ (Time Line) ക്രമീകരിക്കാനുള്ള ശേഷി .</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന സാമഗ്രികൾ & ഉല്പന്നങ്ങൾ (Materials & Products)</h3>
+        <ul>
+            <li><strong>സാമഗ്രികൾ:</strong> ലോക ഭൂപടം, ശുഭപ്രതീക്ഷാ മുനമ്പിന്റെ ചിത്രം, വർണ്ണവിവേചനകാലത്തെ "Whites Only" മുന്നറിയിപ്പ് ബോർഡുകളുടെ ചിത്രങ്ങൾ, നെൽസൺ മണ്ടേലയുടെയും ഗാന്ധിജിയുടെയും ചിത്രങ്ങൾ, റോബൻ ദ്വീപിന്റെ ചിത്രം .</li>
+            <li><strong>ഉല്പന്നങ്ങൾ:</strong> ബൂവർ യുദ്ധങ്ങളുടെ ആശയപടം, വർണ്ണവിവേചന നിയമങ്ങളുടെയും അവയുടെ ഫലങ്ങളുടെയും വിശകലന പട്ടിക, ദക്ഷിണാഫ്രിക്കൻ സമരചരിത്രത്തിന്റെ ടൈം ലൈൻ (Time Line), വിവേചനത്തിനെതിരായ നാടകരൂപം .</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പ്രവർത്തന പ്രക്രിയയും വിലയിരുത്തലും (Learning Process & Evaluation)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 55%;">പ്രക്രിയ (Learning Process)</th>
+                    <th style="width: 45%;">വിലയിരുത്തൽ (Evaluation)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="highlight">1. ആമുഖം: ഒരു പോരാളിയുടെ ശബ്ദം</span>
+                        <p>1962 ൽ പ്രിറ്റോറിയ വിചാരണക്കോടതിയിൽ നെൽസൺ മണ്ടേല നടത്തിയ പ്രസംഗം ("ഞങ്ങൾക്ക് ഒരുതുണ്ട് ഭൂമിയില്ല... വർണ്ണവിവേചനം നിഷ്പക്ഷമായ ഒരു വിചാരണ എനിക്ക് ലഭ്യമാക്കുമെന്ന് എങ്ങനെ ഉറപ്പിക്കാൻ കഴിയും?") ക്ലാസ്സിൽ അവതരിപ്പിക്കുന്നു .</p>
+                        <p><strong>ചർച്ച:</strong> ഈ വരികളിൽ നിന്നും മണ്ടേല നേരിട്ട അനീതികൾ എന്തൊക്കെയെന്ന് ചോദിക്കുന്നു. ദക്ഷിണാഫ്രിക്കൻ ജനതയുടെ മോചനത്തിനായി അദ്ദേഹം നടത്തിയ പ്രവർത്തനങ്ങളെപ്പറ്റി ഒരു ലഘുവിവരണം നൽകി പാഠത്തിലേക്ക് കടക്കുന്നു .</p>
+                    </td>
+                    <td>
+                        <p>പ്രസംഗത്തിലെ ചരിത്രപരമായ വേദനയും വിവേചനവും തിരിച്ചറിയാൻ കുട്ടികൾക്ക് കഴിയുന്നുണ്ടോ എന്ന് ചർച്ചയിലൂടെ നിരീക്ഷിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">2. ദക്ഷിണാഫ്രിക്ക: ഭൂപ്രകൃതിയും കോളനിവൽക്കരണവും</span>
+                        <p>ലോക ഭൂപടത്തിൽ ആഫ്രിക്കൻ വൻകരയുടെ തെക്കേയറ്റത്ത് സ്ഥിതിചെയ്യുന്ന ദക്ഷിണാഫ്രിക്കയെ കണ്ടെത്തുന്നു. ഇന്ത്യൻ മഹാസമുദ്രവും അറ്റ്ലാന്റിക് സമുദ്രവും അതിർത്തി പങ്കിടുന്നത് വ്യക്തമാക്കുന്നു .</p>
+                        <p><strong>ശുഭപ്രതീക്ഷാ മുനമ്പ്:</strong> യൂറോപ്യർക്ക് ഇന്ത്യയിലേക്കുള്ള വഴിയായി മാറിയ 'Cape of Good Hope' നെ പരിചയപ്പെടുത്തുന്നു .</p>
+                        <p>സാൻ, ഖോസാ തുടങ്ങിയ ആദിമനിവാസികളെക്കുറിച്ചും, പിന്നീട് ഡച്ചുകാരും (17-ാം നൂറ്റാണ്ട്), ബ്രിട്ടീഷുകാരും (18-ാം നൂറ്റാണ്ട്) എത്തിയതിന്റെ നാൾവഴികളും ചർച്ച ചെയ്യുന്നു .</p>
+                    </td>
+                    <td>
+                        <p>ഭൂപട നിരീക്ഷണത്തിലൂടെ ദക്ഷിണാഫ്രിക്കയുടെ സ്ഥാനവും ഭൂമിശാസ്ത്രപരമായ പ്രാധാന്യവും മനസ്സിലാക്കിയോ എന്ന് പരിശോധിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">3. ബൂവറുകളും യുദ്ധങ്ങളും</span>
+                        <p><strong>ഗ്രേറ്റ് ട്രെക്ക്:</strong> ഡച്ച് പാരമ്പര്യമുള്ള കർഷകരായ 'ബൂവറുകളെ' ബ്രിട്ടീഷുകാരുടെ നയങ്ങൾ (അടിമത്ത നിരോധനം, ഭാഷാ വിലക്ക്) എങ്ങനെ ബാധിച്ചുവെന്നും, അതിൽ പ്രതിഷേധിച്ച് അവർ ഉൾനാടുകളിലേക്ക് നടത്തിയ പലായനമായ 'ഗ്രേറ്റ് ട്രെക്കിനെ'ക്കുറിച്ചും വിശദീകരിക്കുന്നു .</p>
+                        <p>സ്വർണ്ണ, വജ്ര ഖനികൾക്കുവേണ്ടി നടന്ന രണ്ട് ബൂവർ യുദ്ധങ്ങൾ ചർച്ച ചെയ്യുന്നു:</p>
+                        <ul>
+                            <li>ഒന്നാം ബൂവർ യുദ്ധം (1880-81): ബൂവറുകളുടെ വിജയം .</li>
+                            <li>രണ്ടാം ബൂവർ യുദ്ധം (1899-1902): ബ്രിട്ടീഷ് വിജയം, വെരിനിഗിംഗ് സന്ധി .</li>
+                        </ul>
+                        <div class="box">പ്രവർത്തനം: ബൂവർ യുദ്ധങ്ങളുടെ കാരണങ്ങളും ഫലങ്ങളും ഉൾപ്പെടുത്തി ഒരു ആശയപടം (Concept Map) തയ്യാറാക്കുക.</div>
+                    </td>
+                    <td>
+                        <p>ചരിത്രസംഭവങ്ങളുടെ കാരണങ്ങളും ഫലങ്ങളും തരംതിരിച്ച് ആശയപടം തയ്യാറാക്കുന്നതിലെ യുക്തി വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">4. ഗാന്ധിജിയുടെ പരീക്ഷണശാല</span>
+                        <p>ഗാന്ധിജിയുടെ 'എന്റെ സത്യാന്വേഷണ പരീക്ഷണകഥ'യിലെ മാരിട്‌സ് ബർഗ് റെയിൽവേ സ്റ്റേഷൻ അനുഭവം (ഒന്നാം ക്ലാസ്സിൽ നിന്നും പുറത്താക്കിയത്) വായിച്ചു കേൾപ്പിക്കുന്നു .</p>
+                        <p>1893 ൽ ഗാന്ധിജി എത്തുമ്പോൾ അവിടെയുണ്ടായിരുന്ന അപ്രഖ്യാപിത വർണ്ണവിവേചനവും, 'ഇന്ത്യൻ ഒപ്പീനിയൻ' എന്ന പത്രത്തിലൂടെ അദ്ദേഹം നടത്തിയ പോരാട്ടങ്ങളും സത്യഗ്രഹ സമരങ്ങളും വിശദീകരിക്കുന്നു .</p>
+                    </td>
+                    <td>
+                        <p>ഗാന്ധിജിയുടെ അഹിംസാ സമരമാർഗ്ഗങ്ങളുടെ ആരംഭം ദക്ഷിണാഫ്രിക്കയിലായിരുന്നുവെന്ന ചരിത്രവസ്തുത ഉൾക്കൊള്ളുന്നുണ്ടോ എന്ന് ചോദ്യാവലിയിലൂടെ പരിശോധിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">5. വർണ്ണവിവേചന നിയമങ്ങളും വംശീയതയും</span>
+                        <p>1948 ൽ നാഷണൽ പാർട്ടി അധികാരത്തിൽ വന്നതോടെ വർണ്ണവിവേചനം (Apartheid) നിയമപരമാക്കിയതെങ്ങനെയെന്ന് ചർച്ച ചെയ്യുന്നു .</p>
+                        <p><strong>പട്ടിക വിശകലനം:</strong> പാസ്സ് നിയമം, ബന്റു വിദ്യാഭ്യാസ നിയമം, ഗ്രൂപ്പ് ഏരിയ നിയമം, പ്രത്യേക സൗകര്യ സംവരണ നിയമം എന്നിവ കറുത്ത വർഗക്കാരെ എങ്ങനെ ബാധിച്ചുവെന്ന് പട്ടികയിലൂടെ പഠിപ്പിക്കുന്നു .</p>
+                        <p>പൊതുസ്ഥലങ്ങളിൽ സ്ഥാപിച്ചിരുന്ന "Whites Only / യൂറോപ്യൻ കുട്ടികൾക്ക് മാത്രം" എന്ന മുന്നറിയിപ്പ് ബോർഡുകളുടെ ചിത്രങ്ങൾ കാണിച്ച് മനുഷ്യാവകാശ ലംഘനങ്ങളെക്കുറിച്ച് ക്ലാസ്സിൽ ചർച്ച സംഘടിപ്പിക്കുന്നു .</p>
+                    </td>
+                    <td>
+                        <p>വർണ്ണവിവേചന നിയമങ്ങൾ മനുഷ്യജീവിതത്തെ എത്രത്തോളം പ്രതികൂലമായി ബാധിച്ചുവെന്ന് സ്വന്തം വാക്കുകളിൽ വിവരിക്കാനുള്ള ശേഷി നിരീക്ഷിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">6. മണ്ടേലയുടെ പോരാട്ടവും വിജയവും</span>
+                        <p>നെൽസൺ മണ്ടേലയുടെ 'ലോംഗ് വാക്ക് ടു ഫ്രീഡം' എന്ന ആത്മകഥയിലെ ഭാഗങ്ങൾ (ടീച്ചർ നെൽസൺ എന്ന പേര് നൽകിയത്, പാസ്സ് ചോദിച്ച് അറസ്റ്റ് ചെയ്യുന്നത്) വായിക്കുന്നു .</p>
+                        <p>ആഫ്രിക്കൻ നാഷണൽ കോൺഗ്രസ് (ANC) നടത്തിയ സമരങ്ങൾ:</p>
+                        <ul>
+                            <li>വീട്ടിലിരിപ്പ് (Stay-at-home) സമരം .</li>
+                            <li>1960 ലെ 'ആഫ്രിക്കൻ വർഷം' & ഷാർപ്പ് വിൽ കൂട്ടക്കൊല .</li>
+                        </ul>
+                        <p>1964 ൽ മണ്ടേലയ്ക്ക് ജീവപര്യന്തം ശിക്ഷ ലഭിച്ചതും, റോബൻ ദ്വീപിലെ 26 വർഷത്തെ ജയിൽവാസവും വിശദമാക്കുന്നു .</p>
+                        <p>1990 ൽ മണ്ടേലയുടെ മോചനം, 1991 ലെ വർണ്ണവിവേചന റദ്ദാക്കൽ, 1994 ലെ തിരഞ്ഞെടുപ്പ് വിജയം എന്നിവയോടെ പാഠം ക്രോഡീകരിക്കുന്നു .</p>
+                    </td>
+                    <td>
+                        <p>മണ്ടേലയുടെ ത്യാഗനിർഭരമായ ജീവിതത്തെയും പോരാട്ടങ്ങളെയും കുറിച്ച് ഒരു കുറിപ്പ് തയ്യാറാക്കാനുള്ള കഴിവ് വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">7. തുടർപ്രവർത്തനങ്ങൾ</span>
+                        <p><strong>ടൈം ലൈൻ:</strong> ദക്ഷിണാഫ്രിക്കയുടെ വർണ്ണവിവേചന വിരുദ്ധ സമരങ്ങളുടെ സംഭവബഹുലമായ നാൾവഴികൾ ഉൾപ്പെടുത്തി ഒരു ടൈം ലൈൻ (Time Line) തയ്യാറാക്കുക .</p>
+                        <p><strong>നാടകം:</strong> വർണ്ണവിവേചനത്തിന്റെ വേരറുക്കാൻ ആഫ്രിക്കൻ ജനത നടത്തിയ പോരാട്ടങ്ങൾ നാടകരൂപത്തിൽ അവതരിപ്പിക്കുക .</p>
+                    </td>
+                    <td>
+                        <p>ടൈം ലൈൻ തയ്യാറാക്കുന്നതിലൂടെ കാലഗണനാ ശേഷിയും, നാടകാവിഷ്കാരത്തിലൂടെ സഹാനുഭൂതിയും സർഗ്ഗാത്മകതയും വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

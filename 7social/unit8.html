@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>അധികാരം ജനങ്ങൾക്ക് - അധ്യായം 8</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2980b9; /* Professional Blue */
+            --secondary-color: #2c3e50; /* Dark Grey/Blue */
+            --accent-color: #e67e22; /* Orange */
+            --background-color: #f4f6f7;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #bdc3c7;
+        }
+
+        body {
+            font-family: 'Noto Sans Malayalam', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.4em;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 1.15em;
+            color: white;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            border-left: 6px solid var(--accent-color);
+            padding-left: 12px;
+            margin-top: 35px;
+            font-size: 1.5em;
+            background-color: #ecf0f1;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* ടേബിൾ സ്റ്റൈൽ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 18px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        td p {
+            margin: 0 0 12px 0;
+        }
+
+        td p:last-child {
+            margin: 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block;
+            border-bottom: 2px dashed #f5b041;
+            padding-bottom: 5px;
+        }
+
+        .box {
+            background: #fdf2e9;
+            border-left: 5px solid var(--accent-color);
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #d35400;
+            font-weight: 600;
+        }
+
+        .citation {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            font-style: normal;
+        }
+
+        .join-section {
+            margin: 25px 0 35px 0;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: #fdfefe;
+        }
+
+        .join-section h3 { margin-top: 0; }
+
+        .group-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .group-list li { margin: 0; }
+
+        .group-link {
+            display: block;
+            padding: 12px 14px;
+            border: 1px solid #25D366;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #128C7E;
+            background: #f3fff7;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                padding: 12px;
+            }
+            .meta-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .group-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Class 7 - Unit 8 - അധികാരം ജനങ്ങൾക്ക് (Teaching Manual)</h1>
+        <div class="meta-info">
+            <span><strong>ക്ലാസ്:</strong> 7</span>
+            <span><strong>യൂണിറ്റ്:</strong> 8 - അധികാരം ജനങ്ങൾക്ക്</span>
+            <span><strong>പിരീഡുകൾ:</strong> 15</span>
+        </div>
+    </div>
+
+    <div class="join-section">
+        <h3>WhatsApp ഗ്രൂപ്പുകളിൽ ചേരുക</h3>
+        <ul class="group-list">
+            <li><a class="group-link" href="https://chat.whatsapp.com/GVNbd9EqvKmBIdS6PE9xZW?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/F9zhb3FemZe8mkm1xxMFPY?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-3</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/G8NS506eHGQHZu2Zf4WIxT?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/JXvhTmtJYO7GGqPlNKlxMo?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-3</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന ലക്ഷ്യങ്ങൾ (Learning Objectives)</h3>
+        <ul>
+            <li>പൂക്കോട്ടുമല മാതൃകയിലൂടെ വികസനത്തിൽ ജനപങ്കാളിത്തത്തിന്റെ പ്രാധാന്യം തിരിച്ചറിയുകയും വിലയിരുത്തുകയും ചെയ്യുക <span class="citation"></span>.</li>
+            <li>ഗ്രാമസഭ, വാർഡ് സഭ എന്നിവയുടെ ഘടന, പ്രവർത്തനങ്ങൾ, ലക്ഷ്യങ്ങൾ എന്നിവ വ്യക്തമായി വിശകലനം ചെയ്യുക <span class="citation"></span>.</li>
+            <li>ഗാന്ധിജിയുടെ ഗ്രാമസ്വരാജ് എന്ന സങ്കല്പവും അധികാര വികേന്ദ്രീകരണവും (Decentralization) തമ്മിലുള്ള ബന്ധം സമർത്ഥിക്കുക <span class="citation"></span>.</li>
+            <li>ബൽവന്ത്റായ് മേത്ത, അശോക് മേത്ത കമ്മിറ്റികളുടെ നിർദ്ദേശങ്ങൾ താരതമ്യം ചെയ്യുക <span class="citation"></span>.</li>
+            <li>73, 74 ഭരണഘടനാ ഭേദഗതികളുടെ സവിശേഷതകൾ പട്ടികപ്പെടുത്തുകയും ഇന്ത്യയിലെ പ്രാദേശിക ഭരണത്തിൽ അവ വരുത്തിയ മാറ്റങ്ങൾ വിലയിരുത്തുകയും ചെയ്യുക <span class="citation"></span>.</li>
+            <li>കേരളത്തിലെ ജനകീയാസൂത്രണ പ്രക്രിയയുടെ (1996) സവിശേഷതകളും 50% സ്ത്രീ സംവരണത്തിന്റെ പ്രാധാന്യവും തിരിച്ചറിയുക <span class="citation"></span>.</li>
+            <li>തദ്ദേശസ്വയംഭരണ സ്ഥാപനങ്ങളുടെ ചുമതലകളും അവയുടെ പ്രധാന വരുമാന സ്രോതസ്സുകളും വ്യക്തമാക്കുക <span class="citation"></span>.</li>
+            <li>അധികാര വികേന്ദ്രീകരണം ഇന്ന് നേരിടുന്ന പ്രധാന വെല്ലുവിളികൾ വിശകലനം ചെയ്ത് പ്രായോഗികമായ പരിഹാരങ്ങൾ നിർദ്ദേശിക്കുക <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ആശയങ്ങൾ / ധാരണകൾ (Concepts)</h3>
+        <ul>
+            <li><strong>ഗ്രാമസഭകൾ:</strong> വാർഡിലെ വോട്ടർപട്ടികയിൽ പേരുള്ള എല്ലാവരും ഉൾക്കൊള്ളുന്ന സഭയാണ് ഗ്രാമസഭ. നഗരങ്ങളിൽ ഇത് വാർഡ്‌സഭ എന്നറിയപ്പെടുന്നു. ഇവ കുറഞ്ഞത് മൂന്നു മാസത്തിലൊരിക്കലാണ് വിളിച്ചു ചേർക്കുന്നത് <span class="citation"></span>.</li>
+            <li><strong>അധികാര വികേന്ദ്രീകരണം:</strong> ഭരണകാര്യങ്ങളിൽ തീരുമാനമെടുക്കാനും നടപ്പിലാക്കാനുമുള്ള അധികാരം എല്ലാ ജനങ്ങളിലേക്കും കൈമാറുന്ന ജനാധിപത്യ രീതി <span class="citation"></span>.</li>
+            <li><strong>ചരിത്രവും കമ്മിറ്റികളും:</strong> 1882-ൽ റിപ്പൺ പ്രഭു കൊണ്ടുവന്ന പരിഷ്കാരങ്ങൾ. 1957 ലെ ബൽവന്ത്റായ് മേത്ത കമ്മിറ്റി (ത്രിതല സംവിധാനം), 1978 ലെ അശോക് മേത്ത കമ്മിറ്റി (ദ്വിതല സംവിധാനം) <span class="citation"></span>. രാജസ്ഥാനിലാണ് ഇന്ത്യയിലാദ്യമായി പഞ്ചായത്തീരാജ് (1959) നിലവിൽവന്നത് <span class="citation"></span>.</li>
+            <li><strong>ഭരണഘടനാ ഭേദഗതികൾ:</strong> 1992 ലെ 73-ാം ഭേദഗതി (പഞ്ചായത്തീരാജ്), 74-ാം ഭേദഗതി (നഗരപാലിക). ഇത് തദ്ദേശ സ്ഥാപനങ്ങൾക്ക് ഭരണഘടനാ സാധുതയും, തിരഞ്ഞെടുപ്പ് കമ്മീഷനും, സംവരണവും ഉറപ്പാക്കി <span class="citation"></span>.</li>
+            <li><strong>ജനകീയാസൂത്രണം & കേരളം:</strong> 1996-ൽ കേരളത്തിൽ നടപ്പിലാക്കി. 2005 ലെ ഭേദഗതിയോടെ തദ്ദേശ സ്ഥാപനങ്ങളിൽ 50% സ്ത്രീ പ്രാതിനിധ്യം ഉറപ്പാക്കി <span class="citation"></span>.</li>
+            <li><strong>ചുമതലകളും വരുമാനവും:</strong> കെട്ടിടനിർമ്മാണ അനുമതി, മാലിന്യ നിർമാർജനം, രോഗപ്രതിരോധം എന്നിവ പ്രധാന ചുമതലകൾ. നികുതികൾ (കെട്ടിടം, വിനോദം), ഫീസുകൾ, ഗവൺമെൻ്റ് ഫണ്ടുകൾ എന്നിവ വരുമാന മാർഗ്ഗങ്ങൾ <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ശേഷികൾ / നൈപുണികൾ (Skills)</h3>
+        <ul>
+            <li>ജനാധിപത്യ പ്രക്രിയയിൽ സജീവമായി പങ്കുചേരുന്നതിനുള്ള പൗരബോധം വളർത്തിയെടുക്കൽ <span class="citation"></span>.</li>
+            <li>ചരിത്രപരമായ കമ്മിറ്റി റിപ്പോർട്ടുകളെയും നിയമങ്ങളെയും വിശകലനം ചെയ്യാനുള്ള അപഗ്രഥന ശേഷി (Analytical Skill) <span class="citation"></span>.</li>
+            <li>ക്ലാസ്സ് സഭകൾ സംഘടിപ്പിച്ച് നേതൃത്വപാടവവും സംഘാടന ശേഷിയും (Organizational Skill) പ്രകടിപ്പിക്കൽ <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന സാമഗ്രികൾ & ഉല്പന്നങ്ങൾ (Materials & Products)</h3>
+        <ul>
+            <li><strong>സാമഗ്രികൾ:</strong> പൂക്കോട്ടുമലയുടെ വാർത്താ തലക്കെട്ടുകളുടെ പകർപ്പുകൾ, ഗ്രാമസഭാ നോട്ടീസ് മാതൃകകൾ, അധികാര വികേന്ദ്രീകരണ ആശയപടം, ഭരണഘടനാ ഭേദഗതികളുടെ ചാർട്ടുകൾ, ഐ.സി.ടി സൗകര്യങ്ങൾ <span class="citation"></span>.</li>
+            <li><strong>ഉല്പന്നങ്ങൾ:</strong> ക്ലാസ് സഭാ നോട്ടീസ്, അധികാര വികേന്ദ്രീകരണത്തിന്റെ ഫ്ലോചാർട്ട്, 73-74 ഭേദഗതികളുടെ താരതമ്യ പട്ടിക, തദ്ദേശ സ്ഥാപനങ്ങളെക്കുറിച്ചുള്ള ലഘുലേഖ <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പ്രവർത്തന പ്രക്രിയയും വിലയിരുത്തലും (Learning Process & Evaluation)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 55%;">പ്രക്രിയ (Learning Process)</th>
+                    <th style="width: 45%;">വിലയിരുത്തൽ (Evaluation)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="highlight">1. ആമുഖം: പൂക്കോട്ടുമല മാതൃക</span>
+                        <p>പാഠപുസ്തകത്തിലെ 'പൂക്കോട്ടുമല ഗ്രാമത്തെക്കുറിച്ചുള്ള വാർത്താതലക്കെട്ടുകൾ' ക്ലാസിൽ പ്രദർശിപ്പിക്കുന്നു (ഉദാ: ഫിലമെൻ്റ് രഹിത ഗ്രാമം, സമ്പൂർണ്ണ തരിശു രഹിത ഗ്രാമം) <span class="citation"></span>.</p>
+                        <p><strong>ചർച്ച:</strong> പൂക്കോട്ടുമലയുടെ ഈ പുരോഗതിക്ക് കാരണമെന്താണ്? (ഉത്തരം: ജനങ്ങളുടെ പങ്കാളിത്തം, ഗ്രാമസഭകളിലെ ആസൂത്രണം) <span class="citation"></span>.</p>
+                        <p>നിങ്ങളുടെ പ്രദേശത്ത് ഇത്തരത്തിൽ നടന്ന വികസന പ്രവർത്തനങ്ങൾ കണ്ടെത്തി പട്ടികപ്പെടുത്താൻ വിദ്യാർത്ഥികളോട് ആവശ്യപ്പെടുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>പ്രാദേശിക വികസന വാർത്തകളിൽ നിന്ന് ആശയങ്ങൾ ഉൾക്കൊള്ളാനും സ്വന്തം ചുറ്റുപാടുമായി അതിനെ ബന്ധിപ്പിക്കാനുമുള്ള കുട്ടികളുടെ ശേഷി വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">2. ഗ്രാമസഭകളും വാർഡ് സഭകളും</span>
+                        <p>'നിവിൻ' എന്ന കുട്ടിയുടെ ഫേസ്ബുക്ക് പോസ്റ്റ് ക്ലാസിൽ വായിക്കുന്നു. ഗ്രാമസഭയുടെ ഘടന വ്യക്തമാക്കുന്നു: വാർഡിലെ വോട്ടർപട്ടികയിൽ പേരുള്ള എല്ലാവരും ഉൾപ്പെടുന്നതാണ് ഗ്രാമസഭ <span class="citation"></span>.</p>
+                        <p>നഗരങ്ങളിൽ ഇത് വാർഡ്‌സഭ എന്നറിയപ്പെടുന്നുവെന്നും, 3 മാസത്തിലൊരിക്കലെങ്കിലും ഇത് ചേരണമെന്നും വിശദീകരിക്കുന്നു <span class="citation"></span>.</p>
+                        <div class="box">പ്രവർത്തനം: സ്കൂളിൽ ഒരു 'ക്ലാസ് സഭ' സംഘടിപ്പിക്കുക. ക്ലാസ്സ് ലീഡറെ വാർഡ് പ്രതിനിധിയായി സങ്കൽപ്പിച്ച് നോട്ടീസ് തയ്യാറാക്കുകയും വിദ്യാലയ ശുചിത്വം സംബന്ധിച്ച ചർച്ചകൾ നടത്തുകയും ചെയ്യുക <span class="citation"></span>.</div>
+                    </td>
+                    <td>
+                        <p>ക്ലാസ് സഭാ നോട്ടീസ് തയ്യാറാക്കുന്നതിലെ സർഗ്ഗാത്മകതയും, ജനാധിപത്യപരമായ ചർച്ചകളിലെ പങ്കാളിത്തവും വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">3. അധികാര കേന്ദ്രീകരണവും വികേന്ദ്രീകരണവും</span>
+                        <p>'ഹരിജൻ' പത്രത്തിൽ (1942) ഗാന്ധിജി എഴുതിയ 'ഗ്രാമസ്വരാജ്' എന്ന സ്വപ്നം വായിക്കുന്നു. ഗ്രാമങ്ങൾ സ്വയംപര്യാപ്തമാകേണ്ടതിന്റെ ആവശ്യകത ചർച്ച ചെയ്യുന്നു <span class="citation"></span>.</p>
+                        <p><strong>താരതമ്യം:</strong> തീരുമാനമെടുക്കാനുള്ള അധികാരം ചിലരിൽ മാത്രം നിൽക്കുന്നതിനെ അധികാരകേന്ദ്രീകരണമെന്നും, അത് ജനങ്ങളിലേക്ക് കൈമാറുന്നതിനെ അധികാരവികേന്ദ്രീകരണമെന്നും നിർവചിക്കുന്നു <span class="citation"></span>.</p>
+                        <p>അധികാര വികേന്ദ്രീകരണത്തിന്റെ സവിശേഷതകളുടെ ആശയപടം (ഉദാ: പ്രാദേശിക വികസനം, വനിതാ ശാക്തീകരണം) പൂർത്തിയാക്കാൻ നൽകുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>അധികാര കേന്ദ്രീകരണവും വികേന്ദ്രീകരണവും തമ്മിലുള്ള വ്യത്യാസം ഉദാഹരണസഹിതം വിശദീകരിക്കാനുള്ള കഴിവ് പരിശോധിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">4. ചരിത്ര നാൾവഴികളും കമ്മിറ്റികളും</span>
+                        <p>പുരാതന ഇന്ത്യയിലെ പഞ്ചായത്തുകളെക്കുറിച്ചും, 1882 ലെ റിപ്പൺ പ്രഭുവിന്റെ ഇടപെടലുകളെക്കുറിച്ചും സംസാരിക്കുന്നു <span class="citation"></span>.</p>
+                        <p><strong>പാനൽ ചർച്ച:</strong> ബൽവന്ത്റായ് മേത്ത കമ്മിറ്റി (1957 - ത്രിതല പഞ്ചായത്ത്) vs അശോക് മേത്ത കമ്മിറ്റി (1978 - ദ്വിതല സംവിധാനം) എന്നിവയുടെ നിർദ്ദേശങ്ങൾ ക്ലാസിൽ അവതരിപ്പിക്കുന്നു <span class="citation"></span>.</p>
+                        <p>1959 ഒക്ടോബർ 2 ന് രാജസ്ഥാനിലാണ് പഞ്ചായത്തീരാജ് ആദ്യമായി നിലവിൽവന്നതെന്ന് വ്യക്തമാക്കുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>ചരിത്രവസ്തുതകളെ അടിസ്ഥാനമാക്കി കമ്മിറ്റികളുടെ മാറ്റങ്ങൾ താരതമ്യം ചെയ്യുന്നതിലെ കൃത്യത വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">5. 73, 74 ഭരണഘടനാ ഭേദഗതികളും കേരളവും</span>
+                        <p>1992 ലെ 73-ാം (പഞ്ചായത്തീരാജ്), 74-ാം (നഗരപാലിക) ഭരണഘടനാ ഭേദഗതികളുടെ പട്ടിക (സംസ്ഥാന തിരഞ്ഞെടുപ്പ് കമ്മീഷൻ, പട്ടികജാതി/പട്ടികവർഗ സംവരണം, ധനകാര്യ കമ്മീഷൻ) വിശദീകരിക്കുന്നു <span class="citation"></span>.</p>
+                        <p><strong>കേരളത്തിന്റെ മാതൃക:</strong> 1996 ലെ ജനകീയാസൂത്രണവും, 2005 ലെ 50% സ്ത്രീ സംവരണ ഭേദഗതിയും എടുത്തുകാണിച്ച് കേരളം എങ്ങനെ മാതൃകയായി എന്ന് ചർച്ച ചെയ്യുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>ഭരണഘടനാ ഭേദഗതികളെ അടിസ്ഥാനമാക്കിയുള്ള പ്രശ്നോത്തരി (ക്വിസ്) നടത്തി അറിവ് പരിശോധിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">6. ചുമതലകളും വരുമാനവും</span>
+                        <p>മിഴിയും മുത്തശ്ശിയും തമ്മിലുള്ള സംഭാഷണം (പേജ് 129) വായിച്ച് തദ്ദേശ സ്ഥാപനങ്ങളുടെ വരുമാന മാർഗ്ഗങ്ങൾ (നികുതികൾ, ഫീസുകൾ, ഗവൺമെൻ്റ് ഗ്രാന്റുകൾ) പട്ടികപ്പെടുത്താൻ ആവശ്യപ്പെടുന്നു <span class="citation"></span>.</p>
+                        <p>ജനന-മരണ രജിസ്ട്രേഷൻ, ആരോഗ്യ പരിപാലനം തുടങ്ങിയ ചുമതലകൾ ചാർട്ടിൽ തയ്യാറാക്കുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>നികുതിവരുമാനവും ഗ്രാന്റുകളും തമ്മിലുള്ള വ്യത്യാസം തിരിച്ചറിയുന്നുണ്ടോ എന്ന് നിരീക്ഷിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">7. വെല്ലുവിളികളും ക്രോഡീകരണവും</span>
+                        <p>മിലൻ തയ്യാറാക്കിയ സെമിനാർ പ്രബന്ധത്തിലെ വെല്ലുവിളികൾ (ഫണ്ട് വൈകൽ, ഗ്രാമസഭയിലെ കുറഞ്ഞ പങ്കാളിത്തം) വിശകലനം ചെയ്യുന്നു <span class="citation"></span>.</p>
+                        <p><strong>തുടർപ്രവർത്തനം (Project):</strong> നിങ്ങളുടെ പ്രാദേശിക ജനപ്രതിനിധിയുമായി (വാർഡ് മെമ്പർ/കൗൺസിലർ) അഭിമുഖം നടത്തുന്നതിനുള്ള ചോദ്യാവലി തയ്യാറാക്കി അഭിമുഖം നടത്തുക <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>ചോദ്യാവലി തയ്യാറാക്കുന്നതിലെ പക്വതയും പ്രശ്നപരിഹാരത്തിനായുള്ള നിർദ്ദേശങ്ങളും വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

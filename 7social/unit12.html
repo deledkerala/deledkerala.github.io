@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 - ചരിത്രത്തിന്റെ ആധാര ശിലകൾ</title>
+    <!-- ഗൂഗിൾ ഫോണ്ട് ഫോർ മലയാളം -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #5d4037; /* Earthy Brown for History */
+            --secondary-color: #3e2723; /* Darker Brown */
+            --accent-color: #f39c12; /* Antique Gold */
+            --background-color: #efebe9; /* Light Sepia/Brown tint */
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #d7ccc8;
+        }
+
+        body {
+            font-family: 'Noto Sans Malayalam', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.4em;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 1.15em;
+            color: white;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-left: 6px solid var(--accent-color);
+            padding-left: 12px;
+            margin-top: 35px;
+            font-size: 1.5em;
+            background-color: #d7ccc8;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* ടേബിൾ സ്റ്റൈൽ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 18px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        td p {
+            margin: 0 0 12px 0;
+        }
+
+        td p:last-child {
+            margin: 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block;
+            border-bottom: 2px dashed var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        .box {
+            background: #fff8e1;
+            border-left: 5px solid var(--accent-color);
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #d35400;
+            font-weight: 600;
+        }
+
+        .citation {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            font-style: normal;
+        }
+
+        .join-section {
+            margin: 25px 0 35px 0;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: #fdfefe;
+        }
+
+        .join-section h3 {
+            margin-top: 0;
+        }
+
+        .group-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .group-list li {
+            margin: 0;
+        }
+
+        .group-link {
+            display: block;
+            padding: 12px 14px;
+            border: 1px solid #25D366;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #128C7E;
+            background: #f3fff7;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                padding: 12px;
+            }
+            .meta-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .group-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Class 7 Social - 12 - ചരിത്രത്തിന്റെ ആധാര ശിലകൾ (Teaching Manual)</h1>
+        <div class="meta-info">
+            <span><strong>ക്ലാസ്:</strong> 7</span>
+            <span><strong>യൂണിറ്റ്:</strong> 12 - ചരിത്രത്തിന്റെ ആധാര ശിലകൾ</span>
+            <span><strong>പിരീഡുകൾ:</strong> 14</span>
+        </div>
+    </div>
+
+    <div class="join-section">
+        <h3>WhatsApp ഗ്രൂപ്പുകളിൽ ചേരുക</h3>
+        <ul class="group-list">
+            <li><a class="group-link" href="https://chat.whatsapp.com/GVNbd9EqvKmBIdS6PE9xZW?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/F9zhb3FemZe8mkm1xxMFPY?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-3</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/G8NS506eHGQHZu2Zf4WIxT?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/JXvhTmtJYO7GGqPlNKlxMo?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-3</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന ലക്ഷ്യങ്ങൾ (Learning Objectives)</h3>
+        <ul>
+            <li>പൊതുചരിത്രവും പ്രാദേശിക ചരിത്രവും (Local History) തമ്മിലുള്ള വ്യത്യാസങ്ങൾ കണ്ടെത്തുകയും പ്രാദേശിക ചരിത്രത്തിന്റെ പ്രാധാന്യം മനസ്സിലാക്കുകയും ചെയ്യുക .</li>
+            <li>ചരിത്ര രചനയ്ക്കാവശ്യമായ സ്രോതസ്സുകളെ (Historical Sources) പുരാവസ്തുശാസ്ത്രപരമായ സ്രോതസ്സുകളെന്നും സാഹിത്യ സ്രോതസ്സുകളെന്നും വേർതിരിച്ചറിയുക .</li>
+            <li>കേരളത്തിലെ പ്രധാനപ്പെട്ട മഹാശിലാസ്മാരകങ്ങൾ (Megaliths), ഗുഹകൾ എന്നിവ തിരിച്ചറിയുകയും അവ നൽകുന്ന ചരിത്രപരമായ അറിവുകൾ വിലയിരുത്തുകയും ചെയ്യുക .</li>
+            <li>പുരാലിഖിതങ്ങൾ (Epigraphy), നാണയശാസ്ത്രം (Numismatics) എന്നീ പഠനശാഖകളെ പരിചയപ്പെടുകയും അവയുടെ ചരിത്രപരമായ പ്രാധാന്യം അപഗ്രഥിക്കുകയും ചെയ്യുക .</li>
+            <li>കേരളത്തിലെ വിവിധ കോട്ടകൾ, കൊട്ടാരങ്ങൾ, ചരിത്രസ്മാരകങ്ങൾ എന്നിവയുടെ ചരിത്ര-സാംസ്കാരിക പശ്ചാത്തലം വിശകലനം ചെയ്യുക .</li>
+            <li>സംഘസാഹിത്യ കൃതികൾ പോലെയുള്ള സാഹിത്യ സ്രോതസ്സുകൾ പ്രാചീന കേരള ചരിത്രത്തെ എങ്ങനെ സ്വാധീനിക്കുന്നു എന്ന് മനസ്സിലാക്കുക .</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ആശയങ്ങൾ / ധാരണകൾ (Concepts)</h3>
+        <ul>
+            <li><strong>പ്രാദേശിക ചരിത്രം:</strong> ഒരു ചെറിയ പ്രദേശത്തിന്റെയോ സംഭവത്തിന്റെയോ സൂക്ഷ്മമായ രേഖപ്പെടുത്തൽ. ഇത് ചരിത്രത്തെ ജനാധിപത്യവൽക്കരിക്കുകയും മുഖ്യധാരയിൽ ഇടം കിട്ടാത്തവർക്ക് പ്രാതിനിധ്യം നൽകുകയും ചെയ്യുന്നു .</li>
+            <li><strong>ചരിത്ര സ്രോതസ്സുകൾ:</strong> ചരിത്രത്തെക്കുറിച്ച് വിവരം നൽകുന്ന ഉപയുക്തമായ വസ്തുക്കളോ രേഖകളോ .</li>
+            <li><strong>പുരാവസ്തുശാസ്ത്രപരമായ സ്രോതസ്സുകൾ (Archaeological Sources):</strong>
+                <ul>
+                    <li>ശിലാസ്മാരകങ്ങൾ: മഹാശിലാ കാലഘട്ടത്തിലെ കുടക്കല്ല്, തൊപ്പിക്കല്ല്, മുനിയറ, നന്നങ്ങാടികൾ .</li>
+                    <li>ഗുഹകൾ: പ്രാചീന മനുഷ്യരുടെ ജീവിതം പറയുന്ന എടയ്ക്കൽ (വയനാട്), മറയൂർ (ഇടുക്കി), ആങ്കോട് (തിരുവനന്തപുരം) തുടങ്ങിയവ .</li>
+                    <li>പുരാലിഖിതങ്ങൾ (Epigraphy): ശിലകളിലും ലോഹത്തകിടുകളിലുമുള്ള എഴുത്തുകൾ (ഉദാ: തരിസാപ്പള്ളി ലിഖിതം, ക്ഷേത്രപ്രവേശന വിളംബരം) .</li>
+                    <li>നാണയങ്ങൾ (Numismatics): കാശ്, അച്ച്, പണം, വീരരായൻ പണം (പൊൻപണം) .</li>
+                    <li>കോട്ടകളും കൊട്ടാരങ്ങളും: ബേക്കൽ കോട്ട, പത്മനാഭപുരം കൊട്ടാരം .</li>
+                </ul>
+            </li>
+            <li><strong>ചരിത്ര സ്മാരകങ്ങൾ:</strong> തളി ക്ഷേത്രം, മിശ്കാൽ പള്ളി, ദേവമാതാ കത്തീഡ്രൽ .</li>
+            <li><strong>സാഹിത്യ സ്രോതസ്സുകൾ:</strong> കോകില സന്ദേശം, സംഘസാഹിത്യകൃതികൾ (പതിറ്റുപ്പത്ത്, പുറനാനൂറ് മുതലായവ) .</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ശേഷികൾ / നൈപുണികൾ (Skills)</h3>
+        <ul>
+            <li>പ്രാദേശിക ചരിത്രരചനയ്ക്കായി വിവരങ്ങൾ ശേഖരിക്കുന്നതിനും ക്രോഡീകരിക്കുന്നതിനുമുള്ള അന്വേഷണാത്മക ശേഷി .</li>
+            <li>പുരാവസ്തു ശേഷിപ്പുകളെയും സ്മാരകങ്ങളെയും നിരീക്ഷിച്ച് ചരിത്രപരമായ നിഗമനങ്ങളിൽ എത്തിച്ചേരാനുള്ള അപഗ്രഥന നൈപുണി .</li>
+            <li>നാണയങ്ങൾ, ലിഖിതങ്ങൾ എന്നിവയിലൂടെ ഭൂതകാലത്തെ സാമൂഹിക-സാമ്പത്തിക വ്യവസ്ഥിതികളെ താരതമ്യം ചെയ്യാനുള്ള കഴിവ് .</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന സാമഗ്രികൾ & ഉല്പന്നങ്ങൾ (Materials & Products)</h3>
+        <ul>
+            <li><strong>സാമഗ്രികൾ:</strong> വിഴിഞ്ഞത്തിന്റെ പ്രാദേശിക ചരിത്രക്കുറിപ്പ്, മഹാശിലാസ്മാരകങ്ങളുടെ ചിത്രങ്ങൾ (കുടക്കല്ല്, തൊപ്പിക്കല്ല്, മുനിയറ), എടയ്ക്കൽ ഗുഹയുടെ ചിത്രങ്ങൾ, പഴയകാല നാണയങ്ങളുടെ ചിത്രങ്ങൾ (വീരരായൻ പണം), കോട്ടകളുടെയും കൊട്ടാരങ്ങളുടെയും ചിത്രങ്ങൾ .</li>
+            <li><strong>ഉല്പന്നങ്ങൾ:</strong> പ്രാദേശിക ചരിത്രരചന, ചരിത്രവും പ്രാദേശിക ചരിത്രവും തമ്മിലുള്ള താരതമ്യപ്പട്ടിക, പുരാവസ്തു ശാസ്ത്രപരമായ സ്രോതസ്സുകളുടെ ആശയപടം (Concept map) .</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പ്രവർത്തന പ്രക്രിയയും വിലയിരുത്തലും (Learning Process & Evaluation)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 55%;">പ്രക്രിയ (Learning Process)</th>
+                    <th style="width: 45%;">വിലയിരുത്തൽ (Evaluation)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="highlight">1. ആമുഖം: പ്രാദേശിക ചരിത്രം</span>
+                        <p>അനു തയ്യാറാക്കിയ 'വിഴിഞ്ഞം' എന്ന പ്രദേശത്തിന്റെ ചരിത്രക്കുറിപ്പ് ക്ലാസ്സിൽ വായിച്ചു കേൾപ്പിക്കുന്നു. ആയ് രാജവംശം, ജൈനമുനി ഉദ്യോതന സൂരിയുടെ 'കുവലയമാല', റോമൻ നാണയങ്ങൾ, 'പെരിപ്ലസ് ഓഫ് ദി എറീത്രിയൻ സീ' എന്നിവ പരാമർശിക്കുന്നു .</p>
+                        <p><strong>ചർച്ച:</strong> ഈ കുറിപ്പ് തയ്യാറാക്കാൻ എന്തെല്ലാം സ്രോതസ്സുകൾ ഉപയോഗിച്ചിട്ടുണ്ടാകും? (ഉത്തരം: പുരാവസ്തു തെളിവുകൾ, ലിഖിതങ്ങൾ, സാഹിത്യകൃതികൾ) .</p>
+                        <p>വിശാലമായ രാജ്യചരിത്രത്തിൽ നിന്നും വ്യത്യസ്തമായി ഒരു ചെറിയ പ്രദേശത്തിന്റെ ചരിത്രം രേഖപ്പെടുത്തുന്നതിനെ <strong>പ്രാദേശിക ചരിത്രം (Local History)</strong> എന്ന് വിളിക്കാമെന്ന് വിശദീകരിക്കുന്നു .</p>
+                    </td>
+                    <td>
+                        <p>പ്രാദേശിക ചരിത്രവും പ്രധാന ചരിത്രവും തമ്മിലുള്ള വ്യത്യാസം തിരിച്ചറിയുന്നുണ്ടോ എന്ന് ചർച്ചയിലൂടെ നിരീക്ഷിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">2. ചരിത്ര സ്രോതസ്സുകൾ (Historical Sources)</span>
+                        <p>ചരിത്രത്തെക്കുറിച്ച് വിവരം നൽകുന്നവയാണ് സ്രോതസ്സുകൾ എന്ന് നിർവചിക്കുന്നു .</p>
+                        <p><strong>പുരാവസ്തുശാസ്ത്രപരമായ സ്രോതസ്സുകൾ:</strong></p>
+                        <ul>
+                            <li><strong>ശിലാസ്മാരകങ്ങൾ:</strong> പൂർവികരുടെ ഭൗതികാവശിഷ്ടങ്ങൾ അടക്കം ചെയ്യാൻ നിർമ്മിച്ച കുടക്കല്ല്, തൊപ്പിക്കല്ല്, മുനിയറ, നന്നങ്ങാടികൾ എന്നിവ ചിത്രങ്ങൾ സഹിതം പരിചയപ്പെടുത്തുന്നു . മറയൂർ, ചിറമനങ്ങാട്, തവനൂർ എന്നിവിടങ്ങളിൽ ഇവ കാണാമെന്ന് വ്യക്തമാക്കുന്നു .</li>
+                            <li><strong>ഗുഹകൾ:</strong> ശിലായുഗത്തിലെ മനുഷ്യരെക്കുറിച്ച് വിവരങ്ങൾ നൽകുന്ന എടയ്ക്കൽ (വയനാട്) ഗുഹാചിത്രങ്ങളെക്കുറിച്ച് ചർച്ച ചെയ്യുന്നു .</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p>മഹാശിലാസ്മാരകങ്ങളെ തരംതിരിച്ചറിയാനും അവയുടെ ഉപയോഗം വിശദീകരിക്കാനുമുള്ള കഴിവ് വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">3. ലിഖിതപഠനവും നാണയശാസ്ത്രവും</span>
+                        <p><strong>പുരാലിഖിതങ്ങൾ:</strong> ശിലകൾ, ലോഹത്തകിടുകൾ എന്നിവയിലെ എഴുത്തുകളെക്കുറിച്ചുള്ള പഠനമാണ് ലിഖിതപഠനം (Epigraphy) എന്ന് വിശദീകരിക്കുന്നു . തരിസാപ്പള്ളി ലിഖിതം (കൊല്ലം), ക്ഷേത്രപ്രവേശന വിളംബരം എന്നിവ കാണിക്കുന്നു .</p>
+                        <p><strong>നാണയങ്ങൾ:</strong> നാണയങ്ങളെക്കുറിച്ചുള്ള പഠനമാണ് നാണയശാസ്ത്രം (Numismatics) . സാമൂതിരിമാരുടെ കാലത്തെ 'വീരരായൻ പണം' (പൊൻപണം) എന്ന സ്വർണ്ണനാണയത്തിലെ സൂര്യൻ, സിംഹം എന്നീ അടയാളങ്ങൾ ചർച്ച ചെയ്യുന്നു .</p>
+                        <div class="box">പ്രവർത്തനം: നാണയങ്ങളിൽ നിന്നും ഏതെല്ലാം ചരിത്ര വിവരങ്ങൾ (ഭരണാധികാരി, കാലഘട്ടം, സാമ്പത്തിക സ്ഥിതി) ലഭിക്കുമെന്ന് ഒരു പട്ടിക തയ്യാറാക്കുക .</div>
+                    </td>
+                    <td>
+                        <p>നാണയങ്ങളിൽ നിന്നും ലിഖിതങ്ങളിൽ നിന്നും ചരിത്രവസ്തുതകൾ എങ്ങനെ വേർതിരിച്ചെടുക്കാമെന്ന ധാരണ പരിശോധിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">4. കോട്ടകളും കൊട്ടാരങ്ങളും സ്മാരകങ്ങളും</span>
+                        <p>കേരളത്തിലെ പ്രധാന കോട്ടകളായ ബേക്കൽ കോട്ട (കാസർഗോഡ് - 17-ാം നൂറ്റാണ്ട്), കണ്ണൂർ കോട്ട, പാലക്കാട് കോട്ട എന്നിവയുടെ പ്രതിരോധ പ്രാധാന്യം വ്യക്തമാക്കുന്നു .</p>
+                        <p>കൊട്ടാരങ്ങൾ: പത്മനാഭപുരം, മട്ടാഞ്ചേരി, കിളിമാനൂർ, അറയ്ക്കൽ, കൃഷ്ണപുരം എന്നിവ പട്ടികപ്പെടുത്തുന്നു .</p>
+                        <p><strong>ചരിത്രസ്മാരകങ്ങൾ:</strong> കോഴിക്കോട്ടെ തളി ക്ഷേത്രം (രേവതി പട്ടത്താനം), മിശ്കാൽ പള്ളി, ദേവമാതാ കത്തീഡ്രൽ (1513) എന്നിവയെ പരിചയപ്പെടുത്തുന്നു .</p>
+                    </td>
+                    <td>
+                        <p>കോട്ടകളുടെയും കൊട്ടാരങ്ങളുടെയും സാംസ്കാരിക പ്രാധാന്യം അപഗ്രഥിക്കാനുള്ള ശേഷി വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">5. സാഹിത്യസ്രോതസ്സുകളും ക്രോഡീകരണവും</span>
+                        <p>ചരിത്രരചനയിൽ സാഹിത്യകൃതികൾക്കുള്ള പങ്ക് ചർച്ച ചെയ്യുന്നു. 15-ാം നൂറ്റാണ്ടിൽ ഉദ്ദണ്ഡ ശാസ്ത്രികൾ രചിച്ച സംസ്കൃത സന്ദേശകാവ്യമായ 'കോകിലസന്ദേശ'ത്തിൽ കോഴിക്കോടിനെക്കുറിച്ചുള്ള വിവരണം വായിക്കുന്നു .</p>
+                        <p>കേരളത്തിന്റെ പ്രാചീന ചരിത്രം പറയുന്ന തമിഴ് കൃതികളായ <strong>സംഘസാഹിത്യകൃതികൾ</strong> (പതിറ്റുപ്പത്ത്, പുറനാനൂറ്, അകനാനൂറ്) പരിചയപ്പെടുത്തുന്നു .</p>
+                        <p><strong>തുടർപ്രവർത്തനം:</strong> പുരാവസ്തുശാസ്ത്രപരമായ സ്രോതസ്സുകൾ എന്ന വിഷയത്തെ അടിസ്ഥാനമാക്കി ക്ലാസ്സിൽ ഒരു സെമിനാർ സംഘടിപ്പിക്കുക .</p>
+                    </td>
+                    <td>
+                        <p>സാഹിത്യസ്രോതസ്സുകളെയും പുരാവസ്തു സ്രോതസ്സുകളെയും സംയോജിപ്പിച്ച് ചരിത്രം മനസ്സിലാക്കാനുള്ള കുട്ടികളുടെ സിദ്ധാന്തപരമായ അറിവ് വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

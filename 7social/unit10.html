@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ബജറ്റ് : വികസനത്തിന്റെ നേർരേഖ - അധ്യായം 10</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1565c0; /* Blue for Finance/Economy */
+            --secondary-color: #0d47a1; /* Darker Blue */
+            --accent-color: #fbc02d; /* Gold/Yellow for Wealth */
+            --background-color: #e3f2fd; /* Light Blue Background */
+            --card-bg: #ffffff;
+            --text-color: #263238;
+            --border-color: #90caf9;
+        }
+
+        body {
+            font-family: 'Noto Sans Malayalam', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.4em;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 1.15em;
+            color: white;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            border-left: 6px solid var(--accent-color);
+            padding-left: 12px;
+            margin-top: 35px;
+            font-size: 1.5em;
+            background-color: #e3f2fd;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* ടേബിൾ സ്റ്റൈൽ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 18px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        td p {
+            margin: 0 0 12px 0;
+        }
+
+        td p:last-child {
+            margin: 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block;
+            border-bottom: 2px dashed var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        .box {
+            background: #fffde7;
+            border-left: 5px solid var(--accent-color);
+            padding: 15px;
+            margin: 15px 0;
+            color: #f57f17;
+            font-weight: 600;
+        }
+
+        .citation {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .join-section {
+            margin: 25px 0 35px 0;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: #fdfefe;
+        }
+
+        .join-section h3 { margin-top: 0; }
+
+        .group-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .group-list li { margin: 0; }
+
+        .group-link {
+            display: block;
+            padding: 12px 14px;
+            border: 1px solid #25D366;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #128C7E;
+            background: #f3fff7;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                padding: 12px;
+            }
+            .meta-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .group-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Class 7 - Unit 10 - ബജറ്റ് : വികസനത്തിന്റെ നേർരേഖ (Teaching Manual)</h1>
+        <div class="meta-info">
+            <span><strong>ക്ലാസ്:</strong> 7</span>
+            <span><strong>യൂണിറ്റ്:</strong> 10 - ബജറ്റ് : വികസനത്തിന്റെ നേർരേഖ</span>
+            <span><strong>പിരീഡുകൾ:</strong> 14</span>
+        </div>
+    </div>
+
+    <div class="join-section">
+        <h3>WhatsApp ഗ്രൂപ്പുകളിൽ ചേരുക</h3>
+        <ul class="group-list">
+            <li><a class="group-link" href="https://chat.whatsapp.com/GVNbd9EqvKmBIdS6PE9xZW?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/F9zhb3FemZe8mkm1xxMFPY?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-3</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/G8NS506eHGQHZu2Zf4WIxT?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/JXvhTmtJYO7GGqPlNKlxMo?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-3</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന ലക്ഷ്യങ്ങൾ (Learning Objectives)</h3>
+        <ul>
+            <li>കുടുംബചെലവുകളെ പ്രതീക്ഷിത ചെലവുകളെന്നും അപ്രതീക്ഷിത ചെലവുകളെന്നും വേർതിരിച്ചറിയുക <span class="citation"></span>.</li>
+            <li>കുടുംബ വരുമാനവും കുടുംബ ബജറ്റും നിർവ്വചിക്കുകയും മിതവ്യയശീലത്തിൻ്റെ പ്രാധാന്യം ഉൾക്കൊള്ളുകയും ചെയ്യുക <span class="citation"></span>.</li>
+            <li>സർക്കാരിന്റെ പൊതുചെലവുകളെ വികസന ചെലവുകളെന്നും വികസനേതര ചെലവുകളെന്നും തരംതിരിച്ച് വിലയിരുത്തുക <span class="citation"></span>.</li>
+            <li>പൊതുവരുമാനത്തിന്റെ സ്രോതസ്സുകൾ (നികുതിവരുമാനം, നികുതിയേതരവരുമാനം) കണ്ടെത്തുകയും അവ തമ്മിലുള്ള വ്യത്യാസം വിശദീകരിക്കുകയും ചെയ്യുക <span class="citation"></span>.</li>
+            <li>പ്രത്യക്ഷ നികുതിയും പരോക്ഷ നികുതിയും (GST ഉൾപ്പെടെ) തമ്മിലുള്ള വ്യത്യാസം ഉദാഹരണസഹിതം വ്യക്തമാക്കുക <span class="citation"></span>.</li>
+            <li>സർക്കാർ ബജറ്റിൻ്റെ അർത്ഥം ഗ്രഹിക്കുകയും ബജറ്റിനെ മൂന്നായി (മിച്ച ബജറ്റ്, കമ്മി ബജറ്റ്, സന്തുലിത ബജറ്റ്) വർഗ്ഗീകരിക്കുകയും ചെയ്യുക <span class="citation"></span>.</li>
+            <li>പൊതുകടം, ധനനയം (Fiscal Policy) എന്നീ ആശയങ്ങളും ധനനയത്തിന്റെ പ്രധാന ലക്ഷ്യങ്ങളും വിശകലനം ചെയ്യുക <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ആശയങ്ങൾ / ധാരണകൾ (Concepts)</h3>
+        <ul>
+            <li><strong>കുടുംബ ബജറ്റും ചെലവുകളും:</strong> ഭക്ഷ്യ-ഭക്ഷ്യേതര ആവശ്യങ്ങൾക്കായുള്ള കുടുംബ ചെലവുകൾ. മുൻകൂട്ടി നിശ്ചയിക്കാൻ കഴിയുന്നവ (പ്രതീക്ഷിത ചെലവ് - ഉദാ: വൈദ്യുതി ബിൽ), അപ്രതീക്ഷിതമായി വരുന്നവ (അപ്രതീക്ഷിത ചെലവ് - ഉദാ: ചികിത്സ) <span class="citation"></span>.</li>
+            <li><strong>പൊതുചെലവ് (Public Expenditure):</strong> റോഡ്, പാലം പോലെയുള്ള വികസന ചെലവുകളും, പെൻഷൻ, പ്രതിരോധം പോലെയുള്ള വികസനേതര ചെലവുകളും <span class="citation"></span>.</li>
+            <li><strong>പൊതുവരുമാനം (Public Revenue):</strong> സർക്കാരിന് ലഭിക്കുന്ന വരുമാനം. നികുതിവരുമാനം (പ്രത്യക്ഷ നികുതി, പരോക്ഷ നികുതി), നികുതിയേതര വരുമാനം (ഫീസ്, പിഴ, ഗ്രാന്റ്) <span class="citation"></span>.</li>
+            <li><strong>ജി.എസ്.ടി (GST):</strong> ചരക്ക് സേവന നികുതി. 2017 ജൂലൈ 1-ന് നിലവിൽ വന്ന ഏകീകൃത പരോക്ഷ നികുതി സമ്പ്രദായം <span class="citation"></span>.</li>
+            <li><strong>ബജറ്റ് (Budget):</strong> ഒരു സാമ്പത്തികവർഷത്തിൽ സർക്കാർ പ്രതീക്ഷിക്കുന്ന ചെലവും വരവും ഉൾക്കൊള്ളിച്ചുകൊണ്ട് തയ്യാറാക്കുന്ന ധനരേഖ. (മിച്ച ബജറ്റ്, സന്തുലിത ബജറ്റ്, കമ്മി ബജറ്റ്) <span class="citation"></span>.</li>
+            <li><strong>പൊതുകടം (Public Debt) & ധനനയം (Fiscal Policy):</strong> വരുമാനം തികയാതെ വരുമ്പോൾ സർക്കാറെടുക്കുന്ന വായ്പകളാണ് പൊതുകടം (ആഭ്യന്തരകടം, വിദേശകടം). സാമ്പത്തിക വളർച്ചയും സ്ഥിരതയും ലക്ഷ്യമാക്കി സർക്കാർ രൂപീകരിക്കുന്ന നയമാണ് ധനനയം <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ശേഷികൾ / നൈപുണികൾ (Skills)</h3>
+        <ul>
+            <li>സ്വന്തം കുടുംബത്തിലെ വരവ്-ചെലവ് കണക്കുകൾ പരിശോധിച്ച് കുടുംബ ബജറ്റ് തയ്യാറാക്കുന്നതിനുള്ള പ്രായോഗിക നൈപുണി <span class="citation"></span>.</li>
+            <li>ദൈനംദിന സാമ്പത്തിക കാര്യങ്ങളിൽ മിതവ്യയം ശീലമാക്കുന്നതിനും സാമ്പത്തിക അച്ചടക്കം (Financial Discipline) പാലിക്കുന്നതിനുമുള്ള ശേഷി <span class="citation"></span>.</li>
+            <li>പത്രവാർത്തകളിൽ നിന്ന് ഗവൺമെന്റിന്റെ വികസന പദ്ധതികൾ, നികുതികൾ എന്നിവ തിരിച്ചറിഞ്ഞ് വിശകലനം ചെയ്യാനുള്ള ശേഷി <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന സാമഗ്രികൾ & ഉല്പന്നങ്ങൾ (Materials & Products)</h3>
+        <ul>
+            <li><strong>സാമഗ്രികൾ:</strong> നിത്യജീവിതത്തിലെ ചെലവുകൾ സൂചിപ്പിക്കുന്ന വാർത്താ കട്ടിംഗുകൾ, ജി.എസ്.ടി ബില്ലുകളുടെ മാതൃകകൾ, ബജറ്റ് അവതരണത്തിന്റെ ചിത്രങ്ങൾ, ഗ്രാഫുകൾ <span class="citation"></span>.</li>
+            <li><strong>ഉല്പന്നങ്ങൾ:</strong> മിച്ചബജറ്റ് മാതൃക, വികസന-വികസനേതര ചെലവുകളുടെ വർഗ്ഗീകരണ പട്ടിക, നികുതികളെ സംബന്ധിച്ച ഫ്ലോചാർട്ട് (Flowchart), കുടുംബ ബജറ്റ് പ്രോജക്ട് <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പ്രവർത്തന പ്രക്രിയയും വിലയിരുത്തലും (Learning Process & Evaluation)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 55%;">പ്രക്രിയ (Learning Process)</th>
+                    <th style="width: 45%;">വിലയിരുത്തൽ (Evaluation)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="highlight">1. ആമുഖം: കുടുംബത്തിലെ ചെലവുകൾ</span>
+                        <p>പാഠപുസ്തകത്തിലെ ആദ്യ ചിത്രത്തിലുള്ള കുടുംബാംഗങ്ങളുടെ സംഭാഷണം (ചിട്ടിപ്പണം, മരുന്ന്, കറണ്ട് ബിൽ) ക്ലാസ്സിൽ അവതരിപ്പിക്കുന്നു <span class="citation"></span>.</p>
+                        <p><strong>ചർച്ച:</strong> ഈ കുടുംബത്തിൽ എന്തൊക്കെ ആവശ്യങ്ങൾക്കാണ് പണം വിനിയോഗിക്കുന്നത്? നിത്യജീവിതത്തിൽ മുൻകൂട്ടി അറിയാൻ കഴിയുന്ന ചെലവുകളും അപ്രതീക്ഷിതമായുണ്ടാകുന്ന ചെലവുകളും ഏതൊക്കെയെന്ന് ചോദിക്കുന്നു.</p>
+                        <p><strong>വർഗ്ഗീകരണം:</strong> കുട്ടികളെക്കൊണ്ട് 'പ്രതീക്ഷിത ചെലവ്', 'അപ്രതീക്ഷിത ചെലവ്' എന്നിവയ്ക്ക് കൂടുതൽ ഉദാഹരണങ്ങൾ എഴുതി പട്ടിക പൂർത്തീകരിക്കാൻ ആവശ്യപ്പെടുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>നിത്യജീവിതത്തിലെ ചെലവുകളെ ശാസ്ത്രീയമായി വർഗ്ഗീകരിക്കാനുള്ള കുട്ടികളുടെ ശേഷി നിരീക്ഷിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">2. കുടുംബ ബജറ്റും മിതവ്യയവും</span>
+                        <p>ഒരു നിശ്ചിത കാലയളവിൽ കുടുംബത്തിന് വിവിധ സ്രോതസ്സുകളിൽ നിന്ന് ലഭിക്കുന്ന ആകെ വരുമാനമാണ് കുടുംബവരുമാനം എന്ന് വ്യക്തമാക്കുന്നു <span class="citation"></span>.</p>
+                        <p>പ്രതീക്ഷിത വരവും ചെലവും ഉൾപ്പെടുത്തി തയ്യാറാക്കുന്ന 'കുടുംബ ബജറ്റ്' എന്ന ആശയം പരിചയപ്പെടുത്തുന്നു <span class="citation"></span>.</p>
+                        <div class="box">പാഠപുസ്തകത്തിലെ ഒരു കുടുംബത്തിന്റെ പ്രതിമാസ ബജറ്റ് പരിശോധിക്കുന്നു. അതിൽ വരവ് 24,800 രൂപയും ചെലവ് 25,700 രൂപയും ആണ്. ഈ കമ്മി ബജറ്റിനെ മിച്ച ബജറ്റാക്കാൻ (Surplus budget) എന്തൊക്കെ ചെയ്യാം എന്ന് ചർച്ച ചെയ്യിപ്പിക്കുന്നു <span class="citation"></span>.</div>
+                    </td>
+                    <td>
+                        <p>ചെലവുകൾ ചുരുക്കാനും മിതവ്യയശീലം വളർത്താനുമുള്ള പ്രായോഗിക നിർദ്ദേശങ്ങൾ നൽകാൻ വിദ്യാർത്ഥികൾക്ക് കഴിയുന്നുണ്ടോ എന്ന് പരിശോധിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">3. സർക്കാരിന്റെ പൊതുചെലവ്</span>
+                        <p>ദേശീയപാത വികസനം, ക്ഷേമ പെൻഷൻ വിതരണം, ജൽജീവൻ മിഷൻ തുടങ്ങിയ വാർത്താതലക്കെട്ടുകൾ പ്രദർശിപ്പിക്കുന്നു <span class="citation"></span>.</p>
+                        <p>സർക്കാർ പണം ചെലവാക്കുന്ന മേഖലകളെ രണ്ടായി തിരിക്കുന്നു:</p>
+                        <ul>
+                            <li><strong>വികസന ചെലവുകൾ:</strong> റോഡ്, പാലം, വിദ്യാലയ നിർമ്മാണം. (ഉൽപാദനക്ഷമമായത്) <span class="citation"></span>.</li>
+                            <li><strong>വികസനേതര ചെലവുകൾ:</strong> യുദ്ധം, പലിശ, പെൻഷൻ, പൊതുഭരണം <span class="citation"></span>.</li>
+                        </ul>
+                        <p>ചെലവുകളെ തരംതിരിക്കാനുള്ള പട്ടിക കുട്ടികൾക്ക് വർക്ക് ഷീറ്റായി നൽകുന്നു.</p>
+                    </td>
+                    <td>
+                        <p>വികസന-വികസനേതര ചെലവുകൾ കൃത്യമായി വർഗ്ഗീകരിക്കുന്നതിലെ യുക്തിചിന്ത വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">4. പൊതുവരുമാനവും നികുതികളും</span>
+                        <p>സർക്കാർ എങ്ങനെയാണ് വികസന പ്രവർത്തനങ്ങൾക്ക് പണം കണ്ടെത്തുന്നത്? (നികുതികൾ, ഫീസുകൾ).</p>
+                        <p><strong>നികുതി വരുമാനം:</strong></p>
+                        <ol>
+                            <li>പ്രത്യക്ഷ നികുതി (Direct Tax): നികുതി ഭാരം മറ്റൊരാൾക്ക് കൈമാറാൻ കഴിയില്ല. ഉദാ: ആദായ നികുതി, കെട്ടിട നികുതി <span class="citation"></span>.</li>
+                            <li>പരോക്ഷ നികുതി (Indirect Tax): നികുതി ഭാരം ഭാഗികമായോ പൂർണ്ണമായോ മറ്റൊരാൾക്ക് കൈമാറാം. ഉദാ: വില്പന നികുതി, വിനോദ നികുതി <span class="citation"></span>.</li>
+                        </ol>
+                        <p>2017-ൽ നിലവിൽവന്ന ജി.എസ്.ടി (ചരക്ക് സേവന നികുതി) എന്ന ഏകീകൃത നികുതിയെക്കുറിച്ച് വിശദമാക്കുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>പ്രത്യക്ഷ-പരോക്ഷ നികുതികളെ തമ്മിൽ വേർതിരിച്ചറിയാനുള്ള ധാരണ വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">5. സർക്കാർ ബജറ്റും പൊതുകടവും</span>
+                        <p>'ബോഗറ്റ്' (Sack/സഞ്ചി) എന്ന വാക്കിൽ നിന്ന് ബജറ്റ് രൂപപ്പെട്ടതും, ഇന്ത്യയിൽ ഏപ്രിൽ 1 മുതൽ മാർച്ച് 31 വരെയാണ് സാമ്പത്തിക വർഷമെന്നും വിശദീകരിക്കുന്നു <span class="citation"></span>.</p>
+                        <p>ബജറ്റിനെ മൂന്നായി തരംതിരിക്കുന്നു:</p>
+                        <ul>
+                            <li>മിച്ച ബജറ്റ് (Surplus - വരവ് കൂടുതൽ)</li>
+                            <li>സന്തുലിത ബജറ്റ് (Balanced - തുല്യം)</li>
+                            <li>കമ്മി ബജറ്റ് (Deficit - ചെലവ് കൂടുതൽ) <span class="citation"></span>.</li>
+                        </ul>
+                        <p>ചെലവുകൾ കൂടുമ്പോൾ സർക്കാർ എടുക്കുന്ന വായ്പകളായ <strong>പൊതുകടം</strong> (ആഭ്യന്തരകടം, വിദേശകടം) ചർച്ച ചെയ്യുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>ബജറ്റ് തരങ്ങളെ നിർവ്വചിക്കാനുള്ള കഴിവ് ചോദ്യാവലിയിലൂടെ പരിശോധിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">6. ധനനയം (Fiscal Policy) & ക്രോഡീകരണം</span>
+                        <p>വരുമാനം, ചെലവ്, കടം എന്നിവ സംബന്ധിച്ച സർക്കാരിന്റെ സമഗ്ര നയമാണ് ധനനയം എന്ന് വിശദീകരിക്കുന്നു <span class="citation"></span>.</p>
+                        <p>ധനനയത്തിന്റെ ലക്ഷ്യങ്ങൾ (തൊഴിലവസരങ്ങൾ, സാമ്പത്തിക വളർച്ച, വരുമാന വിതരണത്തിലെ അസമത്വം ഇല്ലാതാക്കൽ) ചാർട്ടിലൂടെ അവതരിപ്പിക്കുന്നു <span class="citation"></span>.</p>
+                        <p><strong>തുടർപ്രവർത്തനം:</strong> രക്ഷിതാക്കളുമായി ചർച്ച ചെയ്ത് നിങ്ങളുടെ സ്വന്തം കുടുംബത്തിന്റെ ഒരു മാസത്തെ 'കുടുംബ ബജറ്റ്' തയ്യാറാക്കി കൊണ്ടുവരിക <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>കുടുംബ ബജറ്റ് തയ്യാറാക്കുന്ന പ്രോജക്റ്റിലൂടെ സാമ്പത്തിക സാക്ഷരതയും (Financial Literacy) ഗണിതശേഷിയും വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

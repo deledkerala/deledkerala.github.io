@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ഭൂമിയെ അറിയാൻ ഭൂപടങ്ങളും ആധുനികസങ്കേതങ്ങളും - അധ്യായം 9</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00695c; /* Deep Green/Teal */
+            --secondary-color: #004d40; /* Darker Teal */
+            --accent-color: #ff8f00; /* Amber */
+            --background-color: #e0f2f1; /* Light Teal Background */
+            --card-bg: #ffffff;
+            --text-color: #212121;
+            --border-color: #b2dfdb;
+        }
+
+        body {
+            font-family: 'Noto Sans Malayalam', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.4em;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 1.15em;
+            color: white;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            border-left: 6px solid var(--accent-color);
+            padding-left: 12px;
+            margin-top: 35px;
+            font-size: 1.5em;
+            background-color: #f1f8e9;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* ടേബിൾ സ്റ്റൈൽ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 18px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        td p {
+            margin: 0 0 12px 0;
+        }
+
+        td p:last-child {
+            margin: 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block;
+            border-bottom: 2px dashed var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        .box {
+            background: #fff3e0;
+            border-left: 5px solid var(--accent-color);
+            padding: 15px;
+            margin: 15px 0;
+            color: #d84315;
+            font-weight: 600;
+        }
+
+        .citation {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .join-section {
+            margin: 25px 0 35px 0;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: #fdfefe;
+        }
+
+        .join-section h3 { margin-top: 0; }
+
+        .group-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .group-list li { margin: 0; }
+
+        .group-link {
+            display: block;
+            padding: 12px 14px;
+            border: 1px solid #25D366;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #128C7E;
+            background: #f3fff7;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                padding: 12px;
+            }
+            .meta-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .group-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Class 7 - Unit 9 - ഭൂമിയെ അറിയാൻ ഭൂപടങ്ങളും ആധുനികസങ്കേതങ്ങളും(Teaching Manual)</h1>
+        <div class="meta-info">
+            <span><strong>ക്ലാസ്:</strong> 7</span>
+            <span><strong>യൂണിറ്റ്:</strong> 9 - ഭൂമിയെ അറിയാൻ ഭൂപടങ്ങളും ആധുനികസങ്കേതങ്ങളും</span>
+            <span><strong>പിരീഡുകൾ:</strong> 14</span>
+        </div>
+    </div>
+
+    <div class="join-section">
+        <h3>WhatsApp ഗ്രൂപ്പുകളിൽ ചേരുക</h3>
+        <ul class="group-list">
+            <li><a class="group-link" href="https://chat.whatsapp.com/GVNbd9EqvKmBIdS6PE9xZW?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/F9zhb3FemZe8mkm1xxMFPY?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">UP TM AND PEDAGOGY GROUP-3</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/G8NS506eHGQHZu2Zf4WIxT?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-2</a></li>
+            <li><a class="group-link" href="https://chat.whatsapp.com/JXvhTmtJYO7GGqPlNKlxMo?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer">LP TM AND PEDAGOGY GROUP-3</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന ലക്ഷ്യങ്ങൾ (Learning Objectives)</h3>
+        <ul>
+            <li>ഗ്ലോബുകളും ഭൂപടങ്ങളും തമ്മിലുള്ള സവിശേഷതകളും വ്യത്യാസങ്ങളും തിരിച്ചറിയുക <span class="citation"></span>.</li>
+            <li>ഉള്ളടക്കത്തിന്റെ (ധർമ്മം) അടിസ്ഥാനത്തിൽ ഭൂപടങ്ങളെ ഭൗതിക ഭൂപടങ്ങളെന്നും സാംസ്കാരിക ഭൂപടങ്ങളെന്നും തരംതിരിക്കുക <span class="citation"></span>.</li>
+            <li>തോതിന്റെ (Scale) അടിസ്ഥാനത്തിൽ ഭൂപടങ്ങളെ വലിയതോത് ഭൂപടങ്ങൾ, ചെറിയതോത് ഭൂപടങ്ങൾ എന്നിങ്ങനെ വർഗ്ഗീകരിച്ച് അവയുടെ സവിശേഷതകൾ മനസ്സിലാക്കുക <span class="citation"></span>.</li>
+            <li>ഭൂപടവായനയ്ക്ക് ആവശ്യമായ ഘടകങ്ങൾ (തലക്കെട്ട്, തോത്, ദിക്ക്, അക്ഷാംശ-രേഖാംശങ്ങൾ, ചിഹ്നങ്ങൾ, സൂചിക) തിരിച്ചറിയുകയും അവ പ്രായോഗികമായി ഉപയോഗിക്കുകയും ചെയ്യുക <span class="citation"></span>.</li>
+            <li>ഭൂപടത്തിൽ തോത് രേഖപ്പെടുത്തുന്ന മൂന്ന് രീതികൾ (പ്രസ്താവനാരീതി, ഭിന്നകരീതി, രേഖീയ രീതി) വിശകലനം ചെയ്യുക <span class="citation"></span>.</li>
+            <li>വിദൂരസംവേദനം (Remote Sensing), ഭൂവിവര വ്യവസ്ഥ (GIS), ജി.പി.എസ് (GPS) എന്നീ ആധുനിക സങ്കേതങ്ങളെയും അവയുടെ നിത്യജീവിതത്തിലെ പ്രായോഗികതയെയും വിലയിരുത്തുക <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ആശയങ്ങൾ / ധാരണകൾ (Concepts)</h3>
+        <ul>
+            <li><strong>ഭൂപടങ്ങൾ (Maps):</strong> ഭൂമിയെ പൂർണ്ണമായോ ഭാഗികമായോ ഒരു പരന്ന പ്രതലത്തിൽ ചിത്രീകരിച്ചിട്ടുള്ള രൂപം <span class="citation"></span>.</li>
+            <li><strong>ഭൂപടങ്ങളുടെ തരംതിരിവ് (ഉള്ളടക്കം):</strong> ഭൗതിക ഭൂപടങ്ങൾ (പ്രകൃതിദത്ത സവിശേഷതകൾ), സാംസ്കാരിക ഭൂപടങ്ങൾ (മനുഷ്യനിർമ്മിത സവിശേഷതകൾ), വിഷയാധിഷ്ഠിത ഭൂപടങ്ങൾ (Thematic Maps - ഒരു പ്രത്യേക വിഷയം മാത്രം) <span class="citation"></span>.</li>
+            <li><strong>ഭൂപടങ്ങളുടെ തരംതിരിവ് (തോത്):</strong> വലിയതോത് ഭൂപടങ്ങൾ (ചെറിയ പ്രദേശം, കൂടുതൽ വിവരങ്ങൾ - ഉദാ: വില്ലേജ് ഭൂപടം), ചെറിയതോത് ഭൂപടങ്ങൾ (വലിയ പ്രദേശം, കുറഞ്ഞ വിവരങ്ങൾ - ഉദാ: ലോക ഭൂപടം) <span class="citation"></span>.</li>
+            <li><strong>തോത് (Scale):</strong> ഭൂതലത്തിലെ യഥാർഥ അകലവും ഭൂപടത്തിലെ അകലവും തമ്മിലുള്ള അനുപാതം. (പ്രസ്താവനാ രീതി, ഭിന്നക രീതി-RF, രേഖീയ രീതി) <span class="citation"></span>.</li>
+            <li><strong>അംഗീകൃത നിറങ്ങൾ:</strong> പച്ച (സസ്യങ്ങൾ), മഞ്ഞ (കൃഷി), നീല (ജലം), തവിട്ട് (കുന്നുകൾ), ചുവപ്പ് (റോഡ്, പാർപ്പിടം), കറുപ്പ് (റെയിൽവേ) <span class="citation"></span>.</li>
+            <li><strong>വിദൂരസംവേദനം (Remote Sensing):</strong> സ്പർശിക്കാതെ ഉപകരണങ്ങളിലൂടെ (Sensors & Platforms) വിവരങ്ങൾ ശേഖരിക്കുന്ന രീതി (ഭൂതലം, ആകാശീയം, ഉപഗ്രഹം) <span class="citation"></span>.</li>
+            <li><strong>GIS & GPS:</strong> സോഫ്റ്റ്‌വെയർ ഉപയോഗിച്ച് വിവരങ്ങൾ വിശകലനം ചെയ്യുന്നതാണ് GIS. ഒരു വസ്തുവിൻ്റെ അക്ഷാംശ-രേഖാംശ സ്ഥാനവും സമയവും കണ്ടെത്തുന്നതാണ് GPS <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>ശേഷികൾ / നൈപുണികൾ (Skills)</h3>
+        <ul>
+            <li>ഭൂപടവായനയിലൂടെ (Map Reading) ദിശ, ദൂരം, ചിഹ്നങ്ങൾ എന്നിവ അടിസ്ഥാനമാക്കി ഭൂവിവരങ്ങൾ കൃത്യമായി കണ്ടെത്തുന്നതിനുള്ള നൈപുണി <span class="citation"></span>.</li>
+            <li>ചരടും സ്കെയിലും ഉപയോഗിച്ച് ഭൂപടത്തിലെ റോഡുകളുടെയും നദികളുടെയും യഥാർഥ നീളം കണക്കാക്കുന്നതിനുള്ള ഗണിത-ഭൂമിശാസ്ത്ര ശേഷി <span class="citation"></span>.</li>
+            <li>ആധുനിക സങ്കേതങ്ങൾ (GPS, Digital Maps) നിത്യജീവിതത്തിൽ ലക്ഷ്യസ്ഥാനങ്ങൾ കണ്ടെത്തുന്നതിനായി പ്രായോഗികമായി ഉപയോഗിക്കുന്നതിനുള്ള കഴിവ് <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പഠന സാമഗ്രികൾ & ഉല്പന്നങ്ങൾ (Materials & Products)</h3>
+        <ul>
+            <li><strong>സാമഗ്രികൾ:</strong> ഗ്ലോബ്, വ്യത്യസ്ത തരം ഭൂപടങ്ങൾ (രാഷ്ട്രീയ, ഭൂപ്രകൃതി, മണ്ണ്), അറ്റ്ലസ്, കോമ്പസ് (വടക്കുനോക്കിയന്ത്രം), അളക്കുന്നതിനുള്ള ചരട്, സ്മാർട്ട്ഫോൺ (ഡിജിറ്റൽ മാപ്പ്), ഐ.സി.ടി സൗകര്യങ്ങൾ <span class="citation"></span>.</li>
+            <li><strong>ഉല്പന്നങ്ങൾ:</strong> ഭൂപടങ്ങളുടെ വർഗ്ഗീകരണ പട്ടിക, വിദ്യാലയത്തിന്റെ ദിശകൾ രേഖപ്പെടുത്തിയ രൂപരേഖ (Sketch), നിറങ്ങളും ചിഹ്നങ്ങളും ഉൾപ്പെട്ട സൂചിക, വിദൂരസംവേദന രീതികളുടെ ആശയപടം <span class="citation"></span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>പ്രവർത്തന പ്രക്രിയയും വിലയിരുത്തലും (Learning Process & Evaluation)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 55%;">പ്രക്രിയ (Learning Process)</th>
+                    <th style="width: 45%;">വിലയിരുത്തൽ (Evaluation)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="highlight">1. ആമുഖം: ഗ്ലോബും ഭൂപടവും</span>
+                        <p>അച്ഛനും മകളും തമ്മിൽ ഡിജിറ്റൽ ഭൂപടത്തിന്റെ സഹായത്തോടെ നടത്തിയ മീശപ്പുലിമല യാത്രയെക്കുറിച്ചുള്ള സംഭാഷണം വായിച്ചു കേൾപ്പിക്കുന്നു <span class="citation"></span>.</p>
+                        <p>ക്ലാസിൽ ഗ്ലോബും ലോക ഭൂപടവും പ്രദർശിപ്പിച്ച് ഇവ തമ്മിലുള്ള വ്യത്യാസങ്ങൾ കണ്ടെത്താൻ ആവശ്യപ്പെടുന്നു. (ഉദാ: ഗ്ലോബ് ഭൂമിയുടെ യഥാർഥ മാതൃകയാണ്, ഭൂപടം ദ്വിമാനമായ പരന്ന പ്രതലമാണ്) <span class="citation"></span>.</p>
+                        <p>ഭൂപടം എന്താണെന്ന് നിർവചിച്ച് പാഠത്തിലേക്ക് കടക്കുന്നു.</p>
+                    </td>
+                    <td>
+                        <p>ഗ്ലോബും ഭൂപടവും തമ്മിലുള്ള വ്യത്യാസങ്ങൾ വേർതിരിച്ചറിയാനുള്ള കുട്ടികളുടെ നിരീക്ഷണശേഷി വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">2. ഭൂപടങ്ങളുടെ തരംതിരിവ് (ഉള്ളടക്കവും തോതും)</span>
+                        <p>സാമൂഹ്യശാസ്ത്ര ലാബിലെ വിവിധ ഭൂപടങ്ങൾ (കേരള രാഷ്ട്രീയ ഭൂപടം, കാർഷിക ഭൂപടം) കാണിക്കുന്നു.</p>
+                        <p><strong>ഉള്ളടക്കമനുസരിച്ച്:</strong> ഇവയെ ഭൗതിക ഭൂപടങ്ങൾ (മണ്ണ്, നദി), സാംസ്കാരിക ഭൂപടങ്ങൾ (രാഷ്ട്രീയം, റോഡ്) എന്നിങ്ങനെ വർഗ്ഗീകരിക്കുന്ന പട്ടിക പൂർത്തിയാക്കാൻ നൽകുന്നു <span class="citation"></span>.</p>
+                        <p><strong>തോതനുസരിച്ച്:</strong> വലിയതോത് ഭൂപടങ്ങൾ (ഉദാ: വില്ലേജ് ഭൂപടം), ചെറിയതോത് ഭൂപടങ്ങൾ (ഉദാ: ലോക ഭൂപടം) എന്നിവയുടെ സവിശേഷതകളുടെ ആശയപടം വിശദീകരിക്കുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>ഭൂപടങ്ങളെ അവയുടെ ധർമ്മമനുസരിച്ച് വർഗ്ഗീകരിക്കുന്നതിലെ യുക്തിചിന്ത പരിശോധിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">3. ഭൂപടവായനയും ഘടകങ്ങളും (Map Reading)</span>
+                        <p>കേരളത്തിൻ്റെ ഭൂപ്രകൃതി ഭൂപടം പ്രദർശിപ്പിച്ച് ഭൂപടവായനയ്ക്ക് ആവശ്യമായ 7 ഘടകങ്ങൾ (തലക്കെട്ട്, തോത്, ദിക്ക്, അക്ഷാംശ-രേഖാംശങ്ങൾ, ചിഹ്നങ്ങൾ, സൂചിക) പരിചയപ്പെടുത്തുന്നു <span class="citation"></span>.</p>
+                        <p><strong>തോത് (Scale) കണ്ടെത്തൽ:</strong> ഒരു ചരട് ഉപയോഗിച്ച് ഭൂപടത്തിലെ നദിയുടെ വളഞ്ഞ നീളം അളന്നെടുത്ത്, സ്കെയിലിന്റെ സഹായത്തോടെ അത് യഥാർഥത്തിൽ എത്ര കിലോമീറ്ററാണെന്ന് കണ്ടെത്താൻ കുട്ടികളെ പരിശീലിപ്പിക്കുന്നു <span class="citation"></span>.</p>
+                        <div class="box">പ്രസ്താവനാരീതി, ഭിന്നകരീതി (RF 1:100000), രേഖീയ രീതി എന്നിവ ബോർഡിൽ വരച്ച് വിശദീകരിക്കുന്നു <span class="citation"></span>.</div>
+                    </td>
+                    <td>
+                        <p>ചരട് ഉപയോഗിച്ച് കൃത്യമായി അകലം കണ്ടെത്താനും, തോത് ഉപയോഗിച്ച് യഥാർഥ ദൂരം കണക്കാക്കാനുമുള്ള ഗണിതശേഷി വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">4. ദിക്കുകളും ചിഹ്നങ്ങളും ഗെയിമും</span>
+                        <p>ഭൂപടങ്ങളിൽ വടക്ക് ദിശ (N) അടയാളപ്പെടുത്തിയിരിക്കുന്നത് ശ്രദ്ധിക്കാൻ പറയുന്നു. കോമ്പസ് (വടക്കുനോക്കിയന്ത്രം) ഉപയോഗിച്ച് ഭൂപടം ക്രമീകരിക്കാൻ പഠിപ്പിക്കുന്നു <span class="citation"></span>.</p>
+                        <p><strong>ഗെയിം:</strong> സ്കൂൾ മൈതാനത്തിന്റെ രൂപരേഖ നൽകി, ഓരോ കെട്ടിടവും ഏത് ദിക്കിലാണെന്ന് ഗ്രൂപ്പുകൾ തിരിഞ്ഞ് ചോദ്യോത്തരം നടത്തുന്നു <span class="citation"></span>.</p>
+                        <p>ആഗോളതലത്തിൽ അംഗീകരിക്കപ്പെട്ട നിറങ്ങൾ (പച്ച=സസ്യം, മഞ്ഞ=കൃഷി, നീല=ജലം) പട്ടികപ്പെടുത്തി പഠിപ്പിക്കുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>ദിശകൾ തിരിച്ചറിയാനും ചിഹ്നങ്ങളെ വായിച്ചെടുക്കാനുമുള്ള ഭൂപടവായനാ (Map Reading) പാടവം വിലയിരുത്തുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">5. വിദൂരസംവേദനം (Remote Sensing)</span>
+                        <p>സ്പർശിക്കാതെ ക്യാമറകളും സെൻസറുകളും ഉപയോഗിച്ച് വിവരങ്ങൾ ശേഖരിക്കുന്ന രീതിയെ വിദൂരസംവേദനം എന്ന് നിർവചിക്കുന്നു <span class="citation"></span>.</p>
+                        <p>പ്ലാറ്റുഫോമുകളുടെ അടിസ്ഥാനത്തിൽ ഇവയെ മൂന്നായി തിരിക്കുന്നു:</p>
+                        <ol>
+                            <li>ഭൂതല വിദൂരസംവേദനം (Terrestrial - ക്യാമറ) <span class="citation"></span>.</li>
+                            <li>ആകാശീയ വിദൂരസംവേദനം (Aerial - വിമാനം/ബലൂൺ) <span class="citation"></span>.</li>
+                            <li>ഉപഗ്രഹ വിദൂരസംവേദനം (Satellite) <span class="citation"></span>.</li>
+                        </ol>
+                        <p>ഇവ കാലാവസ്ഥാ പഠനത്തിനും ദുരന്തനിവാരണത്തിനും എങ്ങനെ ഉപകരിക്കുന്നു എന്ന് ചർച്ച ചെയ്യുന്നു.</p>
+                    </td>
+                    <td>
+                        <p>വിവിധ വിദൂരസംവേദന രീതികൾ തമ്മിലുള്ള വ്യത്യാസം തിരിച്ചറിയുന്നുണ്ടോ എന്ന് നിരീക്ഷിക്കുന്നു.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="highlight">6. ജി.ഐ.എസ് (GIS) & ജി.പി.എസ് (GPS)</span>
+                        <p>ശേഖരിച്ച ഭൂവിവരങ്ങളെ കമ്പ്യൂട്ടർ സോഫ്റ്റ്‌വെയറിന്റെ സഹായത്തോടെ വിശകലനം ചെയ്ത് ഭൂപടങ്ങളും മാതൃകകളും നിർമ്മിക്കുന്ന സാങ്കേതിക വിദ്യയായ <strong>GIS</strong> (ഭൂവിവര വ്യവസ്ഥ) വിശദീകരിക്കുന്നു <span class="citation"></span>.</p>
+                        <p>യാത്രകളിൽ ദിശയും സ്ഥാനവും സമയവും കണ്ടെത്താൻ കൃത്രിമ ഉപഗ്രഹങ്ങളുടെ സഹായത്തോടെ പ്രവർത്തിക്കുന്ന <strong>GPS</strong> ന്റെ പ്രാധാന്യം ചർച്ച ചെയ്യുന്നു <span class="citation"></span>.</p>
+                        <p><strong>തുടർപ്രവർത്തനം:</strong> ഐ.എസ്.ആർ.ഒ വികസിപ്പിച്ചെടുത്ത ഭൂപട നിർമ്മാണ സംവിധാനമായ 'ഭുവൻ' (Bhuvan) നെക്കുറിച്ച് ഇൻ്റർനെറ്റിൽ വിവരങ്ങൾ അന്വേഷിച്ച് കുറിപ്പ് തയ്യാറാക്കാൻ നൽകുന്നു <span class="citation"></span>.</p>
+                    </td>
+                    <td>
+                        <p>ആധുനിക സാങ്കേതിക വിദ്യകൾ മനുഷ്യജീവിതത്തെ എങ്ങനെ എളുപ്പമാക്കുന്നു എന്ന് സ്വന്തം വാക്കുകളിൽ വിവരിക്കാനുള്ള ശേഷി പരിശോധിക്കുന്നു.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
