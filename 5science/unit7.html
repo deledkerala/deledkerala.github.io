@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ടീച്ചിംഗ് മാനുവൽ - ഇന്ദ്രിയജാലം</title>
+    <style>
+        :root {
+            --primary-color: #8e44ad;
+            --secondary-color: #9b59b6;
+            --accent-color: #f1c40f;
+            --bg-color: #f5eef8;
+            --text-color: #2c3e50;
+            --table-border: #d2b4de;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Manjari', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background-color: #ebdef0;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .meta-item {
+            font-size: 1.1em;
+        }
+
+        .meta-item span {
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ebdef0;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .section-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border: 1px solid #ebdef0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid var(--table-border);
+            padding: 18px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.2em;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fdfbfd;
+        }
+
+        tr:hover {
+            background-color: #f5eef8;
+        }
+
+        .process-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            display: block;
+            font-size: 1.1em;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ebdef0;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>(Teaching Manual)</h1>
+            <div class="subtitle">കേരള സംസ്ഥാന സിലബസ് അടിസ്ഥാനമാക്കി തയ്യാറാക്കിയത്</div>
+        </header>
+
+        <div class="meta-grid">
+            <div class="meta-item"><span>ക്ലാസ്</span> 5</div>
+            <div class="meta-item"><span>വിഷയം</span> അടിസ്ഥാനശാസ്ത്രം (ഭാഗം 2)</div>
+            <div class="meta-item"><span>യൂണിറ്റ് 7</span> ഇന്ദ്രിയജാലം</div>
+            <div class="meta-item"><span>ആകെ പിരീഡുകൾ</span> 12</div>
+        </div>
+
+
+    <div style="margin:25px 0 35px 0; padding:20px; border:1px solid #dcdde1; border-radius:10px; background:#fdfefe;">
+        <h2 style="margin-top:0;">WhatsApp ഗ്രൂപ്പുകളിൽ ചേരുക</h2>
+        <ul style="list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px;">
+            <li><a href="https://chat.whatsapp.com/HqpB7juGhdnA0CHFooDGdB?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">LP TM AND PEDAGOGY GROUP-14</a></li>
+            <li><a href="https://chat.whatsapp.com/JVoO9650BsxGAK4FllcVGT?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">LP TM AND PEDAGOGY GROUP-15</a></li>
+            <li><a href="https://chat.whatsapp.com/BFWDok35BVv2dY2ZY8pAIs?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">UP TM AND PEDAGOGY GROUP-14</a></li>
+            <li><a href="https://chat.whatsapp.com/GDo2hvmcvx2FGvn1J8Y8gK?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">UP TM AND PEDAGOGY GROUP-15</a></li>
+        </ul>
+    </div>
+        <div class="section-box">
+            <h2>പഠന ലക്ഷ്യങ്ങൾ</h2>
+            <ul>
+                <li>ജീവജാലങ്ങൾക്ക് ചുറ്റുപാടുകളെ തിരിച്ചറിയാൻ സഹായിക്കുന്ന അവയവങ്ങളായ ജ്ഞാനേന്ദ്രിയങ്ങളെക്കുറിച്ച് മനസ്സിലാക്കുക.</li>
+                <li>വിവിധ ജീവികളുടെ കണ്ണുകളുടെ സ്ഥാനവും അവ നൽകുന്ന പ്രത്യേക കഴിവുകളും തിരിച്ചറിയുക.</li>
+                <li>ചെങ്കണ്ണ് ഉൾപ്പെടെയുള്ള നേത്രരോഗങ്ങളെയും കണ്ണിന്റെ ആരോഗ്യസംരക്ഷണത്തിനുള്ള മാർഗ്ഗങ്ങളെയും കുറിച്ച് ബോധവാന്മാരാകുക.</li>
+                <li>കാഴ്ചയ്ക്ക് വെല്ലുവിളി നേരിടുന്നവർ ചുറ്റുപാടുകളെ മനസ്സിലാക്കാൻ ഉപയോഗിക്കുന്ന മാർഗ്ഗങ്ങളും (ബ്രെയിലി, സ്മാർട്ട് കെയിൻ) അവരോടുള്ള മനോഭാവവും രൂപപ്പെടുത്തുക.</li>
+                <li>കേൾവി, സ്പർശം, രുചി, ഗന്ധം എന്നീ ഇന്ദ്രിയങ്ങളുടെ പ്രാധാന്യവും അവയുടെ സംരക്ഷണവും ദൈനംദിന ജീവിതത്തിൽ പകർത്തുക.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h2>ആശയങ്ങൾ / ധാരണകൾ</h2>
+            <ul>
+                <li>കണ്ണ്, ചെവി, മൂക്ക്, നാക്ക്, ത്വക്ക് എന്നിവയാണ് മനുഷ്യരുടെ ജ്ഞാനേന്ദ്രിയങ്ങൾ.</li>
+                <li>തലയുടെ മുൻവശത്ത് കണ്ണുകളുള്ള കടുവ പോലുള്ള ജീവികൾക്ക് ഇരയുടെ സ്ഥാനവും അകലവും കൃത്യമായി അറിയാൻ കഴിയും. വശങ്ങളിൽ കണ്ണുകളുള്ളവയ്ക്ക് ശത്രുക്കളിൽ നിന്ന് രക്ഷനേടാൻ സാധിക്കും.</li>
+                <li>രാത്രിഞ്ചരരായ ജീവികളുടെ കണ്ണുകൾക്ക് മങ്ങിയ വെളിച്ചത്തിൽ കാണാൻ സഹായിക്കുന്ന പ്രത്യേകതകളുണ്ട്.</li>
+                <li>കാഴ്ചയ്ക്ക് വെല്ലുവിളി നേരിടുന്നവർ സ്പർശനത്തിലൂടെയും കേൾവിയിലൂടെയുമാണ് വിവരങ്ങൾ ഗ്രഹിക്കുന്നത്. ഇതിനായി ബ്രെയിലി ലിപി, സ്മാർട്ട് കെയിൻ എന്നിവ ഉപയോഗിക്കുന്നു.</li>
+                <li>സ്വയം ചികിത്സ ചെവിക്ക് അപകടകരമാണ്. കേൾവിക്കുറവ് പരിഹരിക്കാൻ ശ്രവണസഹായികളും കോക്ലിയർ ഇംപ്ലാന്റ് ശസ്ത്രക്രിയയും ലഭ്യമാണ്.</li>
+                <li>ഭക്ഷണപദാർഥങ്ങൾ ഉമിനീരിലലിഞ്ഞ് നാക്കിലെ സ്വാദുമുകുളങ്ങളെ ഉത്തേജിപ്പിക്കുമ്പോഴാണ് രുചി അറിയുന്നത്.</li>
+                <li>ശരീരത്തിലെ ഏറ്റവും വലിയ അവയവമായ ത്വക്ക് സ്പർശനത്തിനും ശരീരതാപനില നിയന്ത്രിക്കുന്നതിനും സഹായിക്കുന്നു.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h2>പഠന സാമഗ്രികൾ (TLM)</h2>
+            <ul>
+                <li>വിവിധ മൃഗങ്ങളുടെ (പരുന്ത്, പൂമ്പാറ്റ, മുതല, നായ) ചിത്രങ്ങൾ.</li>
+                <li>സ്നെല്ലൻ ചാർട്ടിൻ്റെ മാതൃക.</li>
+                <li>പൂട്ട്, താക്കോലുകൾ, കണ്ണ് കെട്ടാനുള്ള തുണി.</li>
+                <li>വിവിധ കറൻസി നോട്ടുകൾ, ബ്രെയിലി ലിപിയുടെ മാതൃക, സ്മാർട്ട് കെയിൻ്റെ ചിത്രം.</li>
+                <li>നാരങ്ങ അച്ചാർ, മാമ്പഴം, പാവയ്ക്ക (രുചി പരീക്ഷണത്തിന്).</li>
+                <li>പല ആകൃതിയുള്ള മുത്തുകൾ, തണുത്ത വെള്ളം, മിനുസമുള്ള കല്ല്, പരുപരുത്ത കല്ല്.</li>
+            </ul>
+        </div>
+
+        <h2>പഠന പ്രവർത്തനങ്ങൾ (പ്രക്രിയയും നിരന്തര വിലയിരുത്തലും)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 60%;">പ്രക്രിയ (Teacher & Student Activities)</th>
+                    <th style="width: 40%;">വിലയിരുത്തൽ സൂചകങ്ങൾ (Assessment)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="process-title">1. തുടക്കപ്രവർത്തനം: ഇന്ദ്രിയങ്ങളുടെ ലോകം</span>
+                        കുട്ടികൾക്ക് പരുന്ത്, കരടി, നായ, പൂമ്പാറ്റ എന്നീ ജീവികളുടെ ചിത്രങ്ങൾ നൽകുകയും അവയ്ക്ക് ചുറ്റുപാടുകളെ തിരിച്ചറിയാനുള്ള പ്രത്യേക കഴിവുകളെക്കുറിച്ച് ചോദിക്കുകയും ചെയ്യുന്നു. ജീവികൾക്കും മനുഷ്യർക്കും ചുറ്റുപാടുകളെ മനസ്സിലാക്കാൻ സഹായിക്കുന്ന ജ്ഞാനേന്ദ്രിയങ്ങളെക്കുറിച്ചുള്ള ചർച്ചയിലേക്ക് നയിക്കുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>മുന്നറിവ് പ്രകടിപ്പിക്കുന്നുണ്ടോ?</li>
+                            <li>വിവിധ ജീവികളുടെ പ്രത്യേകതകൾ തിരിച്ചറിയുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">2. കാഴ്‌ചയും ജീവികളും (കളിയിലൂടെ പഠനം)</span>
+                        <strong>ആരാണ് വിജയി? കളി:</strong> കണ്ണ് കെട്ടിക്കൊണ്ട് മേശപ്പുറത്തിരിക്കുന്ന പൂട്ടും താക്കോലുകളും എടുത്ത് പൂട്ട് തുറക്കാൻ ആവശ്യപ്പെടുന്നു. കണ്ണിന്റെ പ്രാധാന്യം ഇതിലൂടെ ബോധ്യപ്പെടുത്തുന്നു.<br><br>
+                        കടുവ, മാൻ, മൂങ്ങ എന്നിവയുടെ കണ്ണുകളുടെ സ്ഥാനം നിരീക്ഷിക്കാൻ ചിത്രങ്ങൾ നൽകുന്നു. തലയുടെ മുൻവശത്ത് കണ്ണുകളുള്ളവ (ഇരപിടിക്കാൻ) എന്നും വശങ്ങളിൽ കണ്ണുകളുള്ളവ (രക്ഷപെടാൻ) എന്നും വേർതിരിക്കുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>കാഴ്ചയുടെ പ്രാധാന്യം അനുഭവത്തിലൂടെ മനസ്സിലാക്കിയോ?</li>
+                            <li>ജീവികളെ അവയുടെ കണ്ണുകളുടെ സ്ഥാനത്തിന്റെ അടിസ്ഥാനത്തിൽ ശരിയായി വർഗ്ഗീകരിക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">3. നേത്ര സംരക്ഷണവും കാഴ്ചപരിശോധനയും</span>
+                        ചെങ്കണ്ണിൻ്റെ ലക്ഷണങ്ങളും പകരുന്ന രീതികളും ചർച്ച ചെയ്യുന്നു. സ്നെല്ലൻ ചാർട്ട് കാണിച്ച് അതിന്റെ ഉപയോഗം (കാഴ്ചപരിശോധന) വിശദീകരിക്കുന്നു. കണ്ണിൻ്റെ ആരോഗ്യത്തിനായി പാലിക്കേണ്ട ശീലങ്ങൾ (മങ്ങിയ വെളിച്ചത്തിൽ വായിക്കാതിരിക്കുക, ഇലക്കറികൾ കഴിക്കുക) പട്ടികപ്പെടുത്താൻ ആവശ്യപ്പെടുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>നേത്രരോഗങ്ങളെയും സംരക്ഷണ മാർഗ്ഗങ്ങളെയും കുറിച്ച് ബോധവാന്മാരാണോ?</li>
+                            <li>ആരോഗ്യശീലങ്ങൾ ദൈനംദിന ജീവിതവുമായി ബന്ധിപ്പിക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">4. കാഴ്ചയ്ക്ക് വെല്ലുവിളി നേരിടുന്നവരും സാങ്കേതികവിദ്യയും</span>
+                        കാഴ്ചയില്ലാത്തവർ ഉപയോഗിക്കുന്ന ബ്രെയിലി ലിപി, കറൻസി നോട്ടുകളിലെ പ്രത്യേകതകൾ എന്നിവ പരിചയപ്പെടുത്തുന്നു. അവർക്ക് വഴികണ്ടെത്താൻ സഹായിക്കുന്ന സ്മാർട്ട് കെയിനിൻ്റെ (Smart Cane) സവിശേഷതകൾ ചർച്ച ചെയ്യുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>കാഴ്ചയില്ലാത്തവരോട് അനുഭാവപൂർണ്ണമായ സമീപനം പ്രകടിപ്പിക്കുന്നുണ്ടോ?</li>
+                            <li>സാങ്കേതികവിദ്യയുടെ സഹായം എങ്ങനെയെന്ന് വിശദീകരിക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">5. കേൾവി, ഗന്ധം എന്നിവയുടെ പ്രാധാന്യം</span>
+                        <strong>ചെവിയുടെ സംരക്ഷണം:</strong> ചെവിവേദന വന്നാൽ സ്വയം ചികിത്സ പാടില്ലെന്നും ഡോക്ടറെ കാണണമെന്നും വ്യക്തമാക്കുന്നു. കേൾവിക്കുറവ് പരിഹരിക്കാനുള്ള ശ്രവണസഹായികൾ പരിചയപ്പെടുത്തുന്നു.<br><br>
+                        <strong>ഗന്ധം:</strong> ജലദോഷം വരുമ്പോൾ മണം അറിയാത്തത് എന്തുകൊണ്ടെന്ന് ശാസ്ത്രീയമായി വിശദീകരിക്കുന്നു (സ്രവം മൂലം ഗന്ധകണികകൾ കോശങ്ങളിൽ എത്താതിരിക്കുന്നത്).
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ചെവിയുടെ സംരക്ഷണത്തിന് ആവശ്യമായ ശാസ്ത്രീയ മാർഗ്ഗങ്ങൾ അറിയാമോ?</li>
+                            <li>ജലദോഷം വരുമ്പോൾ മണം അറിയാത്തതിന്റെ കാരണം വ്യക്തമാക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">6. രുചിയും സ്പർശനവും (പരീക്ഷണം)</span>
+                        <strong>രുചി:</strong> ഭക്ഷണപദാർഥങ്ങൾ ഉമിനീരുമായി ചേരുമ്പോഴാണ് രുചി അറിയുന്നതെന്ന് വ്യക്തമാക്കുന്നു. നാരങ്ങ അച്ചാർ, മാമ്പഴം തുടങ്ങിയവ നൽകി രുചി പട്ടികപ്പെടുത്തുന്നു.<br><br>
+                        <strong>തൊട്ടറിഞ്ഞ് കളി:</strong> കണ്ണുകെട്ടി വിവിധ വസ്തുക്കൾ (തണുത്ത വെള്ളം, മിനുസമുള്ള കല്ല്) തൊട്ട് തിരിച്ചറിയാൻ പറയുന്നു. ശരീരത്തിലെ ഏറ്റവും വലിയ അവയവമായ ത്വക്കിന്റെ ഉപയോഗങ്ങളും സംരക്ഷണവും ചർച്ച ചെയ്യുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>പരീക്ഷണത്തിൽ സജീവമായി പങ്കെടുക്കുകയും വസ്തുക്കളെ സ്പർശനത്തിലൂടെ തിരിച്ചറിയുകയും ചെയ്യുന്നുണ്ടോ?</li>
+                            <li>ത്വക്കിന്റെ ധർമ്മങ്ങൾ കൃത്യമായി പട്ടികപ്പെടുത്തുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-box" style="background-color: #fcf3cf; border-left: 5px solid var(--accent-color);">
+            <h2 style="margin-top: 0;">തുടർപ്രവർത്തനങ്ങൾ (Follow-up Activities)</h2>
+            <ol>
+                <li>ജ്ഞാനേന്ദ്രിയങ്ങളുടെ പ്രവർത്തനങ്ങളെയും സംരക്ഷണത്തെയും കുറിച്ച് അറിയാൻ ആരോഗ്യപ്രവർത്തകനുമായി നടത്തേണ്ട അഭിമുഖത്തിനായി ഒരു ചോദ്യാവലി തയ്യാറാക്കുക.</li>
+                <li>അഞ്ച് ഇന്ദ്രിയങ്ങളുടെയും സംരക്ഷണത്തിന് ശ്രദ്ധിക്കേണ്ട കാര്യങ്ങൾ ചാർട്ടിൽ എഴുതി ക്ലാസ്സിൽ പ്രദർശിപ്പിക്കുക.</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>&copy; തയ്യാറാക്കിയത്: വിദ്യാഭ്യാസ ആവശ്യങ്ങൾക്കായി (SCERT കേരള പാഠ്യപദ്ധതി പ്രകാരം അടിസ്ഥാനശാസ്ത്രം അഞ്ചാം ക്ലാസ് ഭാഗം 2 അടിസ്ഥാനമാക്കി)</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ടീച്ചിംഗ് മാനുവൽ - ജന്തുജാലങ്ങൾ</title>
+    <style>
+        :root {
+            --primary-color: #c0392b;
+            --secondary-color: #e74c3c;
+            --accent-color: #f39c12;
+            --bg-color: #fdf2e9;
+            --text-color: #2c3e50;
+            --table-border: #f5b7b1;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Manjari', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background-color: #fadbd8;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .meta-item {
+            font-size: 1.1em;
+        }
+
+        .meta-item span {
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #fadbd8;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .section-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border: 1px solid #fadbd8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid var(--table-border);
+            padding: 18px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.2em;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fdfefe;
+        }
+
+        tr:hover {
+            background-color: #fdedec;
+        }
+
+        .process-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            display: block;
+            font-size: 1.1em;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #fadbd8;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>(Teaching Manual)</h1>
+            <div class="subtitle">കേരള സംസ്ഥാന സിലബസ് അടിസ്ഥാനമാക്കി തയ്യാറാക്കിയത്</div>
+        </header>
+
+        <div class="meta-grid">
+            <div class="meta-item"><span>ക്ലാസ്</span> 5</div>
+            <div class="meta-item"><span>വിഷയം</span> അടിസ്ഥാനശാസ്ത്രം (ഭാഗം 2)</div>
+            <div class="meta-item"><span>യൂണിറ്റ് 8</span> ജന്തുജാലങ്ങൾ</div>
+            <div class="meta-item"><span>ആകെ പിരീഡുകൾ</span> 12</div>
+        </div>
+
+        <div style="margin:25px 0 35px 0; padding:20px; border:1px solid #dcdde1; border-radius:10px; background:#fdfefe;">
+            <h2 style="margin-top:0;">WhatsApp ഗ്രൂപ്പുകളിൽ ചേരുക</h2>
+            <ul style="list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px;">
+                <li><a href="https://chat.whatsapp.com/HqpB7juGhdnA0CHFooDGdB?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">LP TM AND PEDAGOGY GROUP-14</a></li>
+                <li><a href="https://chat.whatsapp.com/JVoO9650BsxGAK4FllcVGT?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">LP TM AND PEDAGOGY GROUP-15</a></li>
+                <li><a href="https://chat.whatsapp.com/BFWDok35BVv2dY2ZY8pAIs?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">UP TM AND PEDAGOGY GROUP-14</a></li>
+                <li><a href="https://chat.whatsapp.com/GDo2hvmcvx2FGvn1J8Y8gK?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">UP TM AND PEDAGOGY GROUP-15</a></li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h2>പഠന ലക്ഷ്യങ്ങൾ</h2>
+            <ul>
+                <li>ജീവജാലങ്ങളിൽ നടക്കുന്ന രൂപാന്തരണം (Metamorphosis) എന്താണെന്ന് ഉദാഹരണസഹിതം മനസ്സിലാക്കുക.</li>
+                <li>പ്രകൃതിയിൽ പ്രാണികളുടെയും ശലഭങ്ങളുടെയും (ചിത്രശലഭങ്ങൾ, നിശാശലഭങ്ങൾ) പ്രാധാന്യം തിരിച്ചറിയുക.</li>
+                <li>മത്സ്യങ്ങൾ, ഉഭയജീവികൾ, ഉരഗങ്ങൾ, പക്ഷികൾ, സസ്തനികൾ എന്നിവയുടെ അടിസ്ഥാന സവിശേഷതകൾ പട്ടികപ്പെടുത്തുക.</li>
+                <li>വിഷമുള്ളതും വിഷമില്ലാത്തതുമായ പാമ്പുകളെ തിരിച്ചറിയുകയും പാമ്പുകടിയേറ്റാലുള്ള പ്രഥമശുശ്രൂഷയെക്കുറിച്ച് ബോധവാന്മാരാകുകയും ചെയ്യുക.</li>
+                <li>ജീവികൾക്ക് നേരിടുന്ന വംശനാശഭീഷണി, ജീവികളോടുള്ള ക്രൂരത, ജീവികളുമായി ബന്ധപ്പെട്ട അന്ധവിശ്വാസങ്ങൾ എന്നിവയെക്കുറിച്ച് ശാസ്ത്രീയ കാഴ്‌ചപ്പാട് രൂപീകരിക്കുക.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h2>ആശയങ്ങൾ / ധാരണകൾ</h2>
+            <ul>
+                <li><strong>രൂപാന്തരണം:</strong> മുട്ടവിരിഞ്ഞുണ്ടാകുന്ന ലാർവ വിവിധ വളർച്ചാഘട്ടങ്ങളിലൂടെ കടന്ന് മാതൃജീവിയോട് സാദൃശ്യമുള്ളതായി മാറുന്ന പ്രക്രിയ (ഉദാ: കുഴിയാന, പാറ്റ).</li>
+                <li><strong>ശലഭങ്ങൾ:</strong> ചിത്രശലഭങ്ങളും നിശാശലഭങ്ങളും തമ്മിലുള്ള വ്യത്യാസം. ശലഭോദ്യാനത്തിന്റെ (Butterfly garden) പ്രത്യേകതകൾ.</li>
+                <li><strong>സമൂഹജീവികൾ:</strong> ഉറുമ്പുകൾ, ചിതലുകൾ എന്നിവ സമൂഹമായി ജീവിക്കുന്നു, അവയ്ക്കിടയിൽ തൊഴിൽ വിഭജനം ഉണ്ട്.</li>
+                <li><strong>ജന്തു വർഗ്ഗീകരണം:</strong> നട്ടെല്ലുള്ള ജീവികളെ സവിശേഷതകൾക്കനുസരിച്ച് മത്സ്യങ്ങൾ, ഉഭയജീവികൾ, ഉരഗങ്ങൾ, പക്ഷികൾ, സസ്തനികൾ എന്നിങ്ങനെ തിരിക്കാം.</li>
+                <li><strong>ഉരഗങ്ങൾ:</strong> പാമ്പുകൾ ഉരഗങ്ങളാണ്. കേരളത്തിൽ കാണുന്ന വിഷപ്പാമ്പുകൾ (മൂർഖൻ, രാജവെമ്പാല, ശംഖുവരയൻ, അണലി, കടൽപ്പാമ്പ്) വളരെ കുറവാണ്.</li>
+                <li><strong>ആവാസവ്യവസ്ഥയുടെ സംരക്ഷണം:</strong> ജീവികളുടെ നിലനിൽപ്പിന് മനുഷ്യന്റെ ചൂഷണം തടയുകയും അന്ധവിശ്വാസങ്ങൾ ഒഴിവാക്കുകയും ചെയ്യേണ്ടത് അത്യാവശ്യമാണ്.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h2>പഠന സാമഗ്രികൾ (TLM)</h2>
+            <ul>
+                <li>രൂപാന്തരണം വ്യക്തമാക്കുന്ന ഐ.സി.ടി വീഡിയോകൾ (ചിത്രശലഭം, കുഴിയാന, പാറ്റ).</li>
+                <li>ചിത്രശലഭങ്ങളുടെയും നിശാശലഭങ്ങളുടെയും ചിത്രങ്ങൾ.</li>
+                <li>വിഷപ്പാമ്പുകളെ തിരിച്ചറിയാനുള്ള ചിത്രങ്ങൾ അടങ്ങിയ ചാർട്ട്.</li>
+                <li>വിവിധയിനം ഉറുമ്പുകളുടെ ചിത്രങ്ങൾ.</li>
+                <li>വംശനാശഭീഷണി നേരിടുന്ന ജീവികളുടെയും അന്ധവിശ്വാസങ്ങളുമായി ബന്ധപ്പെട്ട ജീവികളുടെയും (വെള്ളിമൂങ്ങ, ഇരുതലമൂരി) ചിത്രങ്ങൾ.</li>
+            </ul>
+        </div>
+
+        <h2>പഠന പ്രവർത്തനങ്ങൾ (പ്രക്രിയയും നിരന്തര വിലയിരുത്തലും)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 60%;">പ്രക്രിയ (Teacher & Student Activities)</th>
+                    <th style="width: 40%;">വിലയിരുത്തൽ സൂചകങ്ങൾ (Assessment)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="process-title">1. തുടക്കപ്രവർത്തനം: മാമ്പഴത്തിലെ പുഴു</span>
+                        മാമ്പഴത്തിനുള്ളിൽ പുഴു എങ്ങനെയാണ് വന്നത് എന്ന ചോദ്യത്തോടെ ക്ലാസ്സ് ആരംഭിക്കുന്നു. പഴങ്ങളിൽ മാത്രമല്ല, നമ്മുടെ പരിസരത്തും വിവിധതരം പുഴുക്കളെ കാണാമല്ലോ എന്ന് ചർച്ചചെയ്യുന്നു.<br><br>
+                        കുഴിയാനയുടെയും പാറ്റയുടെയും ജീവിതചക്രം (രൂപാന്തരണം) വീഡിയോ / ചിത്രങ്ങളിലൂടെ പ്രദർശിപ്പിക്കുന്നു. മുട്ടവിരിഞ്ഞുണ്ടാകുന്ന ലാർവ മാതൃജീവിയോട് സാദൃശ്യമില്ലാത്തതാണെന്നും അത് വളർന്ന് രൂപാന്തരണം പ്രാപിക്കുന്നുവെന്നും വിശദീകരിക്കുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>രൂപാന്തരണം (Metamorphosis) എന്ന ആശയം സ്വന്തം വാക്കുകളിൽ വിശദീകരിക്കാൻ സാധിക്കുന്നുണ്ടോ?</li>
+                            <li>മുന്നറിവ് പ്രകടിപ്പിക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">2. പ്രാണികളുടെ ലോകം</span>
+                        പുഴുക്കൾ ഉപദ്രവകാരികൾ മാത്രമാണോ എന്ന ചോദ്യം ഉന്നയിക്കുന്നു. പൂക്കളിൽ പരാഗണം നടത്തുന്നതും പരിസരം വൃത്തിയാക്കുന്നതുമായ കാര്യങ്ങൾ ചർച്ച ചെയ്യുന്നു.<br><br>
+                        <strong>ശലഭങ്ങൾ:</strong> ചിത്രശലഭങ്ങളുടെയും നിശാശലഭങ്ങളുടെയും ചിത്രങ്ങൾ നൽകി അവ തമ്മിലുള്ള വ്യത്യാസം (നിറം, സ്പർശിനികൾ, കാണപ്പെടുന്ന സമയം) കണ്ടെത്താൻ കുട്ടികളോട് ആവശ്യപ്പെടുന്നു. വെങ്കണനീലി (Blue tiger moth) എന്ന ശലഭത്തെ പരിചയപ്പെടുത്തുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ആവാസവ്യവസ്ഥയിൽ പ്രാണികളുടെ പങ്ക് തിരിച്ചറിയുന്നുണ്ടോ?</li>
+                            <li>ചിത്രശലഭങ്ങളും നിശാശലഭങ്ങളും തമ്മിലുള്ള വ്യത്യാസം പട്ടികപ്പെടുത്തുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">3. സമൂഹജീവികൾ</span>
+                        ഉറുമ്പുകൾ, ചിതലുകൾ എന്നിവയുടെ കൂട്ടമായി ജീവിക്കുന്ന രീതിയെക്കുറിച്ച് സംസാരിക്കുന്നു. മുട്ടയിടുക, ഭക്ഷണം ശേഖരിക്കുക, സംരക്ഷിക്കുക എന്നിങ്ങനെയുള്ള ജോലി വിഭജനം ഉറുമ്പുകൾക്കിടയിൽ ഉണ്ടെന്ന് വ്യക്തമാക്കുന്നു.<br><br>
+                        <strong>അസൈൻമെന്റ്:</strong> ചുറ്റുപാടുമുള്ള ഉറുമ്പുകളെ നിരീക്ഷിച്ച് അവയുടെ നിറം, വലുപ്പം, വാസസ്ഥലം, ആഹാരം എന്നിവ ഉൾപ്പെടുത്തി ഒരു ചെറുപതിപ്പ് തയ്യാറാക്കാൻ നിർദ്ദേശിക്കുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>സമൂഹമായി ജീവിക്കുന്ന ജീവികളിലെ തൊഴിൽ വിഭജനം മനസ്സിലാക്കിയോ?</li>
+                            <li>നിരീക്ഷണ പ്രവർത്തനങ്ങളിൽ സജീവമാണോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">4. നട്ടെല്ലുള്ള ജീവികൾ (മത്സ്യം മുതൽ സസ്തനികൾ വരെ)</span>
+                        മത്സ്യങ്ങൾ (ഊത്തകയറ്റം എന്ന പ്രതിഭാസം), ഉഭയജീവികൾ (തവള, സിസിലിയനുകൾ), ഉരഗങ്ങൾ (പാമ്പുകൾ) എന്നിവയെ പരിചയപ്പെടുത്തുന്നു.<br><br>
+                        തുടർന്ന് പക്ഷികളെയും കുഞ്ഞുങ്ങളെ പ്രസവിച്ച് പാലൂട്ടി വളർത്തുന്ന സസ്തനികളെയും (തിമിംഗലം, ഡോൾഫിൻ, വവ്വാൽ ഉൾപ്പെടെ) പരിചയപ്പെടുത്തുന്നു. ഇവയെല്ലാം നട്ടെല്ലുള്ള ജീവികളാണെന്ന് ക്രോഡീകരിക്കുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>വിവിധയിനം ജീവിവർഗ്ഗങ്ങളുടെ സവിശേഷതകൾ താരതമ്യം ചെയ്യാൻ സാധിക്കുന്നുണ്ടോ?</li>
+                            <li>സസ്തനികളെ മറ്റ് വിഭാഗങ്ങളിൽ നിന്ന് തിരിച്ചറിയുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">5. ഉരഗങ്ങൾ: പാമ്പുകളും പ്രഥമശുശ്രൂഷയും</span>
+                        കേരളത്തിൽ കാണപ്പെടുന്ന 5 തരം വിഷപ്പാമ്പുകളെ (മൂർഖൻ, രാജവെമ്പാല, ശംഖുവരയൻ, അണലി, കടൽപ്പാമ്പ്) സവിശേഷതകൾക്കൊപ്പം ചാർട്ട് മുഖേന പരിചയപ്പെടുത്തുന്നു.<br><br>
+                        പാമ്പുകടിയേറ്റാലുള്ള പ്രഥമശുശ്രൂഷയെക്കുറിച്ചും (പരിഭ്രമിപ്പിക്കാതിരിക്കുക, മുറിവുണ്ടാക്കാതിരിക്കുക, ഉടനെ ആശുപത്രിയിൽ എത്തിക്കുക) പാമ്പുകളുടെ പാരിസ്ഥിതിക പ്രാധാന്യത്തെക്കുറിച്ചും ചർച്ച ചെയ്യുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>വിഷപ്പാമ്പുകളെയും അല്ലാത്തവയെയും ശാസ്ത്രീയമായി തിരിച്ചറിയാനുള്ള അറിവ് നേടിയോ?</li>
+                            <li>പാമ്പുകടിയേറ്റാലുള്ള പ്രഥമശുശ്രൂഷാ രീതികൾ വ്യക്തമാക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">6. വംശനാശവും അന്ധവിശ്വാസങ്ങളും</span>
+                        മനുഷ്യന്റെ ഇടപെടൽ മൂലം വംശനാശഭീഷണി നേരിടുന്ന ജീവികളെക്കുറിച്ച് (കടുവാച്ചിലന്തി, ഈനാമ്പേച്ചി) ചർച്ച ചെയ്യുന്നു.<br><br>
+                        വെള്ളിമൂങ്ങ, ഇരുതലമൂരി, നക്ഷത്രയാമ തുടങ്ങിയ ജീവികളുമായി ബന്ധപ്പെട്ട അന്ധവിശ്വാസങ്ങൾ എങ്ങനെ സാമ്പത്തിക ചൂഷണത്തിനും ജീവികളുടെ നാശത്തിനും കാരണമാകുന്നു എന്നതിനെക്കുറിച്ച് ക്ലാസ്സിൽ ഒരു ലഘു സെമിനാർ നടത്തുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ജീവികളുമായി ബന്ധപ്പെട്ട അന്ധവിശ്വാസങ്ങളെ ശാസ്ത്രീയമായി ഖണ്ഡിക്കാൻ കഴിയുന്നുണ്ടോ?</li>
+                            <li>ആവാസവ്യവസ്ഥ സംരക്ഷിക്കേണ്ടതിന്റെ ഉത്തരവാദിത്തം ബോധ്യപ്പെട്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-box" style="background-color: #fef9e7; border-left: 5px solid var(--accent-color);">
+            <h2 style="margin-top: 0;">തുടർപ്രവർത്തനങ്ങൾ (Follow-up Activities)</h2>
+            <ol>
+                <li>വിവിധ ജീവികളുടെ ജ്ഞാനേന്ദ്രിയങ്ങൾ, രൂപം എന്നിവയുടെ വൈവിധ്യം വ്യക്തമാക്കുന്ന ഒരു ചിത്ര ആൽബം തയ്യാറാക്കുക.</li>
+                <li>വിദ്യാലയത്തിൽ തേൻ കുടിക്കാനുള്ള സസ്യങ്ങളും (nectar plants) ലാർവയ്ക്ക് ഭക്ഷണത്തിനുള്ള സസ്യങ്ങളും (host plants) ഉൾപ്പെടുത്തി ഒരു ശലഭോദ്യാനം (Butterfly garden) നിർമ്മിക്കാൻ പദ്ധതി തയ്യാറാക്കുക.</li>
+                <li>ദേശാടനപ്പക്ഷികളെക്കുറിച്ച് കൂടുതൽ വിവരങ്ങൾ ശേഖരിച്ച് ശാസ്ത്രപുസ്തകത്തിൽ രേഖപ്പെടുത്തുക.</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>&copy; തയ്യാറാക്കിയത്: വിദ്യാഭ്യാസ ആവശ്യങ്ങൾക്കായി (SCERT കേരള പാഠ്യപദ്ധതി പ്രകാരം അടിസ്ഥാനശാസ്ത്രം അഞ്ചാം ക്ലാസ് ഭാഗം 2 അടിസ്ഥാനമാക്കി)</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

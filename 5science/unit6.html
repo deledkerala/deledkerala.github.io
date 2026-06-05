@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ടീച്ചിംഗ് മാനുവൽ - ഊർജസ്രോതസ്സുകൾ</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #388e3c;
+            --accent-color: #ff8f00;
+            --bg-color: #f1f8e9;
+            --text-color: #333;
+            --table-border: #c8e6c9;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Manjari', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background-color: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .meta-item {
+            font-size: 1.1em;
+        }
+
+        .meta-item span {
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f1f8e9;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .section-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border: 1px solid #e8f5e9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid var(--table-border);
+            padding: 18px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.2em;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fbfdfa;
+        }
+
+        tr:hover {
+            background-color: #f1f8e9;
+        }
+
+        .process-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            display: block;
+            font-size: 1.1em;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e8f5e9;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        .cite {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            vertical-align: super;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>(Teaching Manual)</h1>
+            <div class="subtitle">കേരള സംസ്ഥാന സിലബസ് അടിസ്ഥാനമാക്കി തയ്യാറാക്കിയത്</div>
+        </header>
+
+        <div class="meta-grid">
+            <div class="meta-item"><span>ക്ലാസ്</span> 5</div>
+            <div class="meta-item"><span>വിഷയം</span> അടിസ്ഥാനശാസ്ത്രം (ഭാഗം 2)</div>
+            <div class="meta-item"><span>യൂണിറ്റ് 6</span> ഊർജസ്രോതസ്സുകൾ</div>
+            <div class="meta-item"><span>ആകെ പിരീഡുകൾ</span> 12</div>
+        </div>
+
+        <div style="margin:25px 0 35px 0; padding:20px; border:1px solid #dcdde1; border-radius:10px; background:#fdfefe;">
+            <h2 style="margin-top:0;">WhatsApp ഗ്രൂപ്പുകളിൽ ചേരുക</h2>
+            <ul style="list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px;">
+                <li><a href="https://chat.whatsapp.com/HqpB7juGhdnA0CHFooDGdB?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">LP TM AND PEDAGOGY GROUP-14</a></li>
+                <li><a href="https://chat.whatsapp.com/JVoO9650BsxGAK4FllcVGT?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">LP TM AND PEDAGOGY GROUP-15</a></li>
+                <li><a href="https://chat.whatsapp.com/BFWDok35BVv2dY2ZY8pAIs?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">UP TM AND PEDAGOGY GROUP-14</a></li>
+                <li><a href="https://chat.whatsapp.com/GDo2hvmcvx2FGvn1J8Y8gK?s=cl&p=i&mlu=2" target="_blank" rel="noopener noreferrer" style="display:block; padding:12px 14px; border:1px solid #25D366; border-radius:8px; text-decoration:none; color:#128C7E; background:#f3fff7; font-weight:600;">UP TM AND PEDAGOGY GROUP-15</a></li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h2>പഠന ലക്ഷ്യങ്ങൾ</h2>
+            <ul>
+                <li>പ്രവൃത്തി ചെയ്യാനുള്ള കഴിവിനെയാണ് ഊർജം എന്ന് പറയുന്നത് എന്ന് മനസ്സിലാക്കുക.</li>
+                <li>വിവിധതരം ഇന്ധനങ്ങളെ തിരിച്ചറിയാനും അവയെ ഖരം, ദ്രാവകം, വാതകം എന്നിങ്ങനെ തരംതിരിക്കാനുമുള്ള ശേഷി നേടുക.</li>
+                <li>കത്താൻ വായു ആവശ്യമാണെന്ന് പരീക്ഷണത്തിലൂടെ തെളിയിക്കാൻ സാധിക്കുക.</li>
+                <li>പുതുക്കാൻ കഴിയുന്നതും (Renewable) പുതുക്കാൻ കഴിയാത്തതുമായ (Non-renewable) ഊർജസ്രോതസ്സുകളെ തിരിച്ചറിയുകയും അവയുടെ സവിശേഷതകൾ മനസ്സിലാക്കുകയും ചെയ്യുക.</li>
+                <li>ജലവൈദ്യുതി, കാറ്റിൽനിന്നുള്ള വൈദ്യുതി, സൗരോർജം എന്നീ ഊർജ ഉല്പാദന രീതികളെക്കുറിച്ച് ധാരണ നേടുക.</li>
+                <li>ചൂടാറാപ്പെട്ടി പോലെയുള്ള സംവിധാനങ്ങൾ പരിചയപ്പെടുകയും ഊർജസംരക്ഷണത്തിന്റെ പ്രാധാന്യം ദൈനംദിന ജീവിതത്തിൽ പകർത്തുകയും ചെയ്യുക.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h2>ആശയങ്ങൾ / ധാരണകൾ</h2>
+            <ul>
+                <li>പ്രവൃത്തി ചെയ്യാനുള്ള കഴിവിനെയാണ് ഊർജം എന്ന് പറയുന്നത്. ചൂട്, പ്രകാശം എന്നിവ ഊർജരൂപങ്ങളാണ്.</li>
+                <li>കത്തുമ്പോൾ താപം പുറത്തുവിടുന്ന വസ്തുക്കളാണ് ഇന്ധനങ്ങൾ.</li>
+                <li>ലക്ഷക്കണക്കിന് വർഷങ്ങൾക്കുമുമ്പ് മണ്ണിനടിയിൽ അകപ്പെട്ടുപോയ ജൈവവസ്തുക്കളിൽ നിന്നാണ് ഫോസിൽ ഇന്ധനങ്ങളായ കൽക്കരി, ക്രൂഡോയിൽ, പ്രകൃതിവാതകം എന്നിവയുണ്ടാകുന്നത്. ഇവ പുതുക്കാൻ കഴിയാത്ത ഊർജസ്രോതസ്സുകളാണ്.</li>
+                <li>കെട്ടിനിർത്തിയ ജലത്തിന്റെ ഊർജം ഉപയോഗപ്പെടുത്തിയാണ് ജലവൈദ്യുതി ഉൽപാദിപ്പിക്കുന്നത്.</li>
+                <li>കാറ്റിന് വസ്തുക്കളെ ചലിപ്പിക്കാനുള്ള കഴിവുണ്ട്, ഇത് ഉപയോഗിച്ച് കാറ്റാടിയന്ത്രം വഴി വൈദ്യുതി ഉൽപാദിപ്പിക്കാം.</li>
+                <li>സൗരോർജപാനലുകൾ സൂര്യപ്രകാശത്തെ വൈദ്യുതിയാക്കി മാറ്റുന്നു. സൂര്യപ്രകാശം, കാറ്റ്, തിരമാല എന്നിവ പുതുക്കാൻ കഴിയുന്ന ഊർജസ്രോതസ്സുകളാണ്.</li>
+                <li>ജൈവമാലിന്യങ്ങളിൽ നിന്ന് ഉണ്ടാക്കുന്ന വാതക ഇന്ധനമാണ് ബയോഗ്യാസ്.</li>
+                <li>ഹൈഡ്രജൻ, ജൈവ ഡീസൽ എന്നിവ ഭാവിയുടെ ഇന്ധനങ്ങളാണ്.</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h2>പഠന സാമഗ്രികൾ (TLM)</h2>
+            <ul>
+                <li>മെഴുകുതിരികൾ, ഗ്ലാസ്സ് ടംബ്ലർ (തീ കത്താൻ വായു വേണം എന്ന് തെളിയിക്കാൻ).</li>
+                <li>വിവിധ ഇന്ധനങ്ങളുടെ ചിത്രങ്ങൾ (വിറകടുപ്പ്, ഗ്യാസടുപ്പ്, പെട്രോൾ പമ്പ്, കൽക്കരി).</li>
+                <li>ജലചക്രം നിർമ്മിക്കാൻ ആവശ്യമായ പി.വി.സി പൈപ്പ്, വെള്ളം നിറച്ച കുപ്പി.</li>
+                <li>ഓലപ്പമ്പരം അല്ലെങ്കിൽ പേപ്പർ കാറ്റാടി നിർമ്മിക്കാനുള്ള വസ്തുക്കൾ.</li>
+                <li>ഐ.സി.ടി (സോളാർ പാനലുകൾ, കൊച്ചിൻ എയർപോർട്ട്, വൈദ്യുത തീവണ്ടി എന്നിവയുടെ ദൃശ്യങ്ങൾ).</li>
+            </ul>
+        </div>
+
+        <h2>പഠന പ്രവർത്തനങ്ങൾ (പ്രക്രിയയും നിരന്തര വിലയിരുത്തലും)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 60%;">പ്രക്രിയ (Teacher & Student Activities)</th>
+                    <th style="width: 40%;">വിലയിരുത്തൽ സൂചകങ്ങൾ (Assessment)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="process-title">1. തുടക്കപ്രവർത്തനം: ഊർജം എന്ന ആശയം</span>
+                        തുടർച്ചയായി കളികളിൽ ഏർപ്പെടുമ്പോൾ ക്ഷീണം അനുഭവപ്പെടാറില്ലേ എന്ന് ചോദിച്ചുകൊണ്ട് ക്ലാസ് ആരംഭിക്കുന്നു. പ്രവൃത്തി ചെയ്യാനുള്ള കഴിവിനെയാണ് ഊർജം (Energy) എന്ന് പറയുന്നത് എന്ന് കുട്ടികളെ ബോധ്യപ്പെടുത്തുന്നു. വീട്ടിൽ ഊർജം ഉപയോഗപ്പെടുത്തുന്ന സന്ദർഭങ്ങൾ (ഉദാഹരണത്തിന്: പാചകം ചെയ്യാൻ) കുട്ടികളോട് എഴുതാൻ ആവശ്യപ്പെടുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ഊർജം എന്ന ആശയം സ്വന്തം അനുഭവങ്ങളുമായി ബന്ധിപ്പിച്ച് പറയാൻ കഴിയുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">2. ഇന്ധനങ്ങളും കത്തലും (പരീക്ഷണം)</span>
+                        വിറകടുപ്പ്, ഗ്യാസടുപ്പ്, മണ്ണെണ്ണയടുപ്പ് എന്നിവയുടെ ചിത്രങ്ങൾ കാണിക്കുന്നു. കത്തുമ്പോൾ താപം പുറത്തുവിടുന്ന വസ്തുക്കളാണ് ഇന്ധനങ്ങൾ എന്ന് വിശദീകരിക്കുന്നു.<br><br>
+                        <strong>പരീക്ഷണം:</strong> ഒരേ വലുപ്പമുള്ള രണ്ട് മെഴുകുതിരികൾ കത്തിച്ചു വെച്ച് അതിൽ ഒരെണ്ണം ഗ്ലാസുകൊണ്ട് മൂടുന്നു. കത്താൻ വായു ആവശ്യമുണ്ടോ എന്ന ചോദ്യത്തിലൂടെ നിഗമനത്തിലെത്താൻ കുട്ടികളെ സഹായിക്കുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>നിത്യജീവിതത്തിലെ ഇന്ധനങ്ങളെ തിരിച്ചറിയുന്നുണ്ടോ?</li>
+                            <li>പരീക്ഷണത്തിൽ സജീവമായി പങ്കെടുക്കുകയും ശരിയായ പരീക്ഷണക്കുറിപ്പ് തയ്യാറാക്കുകയും ചെയ്യുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">3. ഫോസിൽ ഇന്ധനങ്ങളും വർഗ്ഗീകരണവും</span>
+                        പെട്രോൾ, ഡീസൽ തുടങ്ങിയവ എവിടെനിന്ന് ലഭിക്കുന്നു എന്ന് ചർച്ച ചെയ്യുന്നു. ലക്ഷക്കണക്കിന് വർഷങ്ങൾക്കുമുമ്പ് മണ്ണിനടിയിൽ അകപ്പെട്ടുപോയ ജൈവവസ്തുക്കളിൽ നിന്നാണ് ക്രൂഡോയിൽ, കൽക്കരി എന്നിവയുണ്ടാകുന്നത് എന്ന് വ്യക്തമാക്കുന്നു. ഇവ ഫോസിൽ ഇന്ധനങ്ങളാണെന്നും ഉപയോഗിക്കുന്നതിനനുസരിച്ച് തീർന്നുപോകുന്നതുകൊണ്ട് പുതുക്കാൻ കഴിയാത്ത ഊർജസ്രോതസ്സുകൾ (Non-renewable) എന്ന് വിളിക്കുമെന്നും പറയുന്നു.<br><br>
+                        ഇന്ധനങ്ങളെ ഖരം, ദ്രാവകം, വാതകം എന്നിങ്ങനെ തരംതിരിച്ച് പട്ടിക പൂർത്തിയാക്കാൻ ആവശ്യപ്പെടുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ഫോസിൽ ഇന്ധനങ്ങൾ എന്താണെന്ന് വ്യക്തമായി മനസ്സിലാക്കിയോ?</li>
+                            <li>ഇന്ധനങ്ങളെ അവയുടെ ഭൗതിക അവസ്ഥകൾക്കനുസരിച്ച് ശരിയായി വർഗ്ഗീകരിക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">4. വൈദ്യുതി ഉൽപാദനം (ജലവും കാറ്റും)</span>
+                        കാലക്രമത്തിൽ തീവണ്ടികൾക്കുണ്ടായ മാറ്റം (കൽക്കരി -> ഡീസൽ -> വൈദ്യുതി) ചിത്രങ്ങളിലൂടെ പരിചയപ്പെടുത്തുന്നു.<br><br>
+                        <strong>നിർമ്മാണ പ്രവർത്തനം 1:</strong> കുട്ടികളെ ഗ്രൂപ്പുകളാക്കി ജലചക്രത്തിന്റെ മാതൃക നിർമ്മിക്കാൻ നിർദ്ദേശം നൽകുന്നു. കെട്ടിനിർത്തിയ ജലത്തിന്റെ ഊർജം ഉപയോഗപ്പെടുത്തിയാണ് ജലവൈദ്യുതി ഉൽപാദിപ്പിക്കുന്നത് എന്ന് ഇതിലൂടെ കണ്ടെത്തുന്നു.<br>
+                        <strong>നിർമ്മാണ പ്രവർത്തനം 2:</strong> കടലാസ് അല്ലെങ്കിൽ ഓല ഉപയോഗിച്ച് കാറ്റാടി നിർമ്മിക്കാൻ ആവശ്യപ്പെടുന്നു. കാറ്റിന് വസ്തുക്കളെ ചലിപ്പിക്കാനുള്ള കഴിവുണ്ടെന്നും അതുവഴി കാറ്റാടിയന്ത്രം പ്രവർത്തിപ്പിച്ച് വൈദ്യുതി ഉണ്ടാക്കാമെന്നും വിശദീകരിക്കുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ജലചക്രത്തിന്റെയും കാറ്റാടിയുടെയും മാതൃകാ നിർമ്മാണത്തിൽ താല്പര്യത്തോടെ പങ്കെടുക്കുന്നുണ്ടോ?</li>
+                            <li>മാതൃകകളുടെ നിർമ്മാണക്കുറിപ്പ് കൃത്യമായി എഴുതാൻ സാധിക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">5. സൗരോർജവും പുതുക്കാൻ കഴിയുന്ന ഊർജവും</span>
+                        സോളാർ കുക്കർ, സോളാർ വാട്ടർ ഹീറ്റർ, സോളാർ പാനലുകൾ എന്നിവയുടെ ചിത്രങ്ങൾ പ്രദർശിപ്പിക്കുന്നു. പൂർണ്ണമായും സൗരോർജം കൊണ്ട് പ്രവർത്തിക്കുന്ന ലോകത്തിലെ ആദ്യത്തെ വിമാനത്താവളമായ കൊച്ചിൻ എയർപോർട്ടിനെക്കുറിച്ച് വിവരിക്കുന്നു.<br><br>
+                        സൂര്യപ്രകാശം, കാറ്റ്, തിരമാല എന്നിവ ഉപയോഗിക്കുന്നതിനനുസരിച്ച് തീർന്നുപോകുന്നവയല്ല എന്നും ഇവയാണ് പുതുക്കാൻ കഴിയുന്ന ഊർജസ്രോതസ്സുകൾ (Renewable energy sources) എന്നും കുട്ടികളോട് ആശയവിനിമയം നടത്തുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>സൗരോർജ ഉപകരണങ്ങളെയും അവയുടെ ഉപയോഗങ്ങളെയും തിരിച്ചറിയാൻ കഴിയുന്നുണ്ടോ?</li>
+                            <li>പുതുക്കാൻ കഴിയുന്നതും കഴിയാത്തതുമായ ഊർജസ്രോതസ്സുകൾ തമ്മിലുള്ള വ്യത്യാസം ഉദാഹരണസഹിതം വ്യക്തമാക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="process-title">6. ഊർജ സംരക്ഷണവും ഭാവിയുടെ ഇന്ധനങ്ങളും</span>
+                        ജൈവമാലിന്യങ്ങളിൽ നിന്ന് ഇന്ധനമുണ്ടാക്കാവുന്ന ബയോഗ്യാസ് പ്ലാന്റിനെക്കുറിച്ച് ചർച്ച ചെയ്യുന്നു. ഊർജനഷ്ടം തടയാൻ സഹായിക്കുന്ന ചൂടാറാപ്പെട്ടി (Hot box) പരിചയപ്പെടുത്തുന്നു.<br><br>
+                        ഫോസിൽ ഇന്ധനങ്ങളുടെ പരിമിതികൾ മറികടക്കാൻ ശാസ്ത്രലോകം കണ്ടെത്തുന്ന ഭാവിയുടെ ഇന്ധനങ്ങളായ ഹൈഡ്രജൻ, ജൈവ ഡീസൽ എന്നിവയെക്കുറിച്ച് ഒരു ഹ്രസ്വ വിവരണം നൽകുന്നു.
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ഊർജസംരക്ഷണത്തിന്റെ ആവശ്യകത ദൈനംദിന ജീവിതവുമായി ബന്ധിപ്പിച്ച് പറയാൻ സാധിക്കുന്നുണ്ടോ?</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-box" style="background-color: #fdfefe; border-left: 5px solid var(--accent-color);">
+            <h2 style="margin-top: 0;">തുടർപ്രവർത്തനങ്ങൾ (Follow-up Activities)</h2>
+            <ol>
+                <li>അയൽപക്കത്തുള്ള അഞ്ചു വീടുകളിൽ പാചകത്തിന് ഏതെല്ലാം തരം ഇന്ധനങ്ങൾ ഉപയോഗിക്കുന്നുണ്ടെന്നും ഊർജ ഉപഭോഗം കുറയ്ക്കാൻ എന്തെല്ലാം മാർഗങ്ങൾ ഉപയോഗിക്കുന്നുണ്ടെന്നും സർവ്വേ നടത്തി ക്ലാസിൽ അവതരിപ്പിക്കുക.</li>
+                <li>പുതുക്കാൻ കഴിയാത്ത ഊർജസ്രോതസ്സുകളുടെ ഉപയോഗം കുറയ്ക്കുന്നതിന്റെ പ്രാധാന്യം ബോധ്യപ്പെടുത്തുന്നതിന് സഹായകമാകുന്ന ഒരു സ്കിറ്റ് തയ്യാറാക്കി ക്ലാസിൽ അവതരിപ്പിക്കുക.</li>
+                <li>ഭാവിയുടെ ഇന്ധനങ്ങളായ ഹൈഡ്രജൻ, ജൈവ ഡീസൽ എന്നിവയെക്കുറിച്ച് കൂടുതൽ വിവരങ്ങൾ ശേഖരിച്ച് റിപ്പോർട്ട് തയ്യാറാക്കുക.</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>&copy; തയ്യാറാക്കിയത്: വിദ്യാഭ്യാസ ആവശ്യങ്ങൾക്കായി (SCERT കേരള പാഠ്യപദ്ധതി പ്രകാരം അടിസ്ഥാനശാസ്ത്രം അഞ്ചാം ക്ലാസ് ഭാഗം 2 അടിസ്ഥാനമാക്കി)</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
