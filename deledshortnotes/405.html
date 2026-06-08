@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.El.Ed Paper 405 Notes</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --background: #f8fafc;
+            --surface: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #334155;
+            --border: #e2e8f0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #0f172a;
+                --surface: #1e293b;
+                --text-main: #f8fafc;
+                --text-muted: #cbd5e1;
+                --border: #334155;
+            }
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Noto Sans Malayalam', 'Manjari', sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3, h4, h5 { color: var(--primary); margin-top: 2.5rem; margin-bottom: 1rem; line-height: 1.4; }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-light);
+            padding-bottom: 1rem;
+            margin-top: 0;
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2 { font-size: 1.8rem; border-bottom: 2px solid var(--border); padding-bottom: 0.5rem; display: inline-block; width: 100%; }
+        h3 { font-size: 1.4rem; color: #a855f7; }
+        h4 { font-size: 1.2rem; }
+        h5 { font-size: 1.1rem; }
+        p { margin-bottom: 1.2rem; color: var(--text-muted); font-size: 1.1rem; }
+        ul, ol { margin-bottom: 1.5rem; padding-left: 2.5rem; color: var(--text-muted); font-size: 1.1rem; }
+        li { margin-bottom: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; margin: 2rem 0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        th, td { border: 1px solid var(--border); padding: 1rem; text-align: left; }
+        th { background-color: var(--primary); color: white; font-weight: 700; }
+        td { background-color: var(--surface); color: var(--text-muted); }
+        .card {
+            background: var(--background);
+            border-left: 5px solid var(--primary);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 12px 12px 0;
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateX(5px); }
+        .unit-divider {
+            height: 4px;
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            margin: 4rem 0;
+            border-radius: 2px;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary-light);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            background: var(--background);
+            border-radius: 0 8px 8px 0;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Unit 1 -->
+        <h1>UNIT 1 – അപ്പർ പ്രൈമറി ക്ലാസിലെ ഗണിത പാഠഭാഗങ്ങളുടെ വിശകലനം (Std VI, VII, VIII)</h1>
+        
+        <p>Unit 1-ൽ പ്രധാനമായും Upper Primary (VI, VII, VIII) ക്ലാസുകളിലെ ഗണിത പാഠപുസ്തകങ്ങളുടെ ഉള്ളടക്കം, പഠനലക്ഷ്യങ്ങൾ, അധ്യാപനരീതികൾ, TLM-കൾ (Teaching Learning Materials), മൂല്യനിർണയം എന്നിവ വിശകലനം ചെയ്യുകയാണ്. അധ്യാപകന് Content Knowledge, Pedagogical Knowledge, Techno-Pedagogical Knowledge എന്നിവ സമന്വയിപ്പിച്ച് പഠനം നടത്തേണ്ടതിന്റെ ആവശ്യകതയും ഈ യൂണിറ്റിൽ വിശദീകരിക്കുന്നു.</p>
+
+        <h2>1. ഗണിത വിദ്യാഭ്യാസത്തിന്റെ പ്രാധാന്യം</h2>
+        <p>ഗണിതം ഒരു വിഷയമെന്നതിലുപരി:</p>
+        <ul>
+            <li>യുക്തിചിന്ത വളർത്തുന്നു.</li>
+            <li>പ്രശ്നപരിഹാരശേഷി വികസിപ്പിക്കുന്നു.</li>
+            <li>നിരീക്ഷണശേഷി വർദ്ധിപ്പിക്കുന്നു.</li>
+            <li>ദൈനംദിന ജീവിത സാഹചര്യങ്ങളിൽ തീരുമാനമെടുക്കാൻ സഹായിക്കുന്നു.</li>
+            <li>ശാസ്ത്രം, സാങ്കേതികവിദ്യ, സാമ്പത്തികശാസ്ത്രം തുടങ്ങിയ മേഖലകളുടെ അടിസ്ഥാനമായി പ്രവർത്തിക്കുന്നു.</li>
+        </ul>
+        <p>അതിനാൽ Upper Primary തലത്തിൽ ഗണിത പഠനം കുട്ടികളുടെ ബൗദ്ധിക വികസനത്തിന്റെ പ്രധാന ഘടകമാണ്.</p>
+
+        <h2>2. അധ്യാപകനിൽ ആവശ്യമായ അറിവുകൾ</h2>
+
+        <h3>(A) Content Knowledge</h3>
+        <p>വിഷയത്തെക്കുറിച്ചുള്ള സമഗ്രമായ അറിവ്.</p>
+        <p>ഉദാഹരണം:</p>
+        <ul>
+            <li>ശതമാനം</li>
+            <li>ഭിന്നസംഖ്യ</li>
+            <li>ജ്യാമിതി</li>
+            <li>സംഖ്യാ പ്രവർത്തനങ്ങൾ</li>
+        </ul>
+        <p>ഇവയുടെ ആശയങ്ങളും നിയമങ്ങളും കൃത്യമായി അറിയണം.</p>
+
+        <h3>(B) Pedagogical Knowledge</h3>
+        <p>എങ്ങനെ പഠിപ്പിക്കണം എന്ന അറിവ്.</p>
+        <p>ഉദാഹരണം:</p>
+        <ul>
+            <li>പ്രവർത്തനാധിഷ്ഠിത പഠനം</li>
+            <li>ഗ്രൂപ്പ് പ്രവർത്തനങ്ങൾ</li>
+            <li>കണ്ടെത്തൽ രീതി</li>
+            <li>ചർച്ചകൾ</li>
+        </ul>
+
+        <h3>(C) Techno-Pedagogical Knowledge</h3>
+        <p>സാങ്കേതിക വിദ്യ ഉപയോഗിച്ച് പഠനം മെച്ചപ്പെടുത്താനുള്ള അറിവ്.</p>
+        <p>ഉദാഹരണം:</p>
+        <ul>
+            <li>Smart Class</li>
+            <li>GeoGebra</li>
+            <li>Videos</li>
+            <li>PowerPoint</li>
+            <li>Digital Content</li>
+        </ul>
+
+        <h2>3. Std VI, VII, VIII ഗണിത പാഠപുസ്തകങ്ങളുടെ പൊതുവിശേഷങ്ങൾ</h2>
+
+        <h3>VI ക്ലാസ്</h3>
+        <ul>
+            <li>അടിസ്ഥാന ആശയങ്ങൾ ഉറപ്പിക്കൽ.</li>
+            <li>സംഖ്യാബോധം വികസിപ്പിക്കൽ.</li>
+            <li>ലളിതമായ ജ്യാമിതി.</li>
+            <li>ഭിന്നസംഖ്യകൾ.</li>
+            <li>ശതമാനത്തിന്റെ അടിസ്ഥാന ആശയം.</li>
+        </ul>
+
+        <h3>VII ക്ലാസ്</h3>
+        <ul>
+            <li>മുൻക്ലാസിലെ ആശയങ്ങളുടെ വികസനം.</li>
+            <li>ബീജഗണിതത്തിന്റെ തുടക്കം.</li>
+            <li>അനുപാതം, ശതമാനം.</li>
+            <li>കൂടുതൽ സങ്കീർണ്ണമായ പ്രശ്നങ്ങൾ.</li>
+        </ul>
+
+        <h3>VIII ക്ലാസ്</h3>
+        <ul>
+            <li>ഉയർന്ന തലത്തിലുള്ള ഗണിത ആശയങ്ങൾ.</li>
+            <li>ബീജഗണിതം.</li>
+            <li>ജ്യാമിതീയ നിർമ്മാണങ്ങൾ.</li>
+            <li>പ്രായോഗിക ഗണിതം.</li>
+        </ul>
+
+        <h2>4. പാഠഭാഗ വിശകലനത്തിന്റെ ഘടകങ്ങൾ</h2>
+        <p>ഒരു ഗണിത പാഠഭാഗം വിശകലനം ചെയ്യുമ്പോൾ താഴെ പറയുന്ന കാര്യങ്ങൾ പരിശോധിക്കണം.</p>
+
+        <h3>1. പഠനലക്ഷ്യങ്ങൾ (Learning Outcomes)</h3>
+        <p>കുട്ടി പഠനത്തിന് ശേഷം:</p>
+        <ul>
+            <li>എന്ത് അറിയണം?</li>
+            <li>എന്ത് ചെയ്യാൻ കഴിയണം?</li>
+            <li>എന്ത് മനോഭാവം രൂപപ്പെടണം?</li>
+        </ul>
+
+        <h3>2. മുൻപരിചയം</h3>
+        <p>കുട്ടികൾക്ക് മുമ്പേ അറിയാവുന്ന കാര്യങ്ങൾ.</p>
+        <p>ഉദാഹരണം: ശതമാനം പഠിപ്പിക്കുമ്പോൾ:</p>
+        <ul>
+            <li>ഭിന്നസംഖ്യ</li>
+            <li>ദശാംശം</li>
+            <li>അനുപാതം</li>
+        </ul>
+        <p>അറിയണം.</p>
+
+        <h3>3. ആശയങ്ങൾ (Concepts)</h3>
+        <p>പാഠഭാഗത്തിൽ ഉൾപ്പെടുന്ന പ്രധാന ആശയങ്ങൾ കണ്ടെത്തുക.</p>
+
+        <h3>4. കഴിവുകൾ (Skills)</h3>
+        <ul>
+            <li>കണക്കുകൂട്ടൽ</li>
+            <li>നിരീക്ഷണം</li>
+            <li>പ്രശ്നപരിഹാരം</li>
+            <li>നിഗമനം</li>
+        </ul>
+
+        <h3>5. മൂല്യങ്ങൾ (Values)</h3>
+        <ul>
+            <li>കൃത്യത</li>
+            <li>സഹകരണം</li>
+            <li>യുക്തിചിന്ത</li>
+            <li>ഉത്തരവാദിത്തം</li>
+        </ul>
+
+        <h3>6. TLM</h3>
+        <p>Teaching Learning Materials.</p>
+        <p>ഉദാഹരണം:</p>
+        <ul>
+            <li>ഗ്രാഫ് പേപ്പർ</li>
+            <li>കാർഡ് ബോർഡ്</li>
+            <li>ജ്യാമിതി ഉപകരണങ്ങൾ</li>
+            <li>അബാക്കസ്</li>
+            <li>ചാർട്ടുകൾ</li>
+        </ul>
+
+        <h2>5. മാതൃകാപരമായ പാഠവിശകലനം – ശതമാനം (Percentage)</h2>
+        <p>Unit-ൽ ശതമാനവുമായി ബന്ധപ്പെട്ട ഒരു പാഠഭാഗ വിശകലനം നൽകിയിരിക്കുന്നു.</p>
+
+        <h3>പഠനലക്ഷ്യങ്ങൾ</h3>
+        <p>കുട്ടിക്ക്:</p>
+        <ul>
+            <li>ശതമാനത്തിന്റെ അർത്ഥം മനസ്സിലാക്കാൻ കഴിയണം.</li>
+            <li>ശതമാനത്തെ ഭിന്നസംഖ്യയാക്കി മാറ്റാൻ കഴിയണം.</li>
+            <li>ശതമാനത്തെ ദശാംശമാക്കി മാറ്റാൻ കഴിയണം.</li>
+            <li>ദൈനംദിന പ്രശ്നങ്ങൾ പരിഹരിക്കാൻ കഴിയണം.</li>
+        </ul>
+
+        <h3>പ്രധാന ആശയങ്ങൾ</h3>
+        <h4>ശതമാനം</h4>
+        <p>“100-ൽ എത്ര” എന്ന ആശയം. ഉദാഹരണം: 10% = 10/100</p>
+        <h4>ഭിന്നസംഖ്യ ↔ ശതമാനം</h4>
+        <p>1/2 = 50%, 1/4 = 25%, 3/4 = 75%</p>
+        <h4>ദശാംശം ↔ ശതമാനം</h4>
+        <p>0.5 = 50%, 0.25 = 25%</p>
+
+        <h3>ജീവിതസാഹചര്യങ്ങൾ</h3>
+        <ul>
+            <li>വിലക്കുറവ്</li>
+            <li>ബാങ്ക് പലിശ</li>
+            <li>പരീക്ഷാമാർക്ക്</li>
+            <li>ജനസംഖ്യാ കണക്കുകൾ</li>
+        </ul>
+
+        <h3>TLM</h3>
+        <ul>
+            <li>ശതമാന ഗ്രിഡ്</li>
+            <li>ചാർട്ടുകൾ</li>
+            <li>വർണ്ണ പേപ്പർ</li>
+            <li>ചിത്രങ്ങൾ</li>
+        </ul>
+
+        <h3>മൂല്യനിർണയം</h3>
+        <ul>
+            <li>വാചിക ചോദ്യങ്ങൾ</li>
+            <li>പ്രശ്നപരിഹാരം</li>
+            <li>പ്രവർത്തനങ്ങൾ</li>
+            <li>Worksheet</li>
+        </ul>
+
+        <h2>6. പഠനപ്രവർത്തനങ്ങൾ</h2>
+        <p>ഗണിത പഠനത്തിൽ ഉപയോഗിക്കേണ്ട പ്രവർത്തനങ്ങൾ:</p>
+        
+        <h3>വ്യക്തിഗത പ്രവർത്തനങ്ങൾ</h3>
+        <ul>
+            <li>പ്രശ്നപരിഹാരം</li>
+            <li>നിരീക്ഷണം</li>
+        </ul>
+        
+        <h3>ഗ്രൂപ്പ് പ്രവർത്തനങ്ങൾ</h3>
+        <ul>
+            <li>ചർച്ച</li>
+            <li>കണ്ടെത്തൽ</li>
+        </ul>
+        
+        <h3>പ്രായോഗിക പ്രവർത്തനങ്ങൾ</h3>
+        <ul>
+            <li>അളക്കൽ</li>
+            <li>നിർമ്മാണം</li>
+        </ul>
+        
+        <h3>ICT പ്രവർത്തനങ്ങൾ</h3>
+        <ul>
+            <li>വീഡിയോ</li>
+            <li>Simulation</li>
+            <li>Interactive Activities</li>
+        </ul>
+
+        <h2>7. മൂല്യനിർണയം</h2>
+
+        <h3>Formative Assessment</h3>
+        <p>പഠനത്തിനിടയിലെ വിലയിരുത്തൽ.</p>
+        <p>ഉദാഹരണം:</p>
+        <ul>
+            <li>Observation</li>
+            <li>Assignment</li>
+            <li>Portfolio</li>
+            <li>Project</li>
+        </ul>
+
+        <h3>Summative Assessment</h3>
+        <p>പഠനാവസാന പരീക്ഷ.</p>
+        <p>ഉദാഹരണം:</p>
+        <ul>
+            <li>യൂണിറ്റ് ടെസ്റ്റ്</li>
+            <li>വാർഷിക പരീക്ഷ</li>
+        </ul>
+
+        <h3>Continuous Evaluation</h3>
+        <p>തുടർച്ചയായ വിലയിരുത്തൽ.</p>
+        <ul>
+            <li>അറിവ്</li>
+            <li>കഴിവ്</li>
+            <li>മനോഭാവം</li>
+        </ul>
+        <p>എന്നിവ പരിശോധിക്കുന്നു.</p>
+
+        <h2>8. നല്ല ഗണിത പാഠത്തിന്റെ സവിശേഷതകൾ</h2>
+        <ul>
+            <li>കുട്ടികേന്ദ്രിതം</li>
+            <li>പ്രവർത്തനാധിഷ്ഠിതം</li>
+            <li>അന്വേഷണാത്മകം</li>
+            <li>ജീവിതബന്ധിതം</li>
+            <li>ICT സംയോജിതം</li>
+            <li>ഉൾക്കൊള്ളുന്നതായ (Inclusive)</li>
+            <li>പ്രശ്നപരിഹാര കേന്ദ്രീകൃതം</li>
+        </ul>
+
+        <div class="unit-divider"></div>
+
+        <!-- Unit 2 -->
+        <h1>UNIT 2 – അപ്പർ പ്രൈമറി ക്ലാസിലെ മൂല്യനിർണയം (Assessment in Upper Primary Mathematics)</h1>
+        <p>Unit 2-ൽ പ്രധാനമായും Upper Primary (Std VI, VII, VIII) ഗണിത പഠനത്തിലെ മൂല്യനിർണയത്തിന്റെ (Assessment) ആശയങ്ങൾ, ലക്ഷ്യങ്ങൾ, രീതികൾ, ഉപകരണങ്ങൾ, Continuous and Comprehensive Evaluation (CCE), Diagnostic Assessment, Remedial Teaching എന്നിവ വിശദമായി പഠിക്കുന്നു.</p>
+
+        <h2>1. മൂല്യനിർണയം (Assessment) – അർത്ഥം</h2>
+        <p>മൂല്യനിർണയം എന്നത് വിദ്യാർത്ഥിയുടെ പഠന പുരോഗതി, അറിവ്, കഴിവ്, മനോഭാവം, പ്രയോഗശേഷി എന്നിവ അളക്കുകയും വിലയിരുത്തുകയും ചെയ്യുന്ന പ്രക്രിയയാണ്.</p>
+        <p>ഗണിതത്തിൽ മൂല്യനിർണയം പരീക്ഷയ്ക്ക് മാർക്ക് നൽകുക മാത്രമല്ല.</p>
+        <p>ഇത് പരിശോധിക്കുന്നത്:</p>
+        <ul>
+            <li>കുട്ടി എന്ത് പഠിച്ചു?</li>
+            <li>എങ്ങനെ പഠിച്ചു?</li>
+            <li>എത്രമാത്രം മനസ്സിലാക്കി?</li>
+            <li>പ്രായോഗികമായി ഉപയോഗിക്കാൻ കഴിയുന്നുണ്ടോ?</li>
+            <li>എന്തെല്ലാം ബുദ്ധിമുട്ടുകൾ ഉണ്ട്?</li>
+        </ul>
+
+        <h2>2. മൂല്യനിർണയത്തിന്റെ ആവശ്യകത</h2>
+
+        <h3>അധ്യാപകനെ സഹായിക്കുന്നത്</h3>
+        <ul>
+            <li>പഠനഫലം മനസ്സിലാക്കാൻ</li>
+            <li>പഠനരീതികൾ മെച്ചപ്പെടുത്താൻ</li>
+            <li>പിന്നാക്ക വിദ്യാർത്ഥികളെ കണ്ടെത്താൻ</li>
+            <li>Remedial Teaching നടത്താൻ</li>
+        </ul>
+
+        <h3>വിദ്യാർത്ഥിയെ സഹായിക്കുന്നത്</h3>
+        <ul>
+            <li>സ്വന്തം പുരോഗതി മനസ്സിലാക്കാൻ</li>
+            <li>തെറ്റുകൾ തിരുത്താൻ</li>
+            <li>ആത്മവിശ്വാസം വർധിപ്പിക്കാൻ</li>
+        </ul>
+
+        <h3>രക്ഷിതാക്കളെ സഹായിക്കുന്നത്</h3>
+        <ul>
+            <li>കുട്ടിയുടെ പഠനനില മനസ്സിലാക്കാൻ</li>
+            <li>ആവശ്യമായ പിന്തുണ നൽകാൻ</li>
+        </ul>
+
+        <h2>3. ഗണിത മൂല്യനിർണയത്തിന്റെ ലക്ഷ്യങ്ങൾ</h2>
+        <p>ഒരു വിദ്യാർത്ഥിക്ക്:</p>
+        
+        <h3>അറിവ് (Knowledge)</h3>
+        <p>ആശയങ്ങൾ മനസ്സിലായോ?</p>
+        
+        <h3>ധാരണ (Understanding)</h3>
+        <p>നിയമങ്ങളും തത്വങ്ങളും ഗ്രഹിച്ചോ?</p>
+        
+        <h3>പ്രയോഗം (Application)</h3>
+        <p>ജീവിതസാഹചര്യങ്ങളിൽ ഉപയോഗിക്കാനാകുമോ?</p>
+        
+        <h3>വിശകലനം (Analysis)</h3>
+        <p>പ്രശ്നങ്ങൾ വിഭജിച്ച് പഠിക്കാനാകുമോ?</p>
+        
+        <h3>യുക്തിചിന്ത (Reasoning)</h3>
+        <p>കാരണം കണ്ടെത്താനാകുമോ?</p>
+        
+        <h3>പ്രശ്നപരിഹാരം (Problem Solving)</h3>
+        <p>പുതിയ പ്രശ്നങ്ങൾ പരിഹരിക്കാനാകുമോ?</p>
+
+        <h2>4. മൂല്യനിർണയത്തിന്റെ പ്രധാന സവിശേഷതകൾ</h2>
+        
+        <h3>തുടർച്ചയായിരിക്കണം</h3>
+        <p>പഠനത്തിന്റെ എല്ലാ ഘട്ടത്തിലും നടക്കണം.</p>
+        
+        <h3>സമഗ്രമായിരിക്കണം</h3>
+        <p>അറിവ്, കഴിവ്, മനോഭാവം എല്ലാം വിലയിരുത്തണം.</p>
+        
+        <h3>കുട്ടികേന്ദ്രിതമായിരിക്കണം</h3>
+        <p>കുട്ടിയുടെ വ്യക്തിഗത വ്യത്യാസങ്ങൾ പരിഗണിക്കണം.</p>
+        
+        <h3>വികസനാത്മകമായിരിക്കണം</h3>
+        <p>പഠനം മെച്ചപ്പെടുത്താൻ സഹായിക്കണം.</p>
+
+        <h2>5. Formative Assessment (FA)</h2>
+
+        <h3>അർത്ഥം</h3>
+        <p>പഠനപ്രക്രിയയ്ക്കിടയിൽ നടത്തുന്ന മൂല്യനിർണയം.</p>
+
+        <h3>ലക്ഷ്യം</h3>
+        <ul>
+            <li>പഠനത്തിലെ ബുദ്ധിമുട്ടുകൾ കണ്ടെത്തുക</li>
+            <li>ഉടൻ തിരുത്തൽ നൽകുക</li>
+            <li>പഠനം മെച്ചപ്പെടുത്തുക</li>
+        </ul>
+
+        <h3>പ്രത്യേകതകൾ</h3>
+        <ul>
+            <li>തുടർച്ചയായി നടക്കുന്നു</li>
+            <li>മാർക്കിനേക്കാൾ പഠനവികസനത്തിന് പ്രാധാന്യം</li>
+            <li>Feedback നൽകുന്നു</li>
+        </ul>
+
+        <h3>ഉപകരണങ്ങൾ</h3>
+        <ul>
+            <li><strong>Observation:</strong> വിദ്യാർത്ഥിയെ നിരീക്ഷിക്കൽ.</li>
+            <li><strong>Oral Questions:</strong> വാചിക ചോദ്യങ്ങൾ.</li>
+            <li><strong>Worksheet:</strong> വർക്ക് ഷീറ്റുകൾ.</li>
+            <li><strong>Assignment:</strong> ഗൃഹപാഠങ്ങൾ.</li>
+            <li><strong>Project:</strong> പ്രോജക്ട് പ്രവർത്തനങ്ങൾ.</li>
+            <li><strong>Seminar:</strong> അവതരണം.</li>
+            <li><strong>Group Activity:</strong> സംഘ പ്രവർത്തനം.</li>
+        </ul>
+
+        <h2>6. Summative Assessment (SA)</h2>
+
+        <h3>അർത്ഥം</h3>
+        <p>ഒരു യൂണിറ്റിന്റെയോ ടേമിന്റെയോ അവസാനത്തിൽ നടത്തുന്ന മൂല്യനിർണയം.</p>
+
+        <h3>ലക്ഷ്യം</h3>
+        <ul>
+            <li>പഠനഫലം അളക്കുക</li>
+            <li>ഗ്രേഡ്/മാർക്ക് നൽകുക</li>
+        </ul>
+
+        <h3>ഉദാഹരണങ്ങൾ</h3>
+        <ul>
+            <li>യൂണിറ്റ് ടെസ്റ്റ്</li>
+            <li>ടെർമിനൽ പരീക്ഷ</li>
+            <li>വാർഷിക പരീക്ഷ</li>
+        </ul>
+
+        <h3>സവിശേഷതകൾ</h3>
+        <ul>
+            <li>ഔപചാരികം</li>
+            <li>നിശ്ചിത സമയത്ത് നടത്തുന്നു</li>
+            <li>മുഴുവൻ പഠനഭാഗവും ഉൾക്കൊള്ളുന്നു</li>
+        </ul>
+
+        <h2>7. Continuous and Comprehensive Evaluation (CCE)</h2>
+
+        <h3>Continuous</h3>
+        <p>മൂല്യനിർണയം തുടർച്ചയായി നടക്കുന്നു.</p>
+        <p>ഉദാഹരണം: ദിവസേന ചോദ്യങ്ങൾ, ക്ലാസ് പ്രവർത്തനങ്ങൾ, പ്രോജക്ടുകൾ</p>
+
+        <h3>Comprehensive</h3>
+        <p>എല്ലാ മേഖലകളും വിലയിരുത്തുന്നു.</p>
+        <ul>
+            <li><strong>Cognitive Domain:</strong> അറിവ്</li>
+            <li><strong>Affective Domain:</strong> മനോഭാവം</li>
+            <li><strong>Psychomotor Domain:</strong> പ്രവർത്തന നൈപുണി</li>
+        </ul>
+
+        <h2>8. Diagnostic Assessment</h2>
+
+        <h3>അർത്ഥം</h3>
+        <p>പഠനത്തിലെ പ്രശ്നങ്ങൾ കണ്ടെത്താനുള്ള മൂല്യനിർണയം.</p>
+
+        <h3>ലക്ഷ്യം</h3>
+        <p>വിദ്യാർത്ഥി എവിടെയാണ് തെറ്റുന്നത് എന്ന് കണ്ടെത്തുക.</p>
+
+        <h3>ഉദാഹരണം</h3>
+        <p>ഒരു കുട്ടിക്ക് 3/4 + 1/2 കൂട്ടാൻ കഴിയുന്നില്ല.</p>
+        <p>അപ്പോൾ:</p>
+        <ul>
+            <li>ഭിന്നസംഖ്യ മനസ്സിലായില്ലേ?</li>
+            <li>LCM അറിയില്ലേ?</li>
+            <li>കൂട്ടൽ അറിയില്ലേ?</li>
+        </ul>
+        <p>എന്ന് കണ്ടെത്തുന്നു.</p>
+
+        <h2>9. Remedial Teaching</h2>
+
+        <h3>അർത്ഥം</h3>
+        <p>Diagnostic Assessment വഴി കണ്ടെത്തിയ പ്രശ്നങ്ങൾ പരിഹരിക്കുന്ന പഠനപ്രവർത്തനം.</p>
+
+        <h3>സവിശേഷതകൾ</h3>
+        <ul>
+            <li>വ്യക്തിഗത ശ്രദ്ധ</li>
+            <li>ലളിതമായ പ്രവർത്തനങ്ങൾ</li>
+            <li>കൂടുതൽ പരിശീലനം</li>
+            <li>അധിക TLM ഉപയോഗം</li>
+        </ul>
+
+        <h3>ഉദാഹരണം</h3>
+        <p>ശതമാനം മനസ്സിലാകാത്ത കുട്ടിക്ക്:</p>
+        <ul>
+            <li>ശതമാന ഗ്രിഡ്</li>
+            <li>ചാർട്ട്</li>
+            <li>വർണ്ണ പേപ്പർ</li>
+        </ul>
+        <p>ഉപയോഗിച്ച് വീണ്ടും പഠിപ്പിക്കുക.</p>
+
+        <h2>10. ഗണിതത്തിലെ മൂല്യനിർണയ ഉപകരണങ്ങൾ</h2>
+
+        <h3>Observation Schedule</h3>
+        <p>കുട്ടിയുടെ പ്രവർത്തനം നിരീക്ഷിക്കൽ.</p>
+
+        <h3>Checklist</h3>
+        <p>കഴിവുകൾ പരിശോധിക്കൽ.</p>
+        <table>
+            <tr>
+                <th>കഴിവ്</th>
+                <th>ഉണ്ട്</th>
+                <th>ഇല്ല</th>
+            </tr>
+            <tr>
+                <td>ശതമാനം കണ്ടെത്തുന്നു</td>
+                <td>✓</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ഭിന്നസംഖ്യ മാറ്റുന്നു</td>
+                <td>✓</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>പ്രശ്നപരിഹാരം</td>
+                <td></td>
+                <td>✓</td>
+            </tr>
+        </table>
+
+        <h3>Rating Scale</h3>
+        <p>പ്രകടനം റേറ്റ് ചെയ്യൽ.</p>
+        <p>ഉദാഹരണം: Excellent, Good, Average, Needs Improvement.</p>
+
+        <h3>Anecdotal Record</h3>
+        <p>വിദ്യാർത്ഥിയുടെ പ്രത്യേക പെരുമാറ്റം രേഖപ്പെടുത്തൽ.</p>
+
+        <h3>Portfolio</h3>
+        <p>വിദ്യാർത്ഥിയുടെ പ്രവർത്തനങ്ങളുടെ ശേഖരം.</p>
+        <p>ഉൾപ്പെടുന്നത്: Worksheets, Projects, Assignments, Drawings.</p>
+
+        <h2>11. ഗണിതത്തിൽ വിലയിരുത്തേണ്ട മേഖലകൾ</h2>
+        <ul>
+            <li><strong>Conceptual Understanding:</strong> ആശയധാരണ</li>
+            <li><strong>Procedural Skill:</strong> കണക്കുകൂട്ടൽ കഴിവ്</li>
+            <li><strong>Mathematical Communication:</strong> ഗണിത ആശയങ്ങൾ വിശദീകരിക്കൽ</li>
+            <li><strong>Problem Solving:</strong> പ്രശ്നപരിഹാരം</li>
+            <li><strong>Reasoning:</strong> യുക്തിചിന്ത</li>
+            <li><strong>Creativity:</strong> പുതിയ മാർഗങ്ങൾ കണ്ടെത്തൽ</li>
+        </ul>
+
+        <h2>12. നല്ല മൂല്യനിർണയത്തിന്റെ ഗുണങ്ങൾ</h2>
+        <ul>
+            <li><strong>Validity:</strong> അളക്കേണ്ടത് കൃത്യമായി അളക്കണം.</li>
+            <li><strong>Reliability:</strong> എപ്പോഴും ഒരേ ഫലം നൽകണം.</li>
+            <li><strong>Objectivity:</strong> വ്യക്തിപരമായ പക്ഷപാതം ഉണ്ടാകരുത്.</li>
+            <li><strong>Practicability:</strong> നടപ്പിലാക്കാൻ എളുപ്പമായിരിക്കണം.</li>
+            <li><strong>Comprehensiveness:</strong> എല്ലാ മേഖലകളും ഉൾക്കൊള്ളണം.</li>
+        </ul>
+
+        <h2>13. ഗണിത ചോദ്യങ്ങളുടെ തരങ്ങൾ</h2>
+        <ul>
+            <li><strong>Objective Questions:</strong> Multiple Choice, Matching, Fill in the Blanks.</li>
+            <li><strong>Short Answer Questions:</strong> ചെറിയ ഉത്തരങ്ങൾ.</li>
+            <li><strong>Long Answer Questions:</strong> വിവരണാത്മക ചോദ്യങ്ങൾ.</li>
+            <li><strong>Problem Solving Questions:</strong> ഗണിത പ്രശ്നങ്ങൾ.</li>
+            <li><strong>Activity Based Questions:</strong> പ്രവർത്തനാധിഷ്ഠിത ചോദ്യങ്ങൾ.</li>
+        </ul>
+
+        <h2>14. പഠനഫലങ്ങളെ അടിസ്ഥാനമാക്കിയുള്ള മൂല്യനിർണയം</h2>
+        <p>Learning Outcomes വിലയിരുത്തണം.</p>
+        <p>ഉദാഹരണം: Learning Outcome: "വിദ്യാർത്ഥിക്ക് ശതമാനം കണക്കാക്കാൻ കഴിയും."</p>
+        <p>Assessment: 25% of 200 കണ്ടെത്തുക. 60 കുട്ടികളിൽ 30% പെൺകുട്ടികൾ ആണെങ്കിൽ എത്ര പേർ?</p>
+
+        <h2>15. ICT അധിഷ്ഠിത മൂല്യനിർണയം</h2>
+        <p>ആധുനിക മൂല്യനിർണയ ഉപകരണങ്ങൾ:</p>
+        <ul>
+            <li>Online Quiz</li>
+            <li>Google Forms</li>
+            <li>Interactive Worksheets</li>
+            <li>Digital Portfolio</li>
+        </ul>
+
+        <div class="unit-divider"></div>
+
+        <!-- Unit 3 -->
+        <h1>UNIT 3 – കേരളത്തിലെ ഗണിത പാഠ്യപദ്ധതിയുടെയും ഇതര പാഠ്യപദ്ധതികളുടെയും താരതമ്യം</h1>
+        <p><strong>(Unit 3: Comparison of Kerala Mathematics Curriculum with Other Curricula)</strong></p>
+        <p>ഈ യൂണിറ്റിൽ കേരളത്തിലെ ഗണിത പാഠ്യപദ്ധതി (Kerala Curriculum Framework – KCF) മറ്റ് പാഠ്യപദ്ധതികളായ National Curriculum Framework (NCF), CBSE, Singapore Mathematics Curriculum എന്നിവയുമായി താരതമ്യം ചെയ്യുന്നു. പാഠ്യപദ്ധതിയുടെ ലക്ഷ്യങ്ങൾ, ഉള്ളടക്കം, പഠനരീതികൾ, മൂല്യനിർണയം, ഗണിത പ്രക്രിയകൾ എന്നിവയുടെ അടിസ്ഥാനത്തിലാണ് താരതമ്യം നടത്തുന്നത്.</p>
+
+        <h2>1. പാഠ്യപദ്ധതി (Curriculum) – അർത്ഥം</h2>
+        <p>Curriculum എന്നത് പഠിപ്പിക്കേണ്ട വിഷയങ്ങൾ മാത്രം അല്ല.</p>
+        <p>ഇതിൽ ഉൾപ്പെടുന്നത്:</p>
+        <ul>
+            <li>പഠനലക്ഷ്യങ്ങൾ</li>
+            <li>പഠനാനുഭവങ്ങൾ</li>
+            <li>അധ്യാപനരീതികൾ</li>
+            <li>പഠനസാമഗ്രികൾ</li>
+            <li>മൂല്യനിർണയം</li>
+            <li>സഹപാഠ്യ പ്രവർത്തനങ്ങൾ</li>
+        </ul>
+
+        <h2>2. കേരള പാഠ്യപദ്ധതിയുടെ അടിസ്ഥാനം</h2>
+        <p>കേരളത്തിലെ സ്കൂൾ വിദ്യാഭ്യാസം പ്രധാനമായും:</p>
+        <p><strong>KCF 2007 (Kerala Curriculum Framework)</strong> അടിസ്ഥാനമാക്കിയാണ് രൂപകൽപ്പന ചെയ്തത്. ഇത് NCF 2005 ന്റെ ആശയങ്ങളെ അടിസ്ഥാനമാക്കി വികസിപ്പിച്ചതാണ്.</p>
+
+        <h3>KCF ന്റെ പ്രധാന ലക്ഷ്യങ്ങൾ</h3>
+        <ol>
+            <li><strong>കുട്ടികേന്ദ്രിത പഠനം:</strong> പഠനത്തിന്റെ കേന്ദ്രം അധ്യാപകൻ അല്ല, കുട്ടിയാണ്.</li>
+            <li><strong>പ്രവർത്തനാധിഷ്ഠിത പഠനം:</strong> Learning by Doing.</li>
+            <li><strong>നിർമാണവാദം (Constructivism):</strong> കുട്ടി സ്വയം അറിവ് നിർമ്മിക്കുന്നു.</li>
+            <li><strong>സാമൂഹിക നീതി:</strong> എല്ലാ കുട്ടികൾക്കും തുല്യ അവസരം.</li>
+            <li><strong>ജനാധിപത്യ വിദ്യാഭ്യാസം:</strong> സഹകരണം, ചർച്ച, പങ്കാളിത്തം.</li>
+            <li><strong>ഉൾക്കൊള്ളുന്ന വിദ്യാഭ്യാസം (Inclusive Education):</strong> വൈകല്യമുള്ളവരും പിന്നാക്ക വിഭാഗങ്ങളും ഉൾപ്പെടുന്നു.</li>
+        </ol>
+
+        <h2>3. NCF 2005 (National Curriculum Framework)</h2>
+        <p>NCF 2005 ഇന്ത്യയിലെ ദേശീയ വിദ്യാഭ്യാസ മാർഗരേഖയാണ്.</p>
+
+        <h3>NCF 2005 ന്റെ പ്രധാന ആശയങ്ങൾ</h3>
+        <ul>
+            <li><strong>Knowledge is Constructed:</strong> അറിവ് അധ്യാപകൻ നൽകുന്നതല്ല. കുട്ടി സ്വയം നിർമ്മിക്കുന്നതാണ്.</li>
+            <li><strong>Learning Without Burden:</strong> പഠനം ഭാരമാകരുത്.</li>
+            <li><strong>Connecting Knowledge to Life:</strong> ജീവിതവുമായി ബന്ധപ്പെട്ട പഠനം.</li>
+            <li><strong>Learning Through Activities:</strong> പ്രവർത്തനങ്ങളിലൂടെ പഠനം.</li>
+            <li><strong>Continuous Evaluation:</strong> തുടർച്ചയായ മൂല്യനിർണയം.</li>
+        </ul>
+
+        <h2>4. കേരള ഗണിത പാഠ്യപദ്ധതിയുടെ സവിശേഷതകൾ</h2>
+        <ol>
+            <li><strong>പ്രശ്നപരിഹാര കേന്ദ്രീകൃതം:</strong> Problem Solving ന് പ്രാധാന്യം.</li>
+            <li><strong>പ്രവർത്തനാധിഷ്ഠിതം:</strong> Activities വഴി ആശയങ്ങൾ കണ്ടെത്തൽ.</li>
+            <li><strong>ജീവിതബന്ധിതം:</strong> Daily Life Mathematics. (ഉദാഹരണം: ബാങ്ക് ഇടപാടുകൾ, ശതമാനം, അളവുകൾ, വിലക്കിഴിവ്)</li>
+            <li><strong>ഗ്രൂപ്പ് പഠനം:</strong> സഹകരണ പഠനം.</li>
+            <li><strong>അന്വേഷണാത്മക പഠനം:</strong> Discovery Learning.</li>
+            <li><strong>ICT സംയോജനം:</strong> Smart Class, Animation, Videos.</li>
+        </ol>
+
+        <h2>5. CBSE Mathematics Curriculum</h2>
+        <p>CBSE രാജ്യവ്യാപകമായി പിന്തുടരുന്ന പാഠ്യപദ്ധതിയാണ്.</p>
+
+        <h3>CBSE യുടെ സവിശേഷതകൾ</h3>
+        <ul>
+            <li><strong>Concept Clarity:</strong> ആശയ വ്യക്തതയ്ക്ക് പ്രാധാന്യം.</li>
+            <li><strong>Structured Content:</strong> ക്രമബദ്ധമായ ഉള്ളടക്കം.</li>
+            <li><strong>Competitive Exams Orientation:</strong> ഉയർന്ന പഠനത്തിനും മത്സര പരീക്ഷകൾക്കും സഹായകമായ ഘടന.</li>
+            <li><strong>Standardized Evaluation:</strong> ഏകീകൃത മൂല്യനിർണയം.</li>
+        </ul>
+
+        <h3>കേരളവും CBSE യും തമ്മിലുള്ള വ്യത്യാസം</h3>
+        <table>
+            <tr>
+                <th>കേരളം</th>
+                <th>CBSE</th>
+            </tr>
+            <tr>
+                <td>പ്രവർത്തനാധിഷ്ഠിതം</td>
+                <td>ആശയാധിഷ്ഠിതം</td>
+            </tr>
+            <tr>
+                <td>ഗ്രൂപ്പ് പഠനം</td>
+                <td>വ്യക്തിഗത പഠനം കൂടുതൽ</td>
+            </tr>
+            <tr>
+                <td>പ്രാദേശിക സാഹചര്യങ്ങൾ</td>
+                <td>ദേശീയ തലത്തിലുള്ള ഉള്ളടക്കം</td>
+            </tr>
+            <tr>
+                <td>കണ്ടെത്തൽ പഠനം</td>
+                <td>ക്രമാനുസൃത പഠനം</td>
+            </tr>
+        </table>
+
+        <h2>6. Singapore Mathematics Curriculum</h2>
+        <p>Unit-ൽ Singapore Mathematics Curriculum നെക്കുറിച്ചും പരാമർശിക്കുന്നു.</p>
+        <p>ലോകത്തിലെ മികച്ച ഗണിത പാഠ്യപദ്ധതികളിൽ ഒന്നായി കണക്കാക്കപ്പെടുന്നു.</p>
+
+        <h3>Spiral Curriculum</h3>
+        <p>ഒരു ആശയം പല ക്ലാസുകളിലായി വീണ്ടും വീണ്ടും കൂടുതൽ ആഴത്തിൽ പഠിപ്പിക്കുന്നു.</p>
+
+        <h3>CPA Approach</h3>
+        <ul>
+            <li><strong>Concrete:</strong> യഥാർത്ഥ വസ്തുക്കൾ.</li>
+            <li><strong>Pictorial:</strong> ചിത്രങ്ങൾ.</li>
+            <li><strong>Abstract:</strong> ചിഹ്നങ്ങൾ, സംഖ്യകൾ.</li>
+        </ul>
+        <p>ഉദാഹരണം (Fraction പഠിപ്പിക്കുമ്പോൾ): 1. Cake മുറിക്കുക. 2. ചിത്രം വരയ്ക്കുക. 3. 1/2, 3/4 എന്നിങ്ങനെ രേഖപ്പെടുത്തുക.</p>
+
+        <h2>7. Spiral Curriculum</h2>
+        <p>Singapore Curriculum ന്റെ പ്രധാന സവിശേഷത.</p>
+
+        <h3>അർത്ഥം</h3>
+        <p>ഒരു ആശയം ഒരിക്കൽ പഠിപ്പിച്ച് അവസാനിപ്പിക്കില്ല. ഓരോ ക്ലാസിലും കൂടുതൽ ആഴത്തിൽ വീണ്ടും പഠിപ്പിക്കും.</p>
+
+        <h3>ഉദാഹരണം</h3>
+        <p>Class 1: സംഖ്യകൾ &rarr; Class 2: വലിയ സംഖ്യകൾ &rarr; Class 3: Place Value &rarr; Class 4: Operations &rarr; Class 5: Advanced Problems</p>
+
+        <h3>ഗുണങ്ങൾ</h3>
+        <ul>
+            <li>സ്ഥിരമായ പഠനം</li>
+            <li>ആശയങ്ങളുടെ ശക്തീകരണം</li>
+            <li>മറന്നുപോകൽ കുറയുന്നു</li>
+        </ul>
+
+        <h2>8. Singapore Mathematics – Content Strands</h2>
+        <p>Singapore Mathematics ൽ പ്രധാനമായും 3 Content Strands ഉണ്ട്:</p>
+
+        <h3>1. Number and Algebra</h3>
+        <ul>
+            <li>Whole Numbers</li>
+            <li>Fractions</li>
+            <li>Decimals</li>
+            <li>Algebra</li>
+        </ul>
+
+        <h3>2. Measurement and Geometry</h3>
+        <ul>
+            <li>Length</li>
+            <li>Area</li>
+            <li>Volume</li>
+            <li>Shapes</li>
+        </ul>
+
+        <h3>3. Statistics</h3>
+        <ul>
+            <li>Data Handling</li>
+            <li>Graphs</li>
+        </ul>
+
+        <h2>9. Process Strand</h2>
+        <p>Singapore Curriculum ന്റെ പ്രധാന സവിശേഷത.</p>
+
+        <h3>Mathematical Processes</h3>
+        <ul>
+            <li><strong>Reasoning:</strong> യുക്തിപരമായ ചിന്ത.</li>
+            <li><strong>Communication:</strong> ഗണിത ആശയങ്ങൾ അവതരിപ്പിക്കൽ.</li>
+            <li><strong>Connections:</strong> ആശയങ്ങൾ തമ്മിൽ ബന്ധിപ്പിക്കൽ.</li>
+            <li><strong>Applications:</strong> ജീവിതത്തിൽ പ്രയോഗിക്കൽ.</li>
+            <li><strong>Thinking Skills:</strong> വിമർശനാത്മക ചിന്ത.</li>
+            <li><strong>Heuristics:</strong> പ്രശ്നപരിഹാര തന്ത്രങ്ങൾ.</li>
+        </ul>
+
+        <h2>10. Polya's Problem Solving Model</h2>
+        <p>Singapore Curriculum ൽ പ്രധാനമായി ഉപയോഗിക്കുന്ന രീതിയാണ്.</p>
+
+        <ul>
+            <li><strong>Step 1: Understand the Problem</strong> (പ്രശ്നം മനസ്സിലാക്കുക.)</li>
+            <li><strong>Step 2: Make a Plan</strong> (പരിഹാര പദ്ധതി തയ്യാറാക്കുക.)</li>
+            <li><strong>Step 3: Carry Out the Plan</strong> (പദ്ധതി നടപ്പിലാക്കുക.)</li>
+            <li><strong>Step 4: Look Back</strong> (ഉത്തരം പരിശോധിക്കുക.)</li>
+        </ul>
+
+        <h2>11. Singapore Mathematics – Thinking Skills</h2>
+        <ul>
+            <li><strong>Classifying:</strong> വർഗ്ഗീകരിക്കൽ</li>
+            <li><strong>Comparing:</strong> താരതമ്യം</li>
+            <li><strong>Sequencing:</strong> ക്രമീകരണം</li>
+            <li><strong>Generalising:</strong> സാമാന്യവൽക്കരണം</li>
+            <li><strong>Analysing:</strong> വിശകലനം</li>
+            <li><strong>Synthesising:</strong> സംയോജിപ്പിക്കൽ</li>
+            <li><strong>Deduction:</strong> നിഗമനം</li>
+        </ul>
+
+        <h2>12. Primary Mathematics Topics in Singapore</h2>
+        <ul>
+            <li><strong>Number and Algebra:</strong> Whole Numbers, Fractions, Decimals, Four Operations</li>
+            <li><strong>Measurement:</strong> Length, Mass, Volume, Time</li>
+            <li><strong>Geometry:</strong> Shapes, Angles, Symmetry</li>
+            <li><strong>Statistics:</strong> Picture Graphs, Bar Graphs, Tables</li>
+        </ul>
+
+        <h2>13. കേരളം Vs Singapore Curriculum</h2>
+        <table>
+            <tr>
+                <th>കേരളം</th>
+                <th>Singapore</th>
+            </tr>
+            <tr>
+                <td>Constructivism</td>
+                <td>Spiral Curriculum</td>
+            </tr>
+            <tr>
+                <td>Activity Based</td>
+                <td>CPA Approach</td>
+            </tr>
+            <tr>
+                <td>Continuous Evaluation</td>
+                <td>Strong Problem Solving</td>
+            </tr>
+            <tr>
+                <td>Group Learning</td>
+                <td>Mathematical Modelling</td>
+            </tr>
+            <tr>
+                <td>Local Context</td>
+                <td>International Standards</td>
+            </tr>
+        </table>
+
+        <h2>14. കേരളം Vs NCF 2005</h2>
+        <table>
+            <tr>
+                <th>കേരളം</th>
+                <th>NCF 2005</th>
+            </tr>
+            <tr>
+                <td>സംസ്ഥാന പാഠ്യപദ്ധതി</td>
+                <td>ദേശീയ മാർഗരേഖ</td>
+            </tr>
+            <tr>
+                <td>KCF രൂപീകരണത്തിന് അടിസ്ഥാനം</td>
+                <td>അടിസ്ഥാന നയരേഖ</td>
+            </tr>
+            <tr>
+                <td>പ്രാദേശിക ആവശ്യങ്ങൾ ഉൾക്കൊള്ളുന്നു</td>
+                <td>ദേശീയ കാഴ്ചപ്പാട് നൽകുന്നു</td>
+            </tr>
+        </table>
+
+        <h2>15. കേരളം Vs CBSE Vs Singapore</h2>
+        <table>
+            <tr>
+                <th>ഘടകം</th>
+                <th>കേരളം</th>
+                <th>CBSE</th>
+                <th>Singapore</th>
+            </tr>
+            <tr>
+                <td>സമീപനം</td>
+                <td>Constructivist</td>
+                <td>Concept-based</td>
+                <td>Spiral</td>
+            </tr>
+            <tr>
+                <td>പഠനം</td>
+                <td>Activity Based</td>
+                <td>Structured</td>
+                <td>CPA</td>
+            </tr>
+            <tr>
+                <td>മൂല്യനിർണയം</td>
+                <td>Continuous</td>
+                <td>Formal + Continuous</td>
+                <td>Performance Based</td>
+            </tr>
+            <tr>
+                <td>പ്രധാന ലക്ഷ്യം</td>
+                <td>സമഗ്ര വികസനം</td>
+                <td>Academic Excellence</td>
+                <td>Problem Solving</td>
+            </tr>
+            <tr>
+                <td>ICT</td>
+                <td>ഉണ്ട്</td>
+                <td>ഉണ്ട്</td>
+                <td>ശക്തമായി ഉപയോഗിക്കുന്നു</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
